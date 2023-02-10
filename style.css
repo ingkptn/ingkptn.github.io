@@ -1,0 +1,195 @@
+#welcome{
+    position: absolute;
+    /* border: 1px solid black; */
+    width: 100%;
+    height:fit-content;
+    top: 25%;
+}
+
+#instructions {
+    position: absolute;
+    width: 100%;
+    top: 34%;
+    
+}
+
+h2 {
+font-family: "favorit";
+font-weight: 15;
+text-align: center;
+line-height: 60%;
+font-size: 110%;
+}
+
+
+
+@font-face {
+    font-family:"favorit" ;
+    src: url(assets/typefaces/abcfavoritmonovariable-trial-webfont.woff2);
+}
+.circles {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 200px;
+    border: 1px solid black;
+
+}
+
+
+#aboutme {
+    background-color: #48B1BD;
+    left: 50%;
+    top: 50%;
+    transform: translate(-200%, -50%);
+    animation: spin1 4s linear 0s infinite alternate both;
+   
+   
+}
+
+#face1 {
+    position: relative;
+    left: 0%;
+    top: 80%;
+    transform: rotate(90deg);
+    color: black;
+    
+}
+
+
+#assignments {
+    background-color: #B6D16A;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin2 8s linear 0s infinite normal;
+
+}
+
+#face2 {
+    position: relative;
+    left: -20%;
+    top: 30%;
+    transform: rotate(90deg);
+    color: black;
+    
+}
+
+
+
+#projects {
+    background-color: #56658C;
+    left: 50%;
+    top: 50%;
+    transform: translate(100%, -50%);
+    animation: spin3 6s linear 0s infinite alternate both;
+    
+}
+
+#face3 {
+    position: relative;
+    left: 25%;
+    top: 70%;
+    transform: rotate(90deg);
+    color: black;
+    
+}
+
+
+p {
+    font-family: "favorit";
+    font-size: 180%;
+}
+
+@keyframes spin1 {
+    from {
+        transform:translate(-250%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(150%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes spin2 {
+    0% {
+        transform:translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        transform: translate(-250%, -50%) rotate(360deg);
+    }
+    50%{transform: translate(-50%, -50%) rotate(0deg);}
+    75%{transform:translate(150%, -50%) rotate(-180deg);}
+    100% {transform:translate(-50%, -50%) rotate(360deg);}
+}
+
+@keyframes spin3 {
+    from {
+        transform:translate(150%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-250%, -50%) rotate(360deg);
+    } 
+}
+
+h4 {
+    font-family: "favorit";
+    font-weight: 15;
+    line-height: -0%;
+    text-align: center;
+    text-decoration: underline;
+}
+#tab1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 300%);
+    border: 1px solid black;
+width: 170px;
+height: 40px;
+border-radius: 60px;
+opacity: 0;
+}
+
+#tab1:hover {
+    background-color:#48B1BD;
+}
+
+
+#tab2 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 300%);
+    border: 1px solid black;
+width: 170px;
+height: 40px;
+border-radius: 60px;
+opacity: 0;
+}
+
+#tab2:hover {
+    background-color: #B6D16A;
+}
+
+#tab3 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 300%);
+    border: 1px solid black;
+width: 170px;
+height: 40px;
+border-radius: 60px;
+opacity: 0;
+}
+
+#tab3:hover{
+    background-color: #56658C; 
+}
+
+a {
+    color: black;
+}
+
+
+

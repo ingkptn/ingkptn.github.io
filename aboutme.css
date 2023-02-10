@@ -1,0 +1,36 @@
+#aboutme{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    border: 1px solid black;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+@font-face {
+    font-family:"favorit" ;
+    src: url(assets/typefaces/abcfavoritmonovariable-trial-webfont.woff2);
+}
+
+
+h3 {
+    font-family: "favorit";
+    font-weight: 7;
+    margin: 10%;
+    margin-top: 15%;
+    line-height: 100%;
+    font-size:150%;
+}
+
+h4 {
+    margin: 10%;
+    font-family: "favorit";
+    font-weight: 7;
+    line-height: 150%;
+}
+
+
+
+
+
