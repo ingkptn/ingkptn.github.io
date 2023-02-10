@@ -38,7 +38,7 @@ font-size: 110%;
 
 
 #aboutme {
-    background-color: #48B1BD;
+    background-color: #FADA5E;
     left: 50%;
     top: 50%;
     transform: translate(-200%, -50%);
@@ -151,7 +151,7 @@ opacity: 0;
 }
 
 #tab1:hover {
-    background-color:#48B1BD;
+    background-color: #FADA5E;
 }
 
 
