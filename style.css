@@ -41,7 +41,7 @@ font-size: 110%;
     background-color: #FADA5E;
     left: 50%;
     top: 50%;
-    transform: translate(-200%, -50%);
+    transform: translate(-170%, -50%);
     animation: spin1 4s linear 0s infinite alternate both;
    
    
@@ -81,7 +81,7 @@ font-size: 110%;
     background-color: #56658C;
     left: 50%;
     top: 50%;
-    transform: translate(100%, -50%);
+    transform: translate(70%, -50%);
     animation: spin3 6s linear 0s infinite alternate both;
     
 }
@@ -103,10 +103,10 @@ p {
 
 @keyframes spin1 {
     from {
-        transform:translate(-250%, -50%) rotate(0deg);
+        transform:translate(-170%, -50%) rotate(0deg);
     }
     to {
-        transform: translate(150%, -50%) rotate(360deg);
+        transform: translate(70%, -50%) rotate(360deg);
     }
 }
 
@@ -115,19 +115,19 @@ p {
         transform:translate(-50%, -50%) rotate(0deg);
     }
     25% {
-        transform: translate(-250%, -50%) rotate(360deg);
+        transform: translate(-170%, -50%) rotate(360deg);
     }
     50%{transform: translate(-50%, -50%) rotate(0deg);}
-    75%{transform:translate(150%, -50%) rotate(-180deg);}
+    75%{transform:translate(70%, -50%) rotate(-180deg);}
     100% {transform:translate(-50%, -50%) rotate(360deg);}
 }
 
 @keyframes spin3 {
     from {
-        transform:translate(150%, -50%) rotate(0deg);
+        transform:translate(70%, -50%) rotate(0deg);
     }
     to {
-        transform: translate(-250%, -50%) rotate(360deg);
+        transform: translate(-170%, -50%) rotate(360deg);
     } 
 }
 
