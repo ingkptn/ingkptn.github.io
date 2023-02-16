@@ -3,13 +3,13 @@
     /* border: 1px solid black; */
     width: 100%;
     height:fit-content;
-    top: 25%;
+    top: 25vh;
 }
 
 #instructions {
     position: absolute;
     width: 100%;
-    top: 34%;
+    top: 35vh;
     
 }
 
@@ -17,8 +17,8 @@ h2 {
 font-family: "favorit";
 font-weight: 15;
 text-align: center;
-line-height: 60%;
-font-size: 110%;
+line-height: 1vw;
+font-size: 1.8vh;
 }
 
 
@@ -40,7 +40,7 @@ font-size: 110%;
 #aboutme {
     background-color: #FADA5E;
     left: 50%;
-    top: 50%;
+    top: 20vh;
     transform: translate(-170%, -50%);
     animation: spin1 4s linear 0s infinite alternate both;
    
@@ -60,7 +60,7 @@ font-size: 110%;
 #assignments {
     background-color: #B6D16A;
     left: 50%;
-    top: 50%;
+    top: 20vh;
     transform: translate(-50%, -50%);
     animation: spin2 8s linear 0s infinite normal;
 
@@ -80,7 +80,7 @@ font-size: 110%;
 #projects {
     background-color: #56658C;
     left: 50%;
-    top: 50%;
+    top: 20vh;
     transform: translate(70%, -50%);
     animation: spin3 6s linear 0s infinite alternate both;
     
@@ -137,12 +137,14 @@ h4 {
     line-height: -0%;
     text-align: center;
     text-decoration: underline;
+    font-size: 1.6vh;
 }
+
 #tab1 {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 500%);
     border: 1px solid black;
 width: 170px;
 height: 40px;
@@ -159,12 +161,12 @@ opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 500%);
     border: 1px solid black;
 width: 170px;
 height: 40px;
 border-radius: 60px;
-opacity: 0;
+opacity: 1;
 }
 
 #tab2:hover {
@@ -175,7 +177,7 @@ opacity: 0;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, 300%);
+    transform: translate(-50%, 500%);
     border: 1px solid black;
 width: 170px;
 height: 40px;
@@ -192,4 +194,13 @@ a {
 }
 
 
-
+#container {
+    position: absolute;
+    /* border: 1px solid black; */
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+    height: 30vh;
+    width: 60vw;
+    
+}

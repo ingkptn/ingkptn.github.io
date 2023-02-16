@@ -1,11 +1,11 @@
 #bigcontainer {
  position: absolute;
- width: 95%;
- height: 95%;
+ width: 50vw;
+ height: 90vh;
  border: 1px solid black;
  left: 50%;
  top: 50%;
- transform: translate(-50%,-50%);
+ transform: translate(-50%,-48%);
 }
 
 @font-face {
@@ -16,9 +16,9 @@
 h3 {
     font-family: "favorit";
     font-weight: 7;
-    margin: 2%;
+    margin: 1.8vh;
     line-height: 15%;
-    font-size:150%;
+    font-size:2vh;
 }
 
 #title {
