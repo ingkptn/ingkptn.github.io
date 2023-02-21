@@ -9,6 +9,11 @@ body {
     src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
 }
 
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1/part1/Typeface/abcmonumentgrotesksemi-mono-regular-trial-webfont.woff');
+}
+
 #returnbutton {
     position: absolute;
      border: 1px solid #f8f5f0;
@@ -49,7 +54,8 @@ body {
 
 
 #part1 {
-    font-family: 'Favorit';
+    /* font-family: 'Favorit'; */
+    font-family: 'Monument';
     color: #f8f5f0;
     font-size: 100%;
     filter: blur(5px);
@@ -87,7 +93,8 @@ body {
 
 
 #part2 {
-    font-family: 'Favorit';
+    /* font-family: 'Favorit'; */
+    font-family: 'Monument';
     color: #f8f5f0;
     font-size: 100%;
     filter: blur(5px);
@@ -122,7 +129,8 @@ body {
 
 
 #part3 {
-    font-family: 'Favorit';
+    /* font-family: 'Favorit'; */
+    font-family: 'Monument';
     color: #f8f5f0;
     font-size: 100%;
     filter: blur(5px);
@@ -162,7 +170,8 @@ float: left;
  border: 1px solid #f8f5f0;
  width: 49.6%;
  height: 40px;
- font-family: 'Favorit';
+ /* font-family: 'Favorit'; */
+ font-family: 'Monument';
 }
 
 
@@ -192,7 +201,8 @@ background-color: #f8f5f0;
     height: 40px;
     display: float;
     float: left;
-    font-family: 'Favorit';
+    /* font-family: 'Favorit'; */
+    font-family: 'Monument';
 
 }
 

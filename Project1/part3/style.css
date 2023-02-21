@@ -8,6 +8,11 @@ body{background-color: black;
     src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
 }
 
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1/part1/Typeface/abcmonumentgrotesksemi-mono-regular-trial-webfont.woff');
+}
+
 #returnbutton {
     position: absolute;
      border: 1px solid #f8f5f0;
@@ -47,7 +52,8 @@ body{background-color: black;
 
 
     span {
-        font-family: 'Favorit';
+        /* font-family: 'Favorit'; */
+        font-family: 'Monument';
         color: black;
         /* font-size: 1vw ; */
     }

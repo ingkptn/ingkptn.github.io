@@ -7,29 +7,6 @@ body {
 
 
 
-@keyframes open {
-    0% {top: 29.5%;}
-    30% {top:-10%; left: 2.5%;}
-    60% {top: -10%;left: 50%;}
-    100% {top: 18%;left: 50%;
-    }
-
-
-
-   }
-
-@keyframes appear {
-    0% {opacity: 0;}
-    40% {opacity: 1;}
-    100% {opacity: 1;}
-}
-
-@keyframes disappear {
-    0% {opacity: 1;}
-    5% {opacity: 0;}
-    100% {opacity: 0;}
-}
-
 
 #box{
     position: absolute;
@@ -39,6 +16,13 @@ body {
     z-index: 0;
     animation: disappear 3s linear 6s 1 normal forwards;
 }
+
+@keyframes disappear {
+    0% {opacity: 1;}
+    5% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
 
 #lid {
     position: absolute;
@@ -50,6 +34,17 @@ body {
     animation: open 3s linear 2s 1 both;
 }
 
+@keyframes open {
+    0% {top: 29.5%;}
+    30% {top:-10%; left: 2.5%;}
+    60% {top: -10%;left: 50%;}
+    100% {top: 18%;left: 50%;
+    }
+
+
+
+   }
+
 #box2 {
     position: absolute;
     width: 35%;
@@ -59,6 +54,12 @@ body {
     opacity: 0;
     animation: appear 3s linear 6s 1 normal forwards;
 
+}
+
+@keyframes appear {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    100% {opacity: 1;}
 }
 
 .cards {
@@ -291,3 +292,12 @@ body {
         background-clip: content-box;
         /* background-color: #f8f5f0; */
       }
+
+      #addspace{
+        /* border: 1px solid white; */
+        width: 150%;
+        height: 30%;
+        position: absolute;
+        bottom:-130%;
+        left: 10%;
+    }

@@ -3,6 +3,11 @@
     src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
 }
 
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1/part1/Typeface/abcmonumentgrotesksemi-mono-regular-trial-webfont.woff');
+}
+
 body {
     background-color: black;
 }
@@ -36,7 +41,7 @@ body {
     
 h3 { 
     color: #f8f5f0;
-    font-family: 'Favorit';}
+    font-family: 'Monument';}
 
 .timer {
     position: absolute;
@@ -58,7 +63,7 @@ p {
 span {
     margin: 0.%;
     color: #f8f5f0;
-    font-family: 'Favorit';
+    font-family: 'Monument';
     animation-name: vanish;
     animation-duration: 1s;
     animation-timing-function: linear;

@@ -53,6 +53,11 @@ div {
     src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
     }
 
+    @font-face {
+        font-family: 'Monument';
+        src: url('/Project1/part1/Typeface/abcmonumentgrotesksemi-mono-regular-trial-webfont.woff');
+    }
+
     #returnbutton {
         position: absolute;
          border: 1px solid #f8f5f0;
@@ -89,14 +94,14 @@ div {
 }
 
 
-p { font-family: 'Favorit';
+p { font-family: 'Monument';
     position: absolute;
     color: #f8f5f0;
     width: 40vw;
     height: 80vh;
     font-size: 1vw;
     max-width: 25vw;
-    line-height: 2vh;
+    line-height: 2.2vh;
     z-index: 20;
     text-align: justify;
     left: 59.5%;
@@ -225,7 +230,7 @@ p { font-family: 'Favorit';
 
 h3{
     position: absolute;
-         font-family: 'Favorit';
+    font-family: 'Monument';
          font-size:medium;
          color: white;
          position: absolute;
