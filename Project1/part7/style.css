@@ -1210,7 +1210,7 @@ span:hover{
     left:50%;
     top:50%;
     transform: translate(-50%,-200%);
-    animation: sunset 5s linear 0s 1 both;
+    animation: sunset 300s linear 0s 1 both;
     
     
     
