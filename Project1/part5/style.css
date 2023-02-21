@@ -232,12 +232,12 @@ h3{
     position: absolute;
     font-family: 'Monument';
          font-size:medium;
-         color: white;
+         color: #F8F5F0;
          position: absolute;
          right: 5.5%;
          top:2%;
          text-align: center;
-         border: 1px solid white;
+         border: 1px solid #F8F5F0;
          padding-top: 1%;
     padding-left: 2%;
     padding-right: 2%;

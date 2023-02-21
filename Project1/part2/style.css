@@ -17,7 +17,7 @@ body {
 #container{
 width: 90vw;
 height: 85vh;
-border: 1px solid white;
+border: 1px solid #F8F5F0;
 overflow: hidden;
 background-color: #f8f5f0;
 position: absolute;
