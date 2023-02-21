@@ -21,7 +21,7 @@ body{background-color: black;
      height:30px;
      display: block;
     right: 0vw;
-    top: -5vh;
+    top: -5.5vh;
      text-align: center;
     
     
@@ -111,8 +111,11 @@ body{background-color: black;
 
     .doors {
         position: absolute;
-        top: 15vh;
-        left: 12vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-45%);
+        width: 90vw;
+        height: 85vh;
         border: 1px solid #f8f5f0;
 
 
@@ -124,14 +127,14 @@ body{background-color: black;
 
     p {
         /* border: 1px solid #f8f5f0;  */
-        padding-top: 15vh;
-        padding-left: 8vw;
-        padding-right: 8vw;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
         position: relative;
         text-align: justify;
         width: 60vw;
         height: 60vh;
-        font-size: 1.0vw;
+        font-size: 1.2vw;
 
     }
 

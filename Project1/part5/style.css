@@ -8,13 +8,13 @@ body {
     background-color: black;
     /* border-radius: 20%; */
     font-family: 'Favorit';
-    padding-top: 1%;
+    padding-top: 0.9%;
     padding-left: 2%;
     padding-right: 2%;
-    padding-bottom: 1%;
+    padding-bottom: 0.9%;
     position: absolute;
-    right: 37.5%;
-    top: 4%;
+    right: 14.2%;
+    top: 4.15%;
     -webkit-user-select: none; 
   -ms-user-select: none; 
   user-select: none; 
@@ -66,7 +66,7 @@ div {
          height:30px;
          display: block;
          right: 0%;
-         top:-8%;
+         top:-7%;
          text-align: center;
          -webkit-user-select: none; 
   -ms-user-select: none; 
@@ -105,7 +105,7 @@ p { font-family: 'Monument';
     z-index: 20;
     text-align: justify;
     left: 59.5%;
-    top: 25%;
+    top: 28%;
     -webkit-user-select: none; 
   -ms-user-select: none; 
   user-select: none; 
@@ -160,7 +160,7 @@ p { font-family: 'Monument';
     width: 89vw;
     height: 80vh;
     left:5.5vw;
-    top:12vh;
+    top: 15vh;
 
 }
 
@@ -251,4 +251,14 @@ h3:hover{
     border: 1px solid #f8f5f0;
     color: black;
     background-color:#f8f5f0;
+}
+
+h2{
+    position: absolute;
+    font-family: 'Monument';
+         font-size:medium;
+         color: #F8F5F0;
+         position: absolute;
+         right: 23.5%;
+    top: 6%;
 }

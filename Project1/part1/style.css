@@ -19,8 +19,8 @@ position: absolute;
  width: 30px;
  height:30px;
  display: block;
- right: 7.3%;
- top:5%;
+ right: 5.3%;
+ top:10%;
  text-align: center;
 
 
@@ -43,16 +43,16 @@ color: #F8F5F0;
  color: #F8F5F0;
  font-family: 'Favorit';
  margin-left: 7vw;
- margin-top: 6vh;
+ margin-top: 5vh;
  font-size: 120%;
 }
 
 #part1 {
     position: fixed;
-    top: 10%;
-    left: -2%;
+    top: 15%;
+    left: 1%;
     margin-left: auto;
-    padding-left: 7.5%;
+    padding-left: 5%;
     padding-bottom: 5%;
     display: block;
     width: 89vw;
@@ -354,12 +354,13 @@ span {
 
 #container {
     position: absolute;
-    width: 85%;
+    width: 89vw;;
     height: 78vh;
     border: 1px solid #f8f5f0;
     z-index:-10;
-    left: 7.5%;
-    top: 10%;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-44%);
 
 }
 

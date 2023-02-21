@@ -21,8 +21,8 @@ body {
      width: 30px;
      height:30px;
      display: block;
-     right: 8%;
-     top: 7%;
+     right: 5%;
+     top: 13%;
      text-align: center;
     
     
@@ -43,11 +43,14 @@ body {
     
 #box {
     border: 1px solid #f8f5f0;
-    width: fit-content;
+    width: 90vw;
+    height: 68vh;
     /* padding: 5%; */
-    margin-top: 10%;
+    margin-top: 3.5%;
     margin-left: 50%;
-    transform: translate(-50%,0%);
+    max-width: 90vw;
+    max-height: 68vh;
+    transform: translate(-50%,20%);
 
 }
 
@@ -65,11 +68,13 @@ body {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate; */
-    max-width: 40vw;
+    max-width: 50vw;
     text-align: left;
-    margin-left: 10%;
+    margin-left: 5%;
     margin-right: 10%;
     margin-top: 8%;
+    line-height: 150%;
+    letter-spacing: 0.1vw;
    
 
 }
@@ -77,17 +82,23 @@ body {
 @keyframes blurText1{
     0% {filter: blur(0px);
         -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;
     }
     20% {filter:blur(10px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
     40% {filter:blur(12px);
-        -webkit-filter: blur(12px);}
+        -webkit-filter: blur(12px);
+        letter-spacing: 0.4vw;}
     60% {filter:blur(5px);
-        -webkit-filter: blur(9px);}
+        -webkit-filter: blur(9px);
+        letter-spacing: 0.3vw;}
     80% {filter:blur(0px);
-        -webkit-filter: blur(0px);}
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;}
     100% {filter:blur(2px);
-        -webkit-filter: blur(2px);}
+        -webkit-filter: blur(2px);
+        letter-spacing: 0.1vw;}
 
 }
 
@@ -104,25 +115,33 @@ body {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: normal; */
-    max-width: 40vw;
+    max-width: 50vw;
     text-align: right;
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 40%;
+    margin-right: 5%;
+    line-height: 150%;
+    letter-spacing: 0.1vw;
 }
 
 @keyframes blurText2{
     0% {filter: blur(10px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.3vw;}
     20% {filter:blur(2px);
-        -webkit-filter: blur(2px);}
+        -webkit-filter: blur(2px);
+        letter-spacing: 0.2vw;}
     40% {filter:blur(0px);
-        -webkit-filter: blur(0px);}
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;}
     60% {filter:blur(10px);
+        letter-spacing: 0.3vw;
         -webkit-filter: blur(10px);}
     80% {filter:blur(5px);
-        -webkit-filter: blur(5px);}
+        -webkit-filter: blur(5px);
+        letter-spacing: 0.1vw;}
     100% {filter:blur(10px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
 
 }
 
@@ -140,26 +159,34 @@ body {
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate; */
-    max-width: 40vw;
+    max-width: 50vw;
     text-align: left;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-right: 8%;
-    margin-bottom: 8%;
+    margin-bottom: 7%; 
+    line-height: 150%;
+    letter-spacing: 0.1vw;
 }
 
 @keyframes blurText3{
     0% {filter: blur(2px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
     20% {filter:blur(5px);
-        -webkit-filter: blur(5px);}
+        -webkit-filter: blur(5px);
+        letter-spacing: 0.1vw;}
     40% {filter:blur(10px);
-        -webkit-filter: blur(0px);}
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.3vw;}
     60% {filter:blur(0px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.1vw;}
     80% {filter:blur(0px);
-        -webkit-filter: blur(0px);}
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.2vw;}
     100% {filter:blur(10px);
-        -webkit-filter: blur(10px);}
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.3vw;}
 
 }
 
@@ -168,10 +195,12 @@ body {
 display: float;
 float: left;
  border: 1px solid #f8f5f0;
- width: 49.6%;
+ width: 45%;
  height: 40px;
  /* font-family: 'Favorit'; */
  font-family: 'Monument';
+ margin-left:4.5vw;
+ margin-top:13.5vh;
 }
 
 
@@ -197,12 +226,13 @@ background-color: #f8f5f0;
 
 #pausebutton {
     border: 1px solid #f8f5f0;
-    width: 49.6%;
+    width: 45vw;
     height: 40px;
     display: float;
     float: left;
     /* font-family: 'Favorit'; */
     font-family: 'Monument';
+    margin-top:13.5vh;
 
 }
 

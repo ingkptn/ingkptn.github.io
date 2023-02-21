@@ -19,8 +19,8 @@ body {
      width: 30px;
      height:30px;
      display: block;
-     right: 20%;
-     top:12%;
+     right: 5.5%;
+     top:10.5%;
      text-align: center;
     
     
@@ -45,15 +45,25 @@ h3 {
 
 .timer {
     position: absolute;
-    left: 20%;
+    left: 5.5%;
     top: 10%;
 }
 
+#part7{
+    position: absolute;
+    border: 1px solid white;
+    width: 89vw;
+    height:75vh;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-45%);
+}
+
 p {
-    width: 60vw;
+    width: 75vw;
     position: relative;
     margin: auto;
-    margin-top: 25%;
+    margin-top: 24%;
     /* border: 1px solid #f8f5f0; */
     padding: 3%;
     font-size: 1.0vw;
@@ -1199,8 +1209,10 @@ span:hover{
     position: absolute;
     left:50%;
     top:50%;
-    transform: translate(-50%,-190%);
+    transform: translate(-50%,-200%);
     animation: sunset 300s linear 0s 1 both;
+    
+    
 
 }
 
@@ -1209,12 +1221,12 @@ span:hover{
         position: absolute;
         left:50%;
         top:50%;
-        transform: translate(-50%,-190%)
+        transform: translate(-50%,-200%)
     }
     to{
         position: absolute;
         left:50%;
         top:50%;
-        transform: translate(-50%,-85%)
+        transform: translate(-50%,-8%);
     }
 }

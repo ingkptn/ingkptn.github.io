@@ -221,7 +221,7 @@ top: -20vh;}
 #light{
     position: absolute;
     background-color:#f8f5f0;
-    height: 1.4vw;
+    height: 3vw;
     width: 52vw;
     filter: blur(3px);
     top:2%;
@@ -241,7 +241,7 @@ top: -20vh;}
      height:30px;
      display: block;
      right: 5%;
-     top:5%;
+     top:6%;
      text-align: center;
     
     

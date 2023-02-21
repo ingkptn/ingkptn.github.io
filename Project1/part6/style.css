@@ -32,13 +32,15 @@ div{
 
 #container{
     border: 1px solid #F8F5F0;
-    width: 85vw;
+    width: 89vw;
     height: 85vh;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-45%);
+    transform: translate(-50%,-46%);
     overflow-x: hidden;
+    overflow-y: hidden;
+
     
 }
 
@@ -55,7 +57,7 @@ div{
 #door1{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 81vh;
     border: 1px solid #F8F5F0;
@@ -67,7 +69,7 @@ div{
 #door2{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 81vh;
     border: 1px solid #F8F5F0;
@@ -79,7 +81,7 @@ div{
 #door3{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 72vh;
     border: 1px solid #F8F5F0;
@@ -91,7 +93,7 @@ div{
 #door4{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 72vh;
     border: 1px solid #F8F5F0;
@@ -102,7 +104,7 @@ div{
 #door5{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 66vh;
     border: 1px solid #F8F5F0;
@@ -114,7 +116,7 @@ div{
 #door6{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 66vh;
     border: 1px solid #F8F5F0;
@@ -126,7 +128,7 @@ div{
 #door7{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 62vh;
     border: 1px solid #F8F5F0;
@@ -138,7 +140,7 @@ div{
 #door8{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 62vh;
     border: 1px solid #F8F5F0;
@@ -150,7 +152,7 @@ div{
 #door9{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 60vh;
     border: 1px solid #F8F5F0;
@@ -162,7 +164,7 @@ div{
 #door10{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 60vh;
     border: 1px solid #F8F5F0;
@@ -173,7 +175,7 @@ div{
 #door11{
     position: absolute;
     top: 5%;
-    left: 14.5%;
+    left: 16.2%;
     width: 30vw;
     height: 59vh;
     border: 1px solid #F8F5F0;
@@ -185,7 +187,7 @@ div{
 #door12{
     position: absolute;
     top:5%;
-    right: 14.5%;
+    right: 16.2%;
     width: 30vw;
     height: 59vh;
     border: 1px solid #F8F5F0;
@@ -274,7 +276,7 @@ right: 2%;
      width: 30px;
      height:30px;
      display: block;
-     right: 7.3%;
+     right: 5.3%;
      top:5%;
      text-align: center;
     
