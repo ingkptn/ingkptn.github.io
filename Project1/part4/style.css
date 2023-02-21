@@ -22,7 +22,7 @@ body {
      height:30px;
      display: block;
      right: 5%;
-     top: 13%;
+     top: 13.5%;
      text-align: center;
     
     
@@ -51,6 +51,7 @@ body {
     max-width: 90vw;
     max-height: 68vh;
     transform: translate(-50%,20%);
+    overflow-y: scroll;
 
 }
 
@@ -167,6 +168,8 @@ body {
     line-height: 150%;
     letter-spacing: 0.1vw;
 }
+
+
 
 @keyframes blurText3{
     0% {filter: blur(2px);
