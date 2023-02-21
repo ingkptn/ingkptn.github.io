@@ -63,7 +63,7 @@ p {
     width: 75vw;
     position: relative;
     margin: auto;
-    margin-top: 24%;
+    margin-top: 23%;
     /* border: 1px solid #f8f5f0; */
     padding: 3%;
     font-size: 1.0vw;
@@ -1210,7 +1210,8 @@ span:hover{
     left:50%;
     top:50%;
     transform: translate(-50%,-200%);
-    animation: sunset 300s linear 0s 1 both;
+    animation: sunset 5s linear 0s 1 both;
+    
     
     
 
@@ -1227,6 +1228,6 @@ span:hover{
         position: absolute;
         left:50%;
         top:50%;
-        transform: translate(-50%,-8%);
+        transform: translate(-50%,-14%);
     }
 }
