@@ -1,0 +1,202 @@
+body {
+  background-color: black;  
+    
+}
+
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+}
+
+#returnbutton {
+    position: absolute;
+     border: 1px solid #f8f5f0;
+     font-family: 'Favorit';
+     width: 30px;
+     height:30px;
+     display: block;
+     right: 8%;
+     top: 7%;
+     text-align: center;
+    
+    
+    }
+    
+    #cross {
+    margin-top: 5px;
+    color: #f8f5f0;
+    }
+
+    #returnbutton:hover{
+        background-color:#f8f5f0;
+    }
+    
+    #cross:hover{
+         color:black;
+    }
+    
+#box {
+    border: 1px solid #f8f5f0;
+    width: fit-content;
+    /* padding: 5%; */
+    margin-top: 10%;
+    margin-left: 50%;
+    transform: translate(-50%,0%);
+
+}
+
+
+
+#part1 {
+    font-family: 'Favorit';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    max-width: 40vw;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 8%;
+   
+
+}
+
+@keyframes blurText1{
+    0% {filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+    20% {filter:blur(10px);
+        -webkit-filter: blur(10px);}
+    40% {filter:blur(12px);
+        -webkit-filter: blur(12px);}
+    60% {filter:blur(5px);
+        -webkit-filter: blur(9px);}
+    80% {filter:blur(0px);
+        -webkit-filter: blur(0px);}
+    100% {filter:blur(2px);
+        -webkit-filter: blur(2px);}
+
+}
+
+
+#part2 {
+    font-family: 'Favorit';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    max-width: 40vw;
+    text-align: right;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+@keyframes blurText2{
+    0% {filter: blur(10px);
+        -webkit-filter: blur(10px);}
+    20% {filter:blur(2px);
+        -webkit-filter: blur(2px);}
+    40% {filter:blur(0px);
+        -webkit-filter: blur(0px);}
+    60% {filter:blur(10px);
+        -webkit-filter: blur(10px);}
+    80% {filter:blur(5px);
+        -webkit-filter: blur(5px);}
+    100% {filter:blur(10px);
+        -webkit-filter: blur(10px);}
+
+}
+
+
+
+#part3 {
+    font-family: 'Favorit';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    max-width: 40vw;
+    text-align: left;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-bottom: 8%;
+}
+
+@keyframes blurText3{
+    0% {filter: blur(2px);
+        -webkit-filter: blur(10px);}
+    20% {filter:blur(5px);
+        -webkit-filter: blur(5px);}
+    40% {filter:blur(10px);
+        -webkit-filter: blur(0px);}
+    60% {filter:blur(0px);
+        -webkit-filter: blur(10px);}
+    80% {filter:blur(0px);
+        -webkit-filter: blur(0px);}
+    100% {filter:blur(10px);
+        -webkit-filter: blur(10px);}
+
+}
+
+
+#playbutton {
+display: float;
+float: left;
+ border: 1px solid #f8f5f0;
+ width: 49.6%;
+ height: 40px;
+ font-family: 'Favorit';
+}
+
+
+.state {
+    color: #f8f5f0;
+    position: relative;
+    text-align: center;
+    margin-top: 12px;
+
+}
+
+#play:hover {
+    color: black;
+}
+
+#pause:hover {
+    color: black;
+}
+
+#playbutton:hover{
+background-color: #f8f5f0;
+}
+
+#pausebutton {
+    border: 1px solid #f8f5f0;
+    width: 49.6%;
+    height: 40px;
+    display: float;
+    float: left;
+    font-family: 'Favorit';
+
+}
+
+#pausebutton:hover{
+    background-color: #f8f5f0;
+}
+

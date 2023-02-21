@@ -1,0 +1,149 @@
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+}
+
+
+
+#container{
+   /* border: 1px solid #f8f5f0; */
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%,-50%);
+    width: 90vw;
+    height: 100vh;
+    overflow-x: hidden;
+    
+
+
+}
+
+p{
+    color: #f8f5f0;
+    font-family: 'Favorit';
+    font-size: 1vw;
+    width: 20vw;
+}
+
+.panels{
+    border: 1px solid #f8f5f0;
+    padding: 10px;
+    background-color: #f8f5f0;
+    margin: 2px;
+}
+
+.panels:hover{
+    background-color: black;
+
+}
+.flex-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-30%);
+    width:49vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    
+}
+
+
+    
+
+
+
+h4{ 
+    position: absolute;
+    top: -100%;
+    font-size: 2vw;
+    color: black;
+    width: 100vw;
+    display: inline-block;
+    letter-spacing: 10vw;
+    line-height: 8vh;
+    opacity: 0.6;
+}
+
+.rain1{
+    animation-name: rain1;
+    animation-delay: 0s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.rain2{
+   
+    animation-name: rain2;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.rain3{
+    /* color:red; */
+    animation-name: rain3;
+    animation-duration: 5s;
+   animation-delay: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.rain4{
+
+    animation-name: rain4;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    
+}
+
+.rain5{
+    
+    animation-name: rain5;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+
+
+
+@keyframes rain1{
+    from{top: -200%; left:5%; font-size:2vw;}
+    to {top: 100%; left: 5%; }
+}
+
+@keyframes rain2{
+    from{top: -200%; left:10%; font-size:2vw;}
+    to {top: 100%; left: 10%; }
+}
+
+@keyframes rain3{
+    from{top: -200%; left:7%; font-size:2vw;}
+    to {top: 100%; left: 7%; }
+}
+
+@keyframes rain4{
+    from{top: -200%; left:-3%; font-size:2vw;}
+    to {top: 100%; left: -3%; }
+}
+
+@keyframes rain5{
+    from{top: -200%; left:15%; font-size:2vw;}
+    to {top: 100%; left: 15%; }
+}
+
+
+

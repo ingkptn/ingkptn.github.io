@@ -1,0 +1,293 @@
+body {
+    background-color: black;
+    max-width: 100%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+}
+
+
+
+@keyframes open {
+    0% {top: 29.5%;}
+    30% {top:-10%; left: 2.5%;}
+    60% {top: -10%;left: 50%;}
+    100% {top: 18%;left: 50%;
+    }
+
+
+
+   }
+
+@keyframes appear {
+    0% {opacity: 0;}
+    40% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes disappear {
+    0% {opacity: 1;}
+    5% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+
+#box{
+    position: absolute;
+    width: 39%;
+    top: 31%;
+    left: 3%;
+    z-index: 0;
+    animation: disappear 3s linear 6s 1 normal forwards;
+}
+
+#lid {
+    position: absolute;
+    width: 41.2%;
+    margin: 0%;
+    top: 29.5%;
+    left: 2.3%;
+    z-index: 1;
+    animation: open 3s linear 2s 1 both;
+}
+
+#box2 {
+    position: absolute;
+    width: 35%;
+    top: 23%;
+    left: 10%;
+    z-index: 0;
+    opacity: 0;
+    animation: appear 3s linear 6s 1 normal forwards;
+
+}
+
+.cards {
+    position: absolute;
+    width: 8.3%;
+    height: 8%;
+    border: 1px solid #f8f5f0;
+    transform: skewY(138deg);
+    opacity: 0;
+}
+
+.cards:hover {
+    background-color: #f8f5f0;
+}
+
+#card1 {
+    left: 20%;
+    top: 55%;
+    animation: card1animation 1.5s linear 5s 1 normal forwards;
+}
+
+@keyframes card1animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 20%;
+    top: 53%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 13%;
+    height: 28%;
+    left: 40%;
+    top: 85%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }
+    
+}
+
+#card2 {
+    left: 22.5%;
+    top: 60%;
+    animation: card2animation 1.5s linear 5s 1 normal forwards;
+}
+
+@keyframes card2animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 22.5%;
+    top: 60%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 21%;
+    height: 16%;
+    left: 54%;
+    top: 116%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }}
+
+#card3 {
+    left: 22.5%;
+    top: 60%;
+    animation: card3animation 1.5s linear 5s 1 normal forwards;
+}
+
+@keyframes card3animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 22.5%;
+    top: 60%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 13%;
+    height: 28%;
+    left: 38%;
+    top: 140%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }
+    
+}
+
+#card4 {
+    left: 22.5%;
+    top: 45%;
+    animation: card4animation 1.5s linear 5s 1 normal forwards;
+}
+
+
+@keyframes card4animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 32.5%;
+    top: 45%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 13%;
+    height: 28%;
+    left: 126%;
+    top: 180%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }}
+
+#card5 {
+    left: 32.5%;
+    top: 45%;
+    animation: card5animation 1.5s linear 5s 1 normal forwards;
+}
+
+@keyframes card5animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 32.5%;
+    top: 45%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 21%;
+    height: 16%;
+    left: 62%;
+    top: 160%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }}
+
+
+
+#card6 {
+    left: 32.5%;
+    top: 45.6%;
+    animation: card6animation 1.5s linear 5s 1 normal forwards;
+    
+}
+
+@keyframes card6animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 32.5%;
+    top: 45%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 21%;
+    height: 16%;
+    left: 103%;
+    top: 160%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }}
+        
+
+
+#card7 {
+    left: 32.5%;
+    top: 45.6%;
+    animation: card7animation 1.5s linear 5s 1 normal forwards;
+}
+
+@keyframes card7animation{
+    0% {
+    width: 8.3%;
+    height: 8%;
+    left: 32.5%;
+    top: 45%;
+    transform: skewY(138deg);
+    opacity: 0;
+    }
+    99% {opacity: 0;}
+    100% {
+    width: 13%;
+    height: 28%;
+    left: 87%;
+    top: 125%;
+    transform: matrix(1.00,0.50,-1.10,1.00,0,0);
+    opacity: 1;
+    }}
+
+
+#part1 {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    height: 85%;
+    width: 90%;
+    border: 1px solid #f8f5f0;
+    background-color: black;
+    opacity: 0;
+    z-index: 2;
+    }
+
+    ::-webkit-scrollbar {
+        position: relative;
+        margin-top: -0%;
+        height: 20px;
+        width: 20px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        border: 1px solid #f8f5f0;
+      }
+       
+      ::-webkit-scrollbar-thumb {
+        width: 30%;
+        /* border: 1px solid #f8f5f0; */
+        background-color: #f8f5f0;
+        border: 5px solid transparent;
+        background-clip: content-box;
+        /* background-color: #f8f5f0; */
+      }
