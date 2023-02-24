@@ -89,7 +89,7 @@ iframe {
    
 }
 
-a{
+#posterlink{
     font-family: "favorit";
     font-weight: 7;
     margin-top: 2%;
@@ -133,3 +133,22 @@ a{
 
   }
  */
+
+#return{
+    font-family: 'favorit';
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    width: fit-content;
+    padding:0.5vw;
+    border-radius: 50px;
+    position: absolute;
+    margin: 2%;
+}
+
+#return:hover{
+    background-color: #B6D16A;
+}
+
+
+
