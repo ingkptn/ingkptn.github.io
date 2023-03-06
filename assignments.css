@@ -150,5 +150,27 @@ iframe {
     background-color: #B6D16A;
 }
 
+#json-demo{
+    width: 100%;
+    height: 20%;
+    border: 1px solid black;
+
+    margin-bottom: 1%;
+    border-radius: 10px;
+}
+
+#insidecontainer2{
+    height: 25%;
+    border-bottom: 1px solid black;
+}
+
+#json-demo > a{
+    font-family: 'favorit';
+    font-size:1.5vh;
+    line-height: 300%;
+    margin-left: 3%;
+
+}
+
 
 
