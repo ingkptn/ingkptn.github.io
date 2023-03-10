@@ -9,399 +9,23 @@
     <title>Dropbox</title>
 </head>
 
-
-
-<style>
-
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;600;700&family=Prompt&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;500&family=Golos+Text&family=Space+Grotesk:wght@300;400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap');
-
-
-    body{
-        margin: 0;
-        max-width: 100vw;
-        overflow-y: scroll;
-    }
-
-    div{
-        letter-spacing: 0.6px;
-    }
-
-   /* navigation bar */
-
-    .navigation{
-        position: sticky;
-        top: 0px;
-        /* border: 1px solid black; */
-        display: flex;
-        flex-direction: row;
-        max-width: 100vw;
-        height: 50px;
-        background-color: white;
-        z-index: 10;
-    }
-    
-
-    #logo{
-        width: 50px;
-    }
-
-    .navigation > p{
-    display: none;
-    }
-
-    .navigation > h1 {
-        font-size: 25px;
-        font-family: Familjen Grotesk;
-        font-weight: 600;
-        line-height: 50%;
-        flex-basis: 70%;
-        margin-left: 15px;
-        letter-spacing: 0px;
-        
-    }
-
-    .navigation > h2 {
-        font-size: 25px;
-        font-family: Familjen Grotesk;
-        font-weight: lighter;
-        line-height: 30%;
-        margin-right:3vw;
-        margin-left: 3vw;
-        
-    }
-
-    .navigation > div{
-        /* border: 1px solid black; */
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .navigation > div:hover{
-        background-color: #F1EEE9;
-    }
-
-    .navigation > div > h2 {
-        font-size: 18px;
-        font-family: Familjen Grotesk;
-        font-weight: lighter;
-        line-height: 110%;
-        
-    }
-
-
-    .flex-container{
-        background-color: #1D1919;
-        display: flex;
-        flex-direction: column;
-    }
-
-
-
-
-    .flex-container > div > h1{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 100%;
-        color: white;
-        margin-left: 5vw;
-        margin-top: 10vw;
-        width: 90vw;
-        text-align: center;
-
-    }
-
-    .flex-container > div > p{
-        font-family: Familjen Grotesk;
-        font-weight: lighter;
-        font-size: 18px;
-        line-height: 130%;
-        color: white;
-        margin-left: 5vw;
-        margin-top: 2vw;
-        width: 90vw;
-        text-align: center;
-
-    }
-
-    #plan{
-        display: inline-block;
-        padding: 25px;
-        font-family: Familjen Grotesk;
-        font-weight: 600;
-        background-color: #4A85F7;
-        margin-left: 50%;
-        transform: translate(-50%,0);
-    }
-
-    #plan:hover{
-        background-color: #85ABFA;
-    }
-
-    #photo{
-        width: 86vw;
-        margin: 7vw;
-    }
-
-    .flex-container > div > h2{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 27px;
-        color: white;
-        margin-left: 5vw;
-        margin-top: 2.5vw;
-        width: 90vw;
-        text-align: center;
-
-    }
-
-    #section3{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        
-    }
-
-
-    #section3 > div{
-        font-family: Familjen Grotesk;
-        color: white;
-        margin: 7%;
-        margin-bottom: 15%;
-        padding: 10px;
-        /* border: 1px solid white; */
-        width: 40vw;
-        line-height: 140%;
-
-    }
-    
-    .subheader{
-        font-weight: 600;
-        display: block;
-    }
-
-
-   h4{
-    font-family: Montserrat;
-        font-weight: 500;
-        font-size: 27px;
-        color: #1D1919;
-        margin-left: 5vw;
-        margin-top: 12vw;
-        width: 90vw;
-        text-align: center;
-   }
-
-    #section4{
-        background-color: #F7F5F2;
-    }
-
-    #section5{
-        background-color: #F7F5F2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-    }
-
-    #section5 > div{
-        font-family: Familjen Grotesk;
-        color: #1D1919;
-        margin: 6%;
-        margin-bottom: 15%;
-        padding: 10px;
-        width: 40vw;
-        line-height: 140%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #section5 > div> img{
-        display: block;
-        height: 30px;
-        width: 30px;
-        margin-bottom: 30px;
-    }
-
-    .link{
-        display: block;
-        text-decoration: underline;
-        font-weight: 600;
-        }
-
-    #section5 > div > p{
-        flex-basis: 50%;
-    }
-
-    #section6{
-        background-color: #F7F5F2;
-    }
-
-    #section6 > p{
-    color: black;
-    font-size: 100%;
-    }
-
-    #section7{
-        background-color: white;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: fit-content ;
-        grid-template-areas:
-        "description"
-        "image"
-        "list";
-    }
-
-    #description{
-        grid-area: description;
-        list-style: none;
-        font-family: Familjen Grotesk;
-        padding: 50px;
-    }
-
-    #image{
-        margin: 2vw 5vw;
-        background-color: #5BC5E7;
-        grid-area: image;
-    }
-
-    #section7 > div > img{
-        width: 80vw;
-        margin: 10vw 5vw;
-    }
-
-
-    #list{
-        grid-area: list;
-        list-style: none;
-        font-family: Familjen Grotesk;
-    }
-
-    li{
-        margin: 0vw 5vw;
-        padding: 6vw 3vw;
-        font-size: 105%;
-        font-weight: 600;
-        border-bottom: 0.5px solid black;;
-    }
-
-    li:hover{
-        background-color: #F1EEE9 ;
-    }
-
-
-
-
-    #section8{
-        background-color: #F7F5F2;
-    }
-
-    #section9{
-        background-color: #F7F5F2;
-    }
-
-    #section9 > div{
-        background-color: white;
-        width: 85vw;
-        display: flex;
-        flex-direction: column;
-        margin-left: 7.5vw;
-        margin-bottom: 30px;
-    }
-
-    #section9 > div >img{
-        margin-bottom: -0px;
-        width: 85vw;
-    }
-
-    #section9 > div > h3{
-        font-family: Montserrat;
-        font-weight: 500;
-        font-size: 27px;
-        margin: 4vw 4vw 0vw;
-  
-    }
-
-    #section9 > div > p{
-        font-family: Familjen Grotesk;
-        margin: 4vw 4vw 0vw;
-    }
-
-    #link1, #link2 {
-        background-color: #2263F5;
-        color: white;
-        font-weight: 600;
-        font-family: Familjen Grotesk;
-        margin: 6vw 4vw 4vw;
-        padding: 4vw;
-        width: 80%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    #section10{
-        background-color: #F7F5F2;
-    }
-
-    #section10 > p{
-       color: #1D1919;
-       text-decoration: underline;
-    }
-
-
-    #section11{
-        background-color: #F7F5F2;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding-top: 60px;
-    }
-
-    #section11 > div >img{
-        width: 50px;
-        margin-bottom: 20px;
-    }
-
-    #section11 > div{
-        margin: 5% 12%;
-        padding: 10px;
-        width: 35vw;
-        line-height: 140%;
-        display: flex;
-        flex-direction: column;
-        font-family: Familjen Grotesk;
- 
-    }
-
-    #section12{
-       margin-top: 70px;
-    }
-
-    #section12 > p{
-        text-decoration: underline;
-    }
-
-
-</style>
-
-
 <body>
 
     <!-- navigation bar -->
     <div class="navigation">
         <img src="assets/Screen Shot 2023-02-28 at 3.45.53 PM.png" id="logo">
-        <h1>Dropbox</h1>
-            <p>Why Dropbox?</p>
-            <p>Products</p>
-            <p>Solutions</p>
-            <p>Pricing</p>
-            <p>Contact</p>
-            <p>Get app</p>
+        <h1> Dropbox</h1>
+        <h2>Why Dropbox?</h2>
+        <h2>Products</h2>
+        <h2>Solution</h2>
+        <h2>Pricing</h2>
+        <div></div>
+        <h2>Contact</h2>
+        <h2>Get App</h2>
+        <h2 id="login">Login</h2>
+        <h3>Get started</h3>
+    </div>
         
-        <div><h2>Login</h2></div>
-        <h2>☰</h2>
 </div>
 
 <div class="flex-container">
@@ -576,32 +200,27 @@
             <p>Enhance remote collaboration with Zoom instant meetings and video recordings.</p>
         
     </div>
-        
     <div>
         <img src="assets/icons/slack.png">
             <span class="subheader">Slack</span>
             <p>Bring Slack conversations and Dropbox content together to keep teams in sync.</p>
     </div>
-        
     <div>
         <img src="assets/icons/adobe.png">
             <span class="subheader">Adobe Creative Cloud</span>
             <p>Easily and securely send files to clients and vendors from within Adobe Photoshop.</p>
     </div>
-        
     <div>
         <img src="assets/icons/microsoft.png">
             <span class="subheader">Microsoft Office</span>
             <p>Easily access, edit, and share Office docs online in Dropbox.</p>
     </div>
-
     <div>
         <img src="assets/icons/google.png">
         
             <span class="subheader">Google Workspace</span>
             <p>Create, edit, and share Google Docs, Sheets, and Slides in Dropbox.</p>
     </div>
-
     <div>
         <img src="assets/icons/trello.png">
         
@@ -616,7 +235,6 @@
         <p>Upload course files or assignments straight from Dropbox to Canvas.</p>
         
     </div>
-
     <div>
         <img src="assets/icons/asana.png">
         
@@ -628,11 +246,78 @@
 <!-- section 12 -->
 <div id="section12">
 <h2>Trusted by over 700 million registered users and 600,000 teams</h2>
-<p>View more customer stories
-
-</p>
+<p>View more customer stories</p>
 </div>
 
+<!-- section 13 -->
+<div id="section13">
+<img src="assets/Screen Shot 2023-03-07 at 4.36.08 PM.png" id="dog">
+<div><h3>"I don't use Dropbox :D"</h3>
+<p><span class="subheader">Read the full story</span><br><br><br><br><br><br>
+- Ing Klewpatinond</p></div>
+</div>
+
+<!-- section 14 -->
+<div id="section14">
+<h2>For all things worth sharing.</h2>
+<div><p>Explore plans<span>→</span></p></div>
+</div>
+
+<!-- section 15 -->
+<div id="section15">
+   <ul>
+        <span class="subheader">Dropbox</span>
+        <li>Desktop app</li>
+        <li>Mobile app</li>
+        <li>Integrations</li>
+        <li>Features</li>
+        <li>Solutions</li>
+        <li>Do more than store</li>
+        <li>Security</li>
+        <li>Advance access</li>
+   </ul>
+
+   <ul>
+        <span class="subheader">Products</span>
+        <li>Plus</li>
+        <li>Professional</li>
+        <li>Business</li>
+        <li>Enterprise</li>
+        <li>Dropbox Sign</li>
+        <li>DocSend</li>
+        <li>Plans</li>
+        <li>Product updates</li>
+    </ul>
+
+
+    <ul>
+        <span class="subheader">Support</span>
+        <li>Help center</li>
+        <li>Contact us</li>
+        <li>Privacy & terms</li>
+        <li>Cookie policy</li>
+        <li>Cookies & CCPA preferences</li>
+        <li>Sitemap</li>
+        <li>Learning resources</li>
+    </ul>
+
+    <ul>
+        <span class="subheader">Community</span>
+        <li>Blog</li>
+        <li>Developers</li>
+        <li>Community forums</li>
+        <li>Referrals</li>
+    </ul>
+
+    <ul>
+        <span class="subheader">Company</span>
+        <li>About us</li>
+        <li>Jobs</li>
+        <li>Investor relations</li>
+        <li>ESG</li>
+        <li>Partners</li>
+
+    </ul>
 </div>
 
 </body>
