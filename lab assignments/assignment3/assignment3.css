@@ -11,6 +11,8 @@ body{
     overflow-x: hidden;
 }
 
+/* text styling*/
+
 h4, h5{
     font-family: Montserrat;
     width: 80vw;
@@ -42,7 +44,7 @@ p{
 }
 
 
-/* navigation */
+/* navigation bar*/
 
 #large-screen{
     display: none;
@@ -100,7 +102,7 @@ flex-basis: 80%;
     
 }
 
-/* section 1 */
+/* section 1 - header and image*/
 
 
 
@@ -135,7 +137,7 @@ flex-basis: 80%;
     max-width: 800px;
 }
 
-/* section 2 */
+/* section 2 - grid*/
 
 #section2{
     color: white;
@@ -146,14 +148,14 @@ flex-basis: 80%;
     padding: 7.5vw;
 }
 
-/* section 3  */
+/* section 3 - header*/
 
 #section3{
     background-color:#F7F5F2;
     padding: 20px 0px;
 }
 
-/* section 4 */
+/* section 4 - products grid*/
 
 #section4{
     background-color:#F7F5F2;
@@ -188,7 +190,7 @@ flex-basis: 80%;
     font-weight: 600;
 }
 
-/* section 5 */
+/* section 5 - header*/
 
 #section5{
     margin-top: -50px;
@@ -205,7 +207,7 @@ flex-basis: 80%;
 }
 
 
-/* section 6 */
+/* section 6 - grid*/
 #section6{
     display: grid;
     background-color: white;
@@ -257,13 +259,14 @@ flex-basis: 80%;
     background-color:#F1EEE9;
 }
 
-/* section 7 */
+/* section 7 - flex*/
 
 #section7{
     padding: 30px 0px;;
     background-color:#F7F5F2;
 }
 
+    /* flexbox inside section 7 */
 #flex{
     display: flex;
     flex-direction: column;
@@ -304,7 +307,7 @@ flex-basis: 80%;
     font-weight: 600;
 }
 
-/* section 8 */
+/* section 8 - header*/
 
 #section8{
     margin-top: -50px;
@@ -322,7 +325,7 @@ flex-basis: 80%;
 }
 
 
-/* section 9 */
+/* section 9 - tools grid*/
 
 #section9{
     margin-top: -30px;
@@ -344,7 +347,7 @@ flex-basis: 80%;
     padding-bottom: 30px;
 }
 
-/* section 10 */
+/* section 10 - header*/
 
 #section10{
     padding-top: 50px;
@@ -356,7 +359,7 @@ flex-basis: 80%;
     margin-top: -30px;
 }
 
-/* section 11 */
+/* section 11 - user stories flexbox*/
 #section11 > div{
     display: flex;
     height:fit-content;
@@ -383,7 +386,7 @@ flex-basis: 80%;
     font-weight: 600;
 }
 
-/* section 12 */
+/* section 12 - plans flexbox*/
 
 #section12{
     color: white;
@@ -416,7 +419,7 @@ flex-basis: 80%;
     font-weight: 600;
 }
 
-/* section 13 */
+/* section 13 - footer*/
 
 #section13{
 padding-top: 100px;
@@ -434,7 +437,11 @@ grid-gap: 4vw 1vw;
 }
 
 
-/* media query */
+
+
+/* media queries */
+
+/* medium screen - change flex direction from column to row */
 
 @media only screen and (min-width: 768px) {
     #medium-screen{
@@ -462,14 +469,14 @@ grid-gap: 4vw 1vw;
     }
 
     #flex{
-        padding: 0px 15vw 5vw;;
+        padding: 0px 5vw 5vw;;
         flex-direction: row;
     }
     
     #section7 > div > div{
         margin: 0;
-        width: 35vw;
-        max-width: 700px;
+        width: 45vw;
+
     }
     
     #section13{
@@ -483,11 +490,10 @@ grid-gap: 4vw 1vw;
     #section11 img{
         width: 50%;
     }
-   
-   
 }
 
 
+/* large screen - change grid from 2 columns to 4 */
 
 @media only screen and (min-width: 992px) {
    #section2, #section4, #section9{
@@ -536,10 +542,11 @@ grid-gap: 4vw 1vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     padding-bottom: 100px
-}
-    
+} 
+
 }
 
+/* extra large screen - display full navigation bar */
 
 @media only screen and (min-width: 1200px) {
     #large-screen{
