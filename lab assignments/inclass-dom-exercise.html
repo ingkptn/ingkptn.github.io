@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM exercise</title>
+</head>
+
+<body>
+    <button>Change Color</button>
+</body>
+<style>
+
+@font-face {
+    font-family:"favorit" ;
+    src: url(/assets/typefaces/abcfavoritmonovariable-trial-webfont.woff2);}
+
+    button{
+        position: absolute;
+        font-family: favorit;
+        font-size: 18px;
+        text-decoration: underline;
+        padding: 40px;
+        border-radius: 10px;
+        border: 1px solid black;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);}
+    
+</style>
+<script>
+
+    window.onload = () => {
+
+        const btn = document.querySelector("button");
+
+        function random(num) {
+            return Math.floor(Math.random() * num + 1);
+        }
+
+        btn.addEventListener("click",() => {
+            const rndColor = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+
+            document.body.style.backgroundColor = rndColor;
+        });
+        }
+</script>
+
+</html>
