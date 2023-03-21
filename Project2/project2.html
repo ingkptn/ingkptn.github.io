@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="project2.js"></script>
+    <link rel="stylesheet" href="project2.css">
+    <title>Looking In</title>
+
+</head>
+<body>
+    <div id="landing-page">
+        <div><h1 class="header">Looking In</h1>
+        <h3 class="header">A collection of images and videos taken between 18:00 and 06:00 in New York city, looking into different spaces through different frames.</h3></div>
+        <div id="buttons"><button id="aboutbutton">About</button>
+        <button id="test">Continue ↓</button></div>
+        <div id="photo"><img src="assets/images/image38.jpg" class="image" id="landing-image">
+        <img src="assets/background1.png" class="image" id="landing-overlay"></div>
+    </div>
+
+    <div id="about">
+        <button id="homebutton">← Home</button>
+        <h1>About</h1>
+        <h3>"Looking In" is a collection of images and videos taken between 18:00 and 06:00 in New York city. Each image looks into a space through a frame, whether it be windows, doors, holes, etc. <br><br>
+
+            The collection as a whole challenges the concept of privacy, and explores ideas of invasion and intrusion. Though the identities of the people who own, occupy or use each space remain anonymous, questions on the morals or ethics of looking into a space from the positions of an outsider arise. 
+            <br><br>Where does the boundary of privacy invasion lie? What factors play a part in creating this boundary?
+            </h3>
+    </div>
+    <button id="returnbutton">↑ Home</button>
+    <div id="filter-system">
+        
+        <ul>
+            <h2>Level of Invasion</h2>
+            <li class="filter-green">1</li>
+            <li class="filter-green">2</li>
+            <li class="filter-green">3</li>
+            <li class="filter-green">4</li>
+            <li class="filter-yellow">5</li>
+            <li class="filter-yellow">6</li>
+            <li class="filter-yellow">7</li>
+            <li class="filter-red">8</li>
+            <li class="filter-red">9</li>
+            <li class="filter-red">10</li>
+            
+        </ul>
+    </div>
+    <div id="grid-container">
+        
+    </div>
+    
+
+    <script>
+
+    window.onload = () => {
+    window.scrollTo(0,0);}
+
+        function scrolldown(){
+            document.body.style.overflowY = 'scroll';
+            document.body.style.overflowX = 'hidden';
+            window.scrollTo({top: 1400, behavior: 'smooth'})
+        }
+
+        test.addEventListener("click", scrolldown);
+
+        function scrollright(){
+            document.body.style.overflowX = 'scroll';
+            document.body.style.overflowY = 'hidden';
+            window.scrollTo({left: 2000, behavior: 'smooth'})
+        }
+
+       aboutbutton.addEventListener("click", scrollright);
+
+       function scrollback(){
+            document.body.style.overflowX = 'scroll';
+            document.body.style.overflowY = 'hidden';
+            window.scrollTo({left: 0, behavior: 'smooth'})
+        }
+
+       homebutton.addEventListener("click", scrollback);
+
+       function scrollup(){
+            document.body.style.overflowY = 'scroll';
+            document.body.style.overflowX = 'hidden';
+            window.scrollTo({top: 0, behavior: 'smooth'})
+        }
+
+       returnbutton.addEventListener("click", scrollup);
+
+    </script>
+</body>
+</html>
