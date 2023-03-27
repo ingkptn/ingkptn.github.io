@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="project2.js"></script>
+    <script src="project2.js" async></script>
     <link rel="stylesheet" href="project2.css">
     <title>Looking In</title>
 
 </head>
 <body>
     <div id="landing-page">
-        <div><h1 class="header">Looking In</h1>
+        <div><h1 class="header">LOOKING IN</h1>
         <h3 class="header">A collection of images and videos taken between 18:00 and 06:00 in New York city, looking into different spaces through different frames.</h3></div>
-        <div id="buttons"><button id="aboutbutton">About</button>
+        <div id="buttons"><button id="aboutbutton">About →</button>
         <button id="test">Continue ↓</button></div>
-        <div id="photo"><img src="assets/images/image38.jpg" class="image" id="landing-image">
+        <div id="photo"><img src="assets/images/image42.jpg" class="image" id="landing-image">
         <img src="assets/background1.png" class="image" id="landing-overlay"></div>
     </div>
 
@@ -33,18 +33,18 @@
         
         <ul>
             <h2>Level of Invasion</h2>
-            <li class="filter-green">1</li>
-            <li class="filter-green">2</li>
-            <li class="filter-green">3</li>
-            <li class="filter-green">4</li>
-            <li class="filter-yellow">5</li>
-            <li class="filter-yellow">6</li>
-            <li class="filter-yellow">7</li>
-            <li class="filter-red">8</li>
-            <li class="filter-red">9</li>
-            <li class="filter-red">10</li>
-            
+            <li class="filter">1</li>
+            <li class="filter">2</li>
+            <li class="filter">3</li>
+            <li class="filter">4</li>
+            <li class="filter">5</li>
+            <li class="filter">6</li>
+            <li class="filter">7</li>
+            <li class="filter">8</li>
+            <li class="filter">9</li>
+            <li class="filter">10</li>
         </ul>
+
     </div>
     <div id="grid-container">
         
@@ -54,7 +54,7 @@
     <script>
 
     window.onload = () => {
-    window.scrollTo(0,0);}
+    window.scrollTo({top: 0});}
 
         function scrolldown(){
             document.body.style.overflowY = 'scroll';

@@ -16,7 +16,7 @@ fetch('project2.json')
             
             date.textContent = item.Date;
             time.textContent = item.Time;
-            vid.textContent = item.Video + " " + item.VideoLength;
+            vid.textContent = item.VideoLength;
             img.src = "assets/images/" + item.Photo + ".jpg";
             overlay.src = "assets/background1.png"
 
@@ -29,20 +29,39 @@ fetch('project2.json')
                 div.appendChild(overlay);
                 grid.appendChild(div);
 
-            
             div.classList.add("container");
             overlay.classList.add("overlay");
             textdiv.classList.add("textdiv");
             videodiv.classList.add("videodiv");
 
+
+            // function filter() {
+            //     var element= document.getElementsByClassName('color1');
+                
+            //     for(var x=0;x<element.length;x++)
+            //     {element[x].classList.toggle('appear1');}
+
+// if (item.Invasionlevel == 1) {
+//                 img.style.opacity = "1";
+//                 overlay.style.opacity = "0.15";
+//                 // div.style.border = "1.5px solid greenyellow";
+                
+//             } else {
+//                 img.style.opacity = "0";
+//                 overlay.style.opacity = "0";
+//                 div.style.border = "0px";
+//                 textdiv.style.opacity = "0";
+//                 videodiv.style.opacity = "0";
+//             }
             
         });
         
-        
-    })
-
 
  
+    })
+
+    
+
 
 
 
