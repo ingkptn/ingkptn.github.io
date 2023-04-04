@@ -1,0 +1,616 @@
+@font-face {
+    font-family:"NeueBit" ;
+    src: url(assets/webfontkit-20230320-192359/neuebit-bold-webfont.woff
+    );}
+
+@font-face {
+    font-family:"Mondwest" ;
+    src: url(assets/webfontkit-20230320-192359/ppmondwest-regular-webfont.woff);}
+
+    @font-face {
+        font-family:"Segoe" ;
+        src: url(assets/segoe-ui-4-cufonfonts-webfont/Segoe-UI.woff);}
+    
+
+
+/* Landing page */
+
+
+body{
+    margin: 0;
+    background-color: black;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    
+}
+
+
+#landing-page{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+h1{
+    margin: 50px 0vw;
+    position: relative;
+    left: 7.5%;
+    top:5%;
+    font-family: Neuebit;
+    font-size: 100px;
+    color: black;
+    /* animation: changeTextColor 2s linear 1s 1 normal both; */
+}
+
+
+h2{
+    margin: 0;
+    position: relative;
+    left: 7.5%;
+    top:7.5%;
+    font-family: Segoe;
+    font-size: 17px;
+    color: black;
+    width: 85vw;
+}
+
+button{
+    margin: 20px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-family: Segoe;
+    display: block;
+}
+
+#buttons{
+    margin-top: 60px;
+    margin-left: 5vw;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+#landing-photo{
+    margin: 20px 7.5vw;
+    width: 350px;
+    height: 480px;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+}
+
+#landing-overlay{
+    position: absolute;
+    opacity: 0.2;
+    width: 350px;
+    height: 480px;
+    margin-top: -0px;
+    margin-left: -350px;
+}
+
+
+/* About page */
+
+#about{
+    position: absolute;
+    top: 0vh;
+    left: 100vw;
+    margin: 0;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+#about > h1 {
+    position: absolute;
+    top:300px;
+    left: 7.5vw;
+    color: white;
+}
+
+#about > h2 {
+    color: white;
+    top:450px;
+    left: 7.5vw;
+}
+
+
+#homebutton{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    margin: 3vw 7.5vw;
+    
+    }
+    
+#homebutton:hover{
+    background-color: white;
+    color: black;
+    }
+
+
+
+
+/* Data page */
+
+
+
+/* warning pop up */
+
+#data-page{
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+#warningWindow{
+    border: 2px solid #50C878;
+    position: absolute;
+    width: 400px;
+    top: 150%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%,-50%);
+    margin-bottom: 50px;
+    animation: disappear 0.01s linear 2.5s 1 normal both;
+    animation-play-state: paused;
+}
+
+#warningWindow > h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 0;
+    font-family: Neuebit;
+    color: white;
+    font-size: 30px;
+    border-bottom: 2px solid #50C878;
+    padding: 10px 30px 5px;
+}
+
+span{
+    line-height: 1.1;
+}
+
+h4{
+    font-family: Neuebit;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+#proceedButton, #cancelButton{
+margin-top: 0px;
+border: 1px solid #50C878;
+padding: 10px 40px;
+}
+
+#proceedButton:hover ,#cancelButton:hover{
+    background-color: #50C878;
+    color: black;
+} 
+
+#warningButtons{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+
+#loading{
+    border: 2px solid #50C878;
+    width: 85%;
+    height: 20px;
+    margin: 30px 7.5% 50px;
+    display: none;
+    
+}
+
+#loadingBar{
+    background-color: #50C878;
+    width: 0%;
+    height: 100%;
+    animation: loading 2.4s linear 0s 1 normal both;
+    
+}
+
+@keyframes loading{
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+@keyframes disappear{
+    from {opacity: 1;}
+    to {opacity: 0;
+    z-index: -20;}
+}
+
+@keyframes appear{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+
+#returnbutton{
+    border: 1px solid #50C878;
+    background-color: black;
+    color: #50C878;
+    position: absolute;
+    padding: 30px 20px;
+    display: none;
+
+    
+    }
+    
+#returnbutton:hover{
+    background-color: #50C878;
+    color: black;
+    }
+
+/* Display images */
+
+.textdiv{
+    /* background-color: red; */
+    height: 30px;
+    width: 100%;
+    z-index: 20;
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+p{
+    
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    z-index: 10;
+    font-family: segoe;
+    font-size: 15px;
+    filter: blur(0.6px);
+    color: #50C878;
+}
+
+.videodiv{
+    position: absolute;
+    top: 0;
+    height: 30px;
+    width: 100%;
+    z-index: 0;
+    opacity: 0;
+}
+
+.videodiv > p{
+    font-size: 15px;
+}
+
+video{
+    width: 100%;
+    border-radius: 7px;
+}
+
+#grid-container{
+    margin: 5vw 15vw 5vw;
+    width: 70vw;
+    height: 80vh;
+    overflow-y: scroll;
+    opacity: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    z-index: 10;
+    animation: appear 0.01s linear 2.5s 1 normal both;
+    animation-play-state: paused;
+
+}
+
+
+img{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+
+.container{
+   position: relative;
+ filter: grayscale(1);
+ border-radius: 7px;
+}
+
+.container:hover{
+    filter: none;
+    border: 1.5px solid #50C878;
+}
+
+.container:hover > .overlay{
+    opacity: 0.1;
+}
+
+.container:hover > .textdiv{
+    opacity: 1;
+}
+
+.container:hover > .videodiv{
+    opacity: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    height: 100%;
+    opacity: 0.1;
+}
+
+/* Filter system */
+
+#filter-system{
+    width: 70vw;
+    margin: auto;
+    opacity: 0;
+    animation: appear 0.01s linear 2.5s 1 normal both;
+    animation-play-state: paused;
+}
+
+#filter-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+   
+}
+
+
+
+#filter-system > #filter-options > h4{
+    font-family: NeueBit;
+    font-size: 20px;
+    color:#50C878;
+    margin: 0px 0px 30px;
+    padding: 5px 10px;
+}
+
+h5{
+    font-family: NeueBit;
+    font-size: 20px;
+    color:#50C878;
+    margin: 0px 0px 30px;
+    border: 1px solid #50C878;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+
+h5:hover{
+    color: black;
+    background-color: #50C878;
+}
+
+h6{
+    font-family: NeueBit;
+    font-size: 20px;
+    color:#50C878;
+    margin: 0px 0px 30px;
+    padding: 5px 10px;
+
+}
+
+#reset{
+    text-decoration: underline;
+}
+
+
+
+ul{
+   margin-top: -10px;
+   margin-left: -35px;
+   font-size: 20px;
+   font-family: NeueBit;
+   display: none;
+   flex-direction: row;
+   color: #50C878;
+   list-style-type: none;
+
+}
+
+li{
+    text-align: center;
+    padding: 4px 8px;
+    height: 100%;
+    border: 1px solid #50C878;
+    flex-grow: 1;
+}
+
+li:hover{
+    color: black;
+    background-color: #50C878;
+}
+
+#invasionfilter{
+    justify-content: space-between;
+}
+
+#mediafilter{
+    justify-content: start;
+}
+
+
+
+#videogrid{
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 7px;
+    width: 70vw;
+    height: fit-content;
+    position: absolute;
+    left: 15vw;
+    top: 113vh;
+    overflow: hidden;
+    filter:grayscale(1);
+    
+}
+
+#videoElement1, #videoElement6 {
+    width: 180%;
+    height: auto;
+}
+
+#videoElement2, #videoElement8 {
+    width: 250%;
+    height: auto;
+    margin-left: -150%;
+    margin-top: 0%;
+    
+}
+
+#videoElement3, #videoElement11 {
+    width: 200%;
+    height: auto;
+    margin-left: -80%;
+    margin-top: -60%;
+}
+
+#videoElement5, #videoElement10 {
+    width: 300%;
+    height: auto;
+    margin-left: -100%;
+    margin-top: -100%;
+}
+
+
+.video-container1{
+    width: 100%;
+    height: 25vw;
+    border-radius: 7px;
+    overflow-y: hidden;
+}
+
+.video-container2{
+    display: none;
+    overflow: hidden;
+    border-radius: 7px;
+    height: 25vw;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+.textdiv{
+    flex-direction: column;
+    line-height: 0;
+    margin-top: -20px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+
+
+    #grid-container{
+        margin: 3vw 15vw 5vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #videogrid{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+        margin: 4vw 0vw 5vw;
+    }
+ 
+    .video-container1, .video-container2{
+        display: inline-block;
+        height: 15vw;
+    }
+
+    h2{
+        width: 45vw;
+        margin: 0vw;
+    }
+
+    #buttons{
+        margin-left: 7.5vw;
+        height: fit-content;
+        width: fit-content;
+        margin-top: 320px;
+    }
+    button{
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 20px;
+        display: inline;
+    }
+    #landing-photo{
+        margin-top: 1.5vh;
+        width: 85vw;
+        height: 25vh;
+        overflow: hidden;
+    }
+    
+    .image{
+        margin-top: -700px;
+        width: 100%;
+        height: auto;
+    }
+    
+    #landing-overlay{
+        position: absolute;
+        opacity: 0.2;
+        width: 85vw;
+        height: 25vh;
+        margin-top: 0px;
+        margin-left: -85vw;
+    }
+
+    #filter-system > #filter-options > h4, h5,h6, ul {
+        font-size: 25px;
+    }
+
+
+}
+
+
+
+@media only screen and (min-width: 1200px){
+     #grid-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #videogrid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 5px;
+    }
+    
+    .video-container1, .video-container2{
+        display: inline-block;
+        height: 12vw;
+    }
+}

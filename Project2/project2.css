@@ -20,15 +20,6 @@ body{
     
 }
 
-@keyframes changeColor{
-    from {background-color: white}
-    to {background-color: black}
-}
-
-@keyframes changeTextColor{
-    from {color: black}
-    to {color: white}
-}
 
 #landing-page{
     position: relative;
@@ -50,6 +41,7 @@ h1{
     color: black;
     /* animation: changeTextColor 2s linear 1s 1 normal both; */
 }
+
 
 h3{
     margin: 0;
@@ -114,27 +106,43 @@ button:hover{
 
 
 #filter-system{
-    padding: 2px 0px;
+    /* border: 1px solid white; */
+    padding: 2px 15vw;
+    margin-left: 0;
     margin-top: 10vh;
     width: 70vw;
-    margin-left: 15vw;
     background-color: black;
     position: sticky;
     top: 0px;
     z-index: 30;
-   
+    display: flex;
+    flex-direction: column;
 }
 
 h2{
     position: relative;
-    margin: 0;
+    margin-top: 30px;
     color: white;
     font-family: Neuebit;
     font-size: 35px;
 }
 
+h5 {
+    position: relative;
+    margin-top: 10px;
+    color: white;
+    font-family: Segoe;
+    font-size: 18px;
+    text-decoration: underline;
+    letter-spacing: 1px;
+}
+
+h5:hover{
+    color: #50C878;
+}
+
 ul{
-    margin-top: 30px;
+    margin-top: -10px;
     margin-left: -35px;
     display: flex;
     flex-direction: row;
@@ -151,12 +159,12 @@ li{
     padding: 5px 10px;
     border-radius: 15px;
     height: 20px;
-    border: 1px solid greenyellow;
+    border: 1px solid #50C878;
     
 }
 
 li:hover{
-    background-color:greenyellow;
+    background-color:#50C878;
     color: black;
 }
 
@@ -199,7 +207,7 @@ p{
     font-family: segoe;
     font-size: 15px;
     filter: blur(0.8px);
-    color: greenyellow;
+    color: #50C878;
 }
 
 .videodiv{
@@ -207,7 +215,7 @@ p{
     top: 0;
     height: 30px;
     width: 100%;
-    z-index: 100;
+    z-index: 0;
     opacity: 0;
 }
 
@@ -215,9 +223,13 @@ p{
     font-size: 15px;
 }
 
+video{
+    width: 100%;
+    border-radius: 7px;
+}
 
 #grid-container{
-    margin: 10vw 15vw 10vw;
+    margin: 0vw 15vw 10vw;
     width: 70vw;
     height: 80vh;
     overflow-y: scroll;
@@ -225,6 +237,7 @@ p{
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 7px;
+    z-index: 10;
 
 }
 
@@ -232,8 +245,6 @@ img{
     box-sizing: border-box;
     width: 100%;
     border-radius: 7px;
-    
-    
 }
 
 
@@ -249,7 +260,7 @@ img{
 
 .container:hover{
     filter: none;
-    border: 1.5px solid greenyellow;
+    border: 1.5px solid #50C878;
 }
 
 .container:hover > .overlay{
@@ -282,17 +293,19 @@ border: 1px solid white;
 background-color: black;
 color: white;
 margin: 3vw 7.5vw;
+
 }
 
 #homebutton:hover{
 background-color: white;
-color: black;}
+color: black;
+}
 
 #returnbutton{
     border: 1px solid white;
     background-color: black;
     color: white;
-    margin: 3vw 15vw 0vw;
+    z-index: 40;
     }
     
 #returnbutton:hover{
@@ -328,6 +341,49 @@ color: black;}
     left: 7.5vw;
 }
 
+#videogrid{
+    margin:-80vh 15vw 10vw;
+    width: 70vw;
+    height: 80vh;
+    overflow-y: scroll;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 7px;
+    
+}
+
+.video-container{
+    filter: grayscale(1);
+    width: 98%;
+    height: auto;
+    overflow: hidden;
+    /* border: 1px solid white; */
+    z-index: -5;
+
+    
+}
+
+#videoElement1{
+    width: auto;
+    height: 220%;
+}
+
+#videoElement2{
+    width: auto;
+    height: 300%;
+    left: 40%;
+}
+
+#videoElement3{
+    width: auto;
+    height: 100%;
+}
+
+#videoElement4{
+    width: auto;
+    height: 200%;
+}
 
 
 @media only screen and (min-width: 768px) {
@@ -377,8 +433,11 @@ button{
     margin-left: -85vw;
 }
 
+#videogrid{
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
+}
 
 
 
@@ -394,9 +453,38 @@ button{
     }
 
       #grid-container{
+        margin-top: 50px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-gap: 10px;
     }
+
+  #filter-system{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: space-between;
     }
+
+    h2{
+        margin-top:  60px;
+        flex-basis: 20%;
+    }
+
+    ul{
+        margin-top:  60px;
+        flex-basis: 55%;
+        margin-right: 0%;
+    }
+
+    #reset {
+        margin-top: 60px;
+        
+    }
+
+    #returnbutton {
+        top: 30px;
+    }
+
     
+    
+}

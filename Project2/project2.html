@@ -11,7 +11,7 @@
 </head>
 <body>
     <div id="landing-page">
-        <div><h1 class="header">LOOKING IN</h1>
+        <div><h1 class="header">L<span>OO</span>KING IN</h1>
         <h3 class="header">A collection of images and videos taken between 18:00 and 06:00 in New York city, looking into different spaces through different frames.</h3></div>
         <div id="buttons"><button id="aboutbutton">About →</button>
         <button id="test">Continue ↓</button></div>
@@ -28,66 +28,65 @@
             <br><br>Where does the boundary of privacy invasion lie? What factors play a part in creating this boundary?
             </h3>
     </div>
-    <button id="returnbutton">↑ Home</button>
+    <div id="button-container"><button id="returnbutton">↑ Home</button></div>
     <div id="filter-system">
-        
+        <h2>Level of Invasion</h2>
         <ul>
-            <h2>Level of Invasion</h2>
-            <li class="filter">1</li>
-            <li class="filter">2</li>
-            <li class="filter">3</li>
-            <li class="filter">4</li>
-            <li class="filter">5</li>
-            <li class="filter">6</li>
-            <li class="filter">7</li>
-            <li class="filter">8</li>
-            <li class="filter">9</li>
-            <li class="filter">10</li>
+            
+            <li class="filter" id="filter1">1</li>
+            <li class="filter" id="filter2">2</li>
+            <li class="filter" id="filter3">3</li>
+            <li class="filter" id="filter4">4</li>
+            <li class="filter" id="filter5">5</li>
+            <li class="filter" id="filter6">6</li>
+            <li class="filter" id="filter7">7</li>
+            <li class="filter" id="filter8">8</li>
+            <li class="filter" id="filter9">9</li>
+            <li class="filter" id="filter10">10</li>
         </ul>
-
+        <h5 id="reset">RESET</h5>
     </div>
-    <div id="grid-container">
+    <div id="grid-container"></div>
+    
         
+    <div id="videogrid">
+    <div class="video-container">
+    <video autoplay="true" id="videoElement1">
+      
+    </video>
+    </div>
+    <div class="video-container">
+    <video autoplay="true" id="videoElement2">
+      
+    </video>
+    </div>
+
+    <div class="video-container">
+    <video autoplay="true" id="videoElement3">
+    
+    </video>
+    </div>
+
+    <div class="video-container">
+        <video autoplay="true" id="videoElement4">
+        
+        </video>
+        </div>
+
+    <div class="video-container">
+        <video autoplay="true" id="videoElement5">
+        
+        </video>
+        </div>
+
+    <div class="video-container">
+        <video autoplay="true" id="videoElement6">
+        
+        </video>
+        </div>
+
+
     </div>
     
-
-    <script>
-
-    window.onload = () => {
-    window.scrollTo({top: 0});}
-
-        function scrolldown(){
-            document.body.style.overflowY = 'scroll';
-            document.body.style.overflowX = 'hidden';
-            window.scrollTo({top: 1400, behavior: 'smooth'})
-        }
-
-        test.addEventListener("click", scrolldown);
-
-        function scrollright(){
-            document.body.style.overflowX = 'scroll';
-            document.body.style.overflowY = 'hidden';
-            window.scrollTo({left: 2000, behavior: 'smooth'})
-        }
-
-       aboutbutton.addEventListener("click", scrollright);
-
-       function scrollback(){
-            document.body.style.overflowX = 'scroll';
-            document.body.style.overflowY = 'hidden';
-            window.scrollTo({left: 0, behavior: 'smooth'})
-        }
-
-       homebutton.addEventListener("click", scrollback);
-
-       function scrollup(){
-            document.body.style.overflowY = 'scroll';
-            document.body.style.overflowX = 'hidden';
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }
-
-       returnbutton.addEventListener("click", scrollup);
-
-    </script>
 </body>
 </html>
