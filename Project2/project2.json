@@ -6,7 +6,8 @@
     "Invasionlevel": 4,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Lights and screen always on but never seen anyone inside",
+    "Coordinates":"40.74101°N, 73.99612°W"
     
     
   },
@@ -17,7 +18,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Guy sitting in room alone",
+    "Coordinates":"40.73691°N, 73.99211°W"
   },
   {
     "Photo": "image3",
@@ -26,7 +28,8 @@
     "Invasionlevel": 5,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Lights still on at 4:26am.",
+    "Coordinates":"40.74101°N, 73.99612°W"
   },
   {
     "Photo": "image4",
@@ -35,7 +38,8 @@
     "Invasionlevel": 8,
     "Video":"video4",
     "VideoLength":"► 0:21",
-    "Observations":""
+    "Observations":"Guy on 4th floor working on desktop.",
+    "Coordinates":"40.74101°N, 73.99612°W"
   },
   {
     "Photo": "image5",
@@ -44,7 +48,8 @@
     "Invasionlevel": 7,
     "Video":"video5",
     "VideoLength":"► 0:17",
-    "Observations":""
+    "Observations":"Guy in the apartment right below the previous guy also working.",
+    "Coordinates":"40.74109°N, 73.99571°W"
   },
   {
     "Photo": "image6",
@@ -53,7 +58,8 @@
     "Invasionlevel": 2,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Cool windows. Nothing inside.",
+    "Coordinates":"40.74088°N, 73.99527°W"
   },
   {
     "Photo": "image7",
@@ -62,7 +68,8 @@
     "Invasionlevel": 1,
     "Video":"video7",
     "VideoLength":"► 0:22",
-    "Observations":""
+    "Observations":"Lights flashing for the past hour. Probably watching TV",
+    "Coordinates":"40.74103°N, 73.99529°W"
   },
   {
     "Photo": "image8",
@@ -71,7 +78,8 @@
     "Invasionlevel": 6,
     "Video":"video8",
     "VideoLength":"► 0:36",
-    "Observations":""
+    "Observations":"Guy on 4th floor moved to working on the sofa.",
+    "Coordinates":"40.74103°N, 73.99529°W"
   },
   {
     "Photo": "image9",
@@ -80,7 +88,8 @@
     "Invasionlevel": 1,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Subway.",
+    "Coordinates":"40.71836°N, 74.00038°W"
   },
   {
     "Photo": "image10",
@@ -89,7 +98,8 @@
     "Invasionlevel": 7,
     "Video":"video10",
     "VideoLength":"► 0:42",
-    "Observations":""
+    "Observations":"Janitor cleaning out the trash room after midnight. Very loud.",
+    "Coordinates":"40.74101°N, 73.99612°W"
   },
   {
     "Photo": "image11",
@@ -98,7 +108,8 @@
     "Invasionlevel": 4,
     "Video":"video11",
     "VideoLength":"► 0:14",
-    "Observations":""
+    "Observations":"Light turned on 24/7",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image12",
@@ -107,7 +118,8 @@
     "Invasionlevel": 8,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Meeting",
+    "Coordinates":"40.74121°N, 73.99603°W"
   },
   {
     "Photo": "image13",
@@ -116,7 +128,8 @@
     "Invasionlevel": 5,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Office on 2nd floor.",
+    "Coordinates":"40.74121°N, 73.99603°W"
   },
   {
     "Photo": "image14",
@@ -125,7 +138,8 @@
     "Invasionlevel": 6,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Bathroom. Woman walked out and saw me taking a photo.",
+    "Coordinates":"40.73691°N, 73.99211°W"
   },
   {
     "Photo": "image15",
@@ -134,7 +148,8 @@
     "Invasionlevel": 2,
     "Video":"video15",
     "VideoLength":"► 0:19",
-    "Observations":""
+    "Observations":"Kinda scary",
+    "Coordinates":"40.74121°N, 73.99603°W"
   },
   {
     "Photo": "image16",
@@ -143,7 +158,8 @@
     "Invasionlevel": 7,
     "Video":"video16",
     "VideoLength":"► 0:13",
-    "Observations":""
+    "Observations":"Cartoons. Fun! :D",
+    "Coordinates":"40.74105°N, 73.99531°W"
   },
   {
     "Photo": "image17",
@@ -152,7 +168,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Window on ground floor.",
+    "Coordinates":"40.74078°N, 73.99509°W"
   },
   
   {
@@ -162,7 +179,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Restaurant after closing time.",
+    "Coordinates":"40.73085°N, 74.00075°W"
   },
   {
     "Photo": "image19",
@@ -171,7 +189,8 @@
     "Invasionlevel": 2,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Brick wall. Idk.",
+    "Coordinates":"40.74121°N, 73.99603°W"
   },
   {
     "Photo": "image20",
@@ -180,7 +199,8 @@
     "Invasionlevel": 9,
     "Video":"video20",
     "VideoLength":"► 0:52",
-    "Observations":""
+    "Observations":"Apartment across the street.",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image21",
@@ -189,7 +209,8 @@
     "Invasionlevel": 9,
     "Video":"video21",
     "VideoLength":"► 0:13",
-    "Observations":""
+    "Observations":"Can’t zoom in any further. Lots of plants in there.",
+    "Coordinates":"40.74128°N, 73.99624°W"
   },
   {
     "Photo": "image22",
@@ -198,7 +219,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Classroom.",
+    "Coordinates":"40.73691°N, 73.99211°W"
   },
   {
     "Photo": "image23",
@@ -207,7 +229,8 @@
     "Invasionlevel": 7,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"They have a golden retriever :)",
+    "Coordinates":"40.74101°N, 73.99612°W"
   },
   {
     "Photo": "image24",
@@ -216,7 +239,8 @@
     "Invasionlevel": 5,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Another empty office.",
+    "Coordinates":"40.74128°N, 73.99624°W"
   },
   {
     "Photo": "image25",
@@ -225,7 +249,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"And another empty office.",
+    "Coordinates":"40.74121°N, 73.99603°W"
   },
   {
     "Photo": "image26",
@@ -234,7 +259,8 @@
     "Invasionlevel": 1,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Subway. Very scary. I don't like.",
+    "Coordinates":"40.73665°N, 73.990450°W"
   },
   {
     "Photo": "image27",
@@ -243,7 +269,8 @@
     "Invasionlevel": 9,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Another nice apartment across the street. Pretty sure a couple lives there.",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image28",
@@ -252,7 +279,8 @@
     "Invasionlevel": 8,
     "Video":"video28",
     "VideoLength":"► 0:14",
-    "Observations":""
+    "Observations":"Lights out.",
+    "Coordinates":"40.74120°N, 73.99593°W"
   },
   {
     "Photo": "image29",
@@ -261,7 +289,8 @@
     "Invasionlevel": 6,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"First time I’ve seen the lights on.",
+    "Coordinates":"40.74128°N, 73.99624°W"
   },
   {
     "Photo": "image30",
@@ -270,7 +299,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Apartment undergoing renovation.",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image31",
@@ -279,7 +309,8 @@
     "Invasionlevel": 5,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Apartment on 8th floor.",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image32",
@@ -288,7 +319,8 @@
     "Invasionlevel": 9,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Still awake at 5am",
+    "Coordinates":"40.74120°N, 73.99593°W"
   },
   {
     "Photo": "image33",
@@ -297,7 +329,8 @@
     "Invasionlevel": 1,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Ground floor.",
+    "Coordinates":"40.74099°N, 73.99561°W"
   },
   {
     "Photo": "image34",
@@ -306,7 +339,8 @@
     "Invasionlevel": 7,
     "Video":"video34",
     "VideoLength":"► 0:38",
-    "Observations":""
+    "Observations":"Office cleaning",
+    "Coordinates":"40.74114°N, 73.99602°W"
   },
   {
     "Photo": "image35",
@@ -315,7 +349,8 @@
     "Invasionlevel": 3,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"-",
+    "Coordinates":"40.74120°N, 73.99593°W"
   },
   {
     "Photo": "image36",
@@ -324,7 +359,8 @@
     "Invasionlevel": 5,
     "Video":"video36",
     "VideoLength":"► 0:32",
-    "Observations":""
+    "Observations":"Returning home from dog walking?",
+    "Coordinates":"40.74121°N, 73.99601°W"
   },
   {
     "Photo": "image37",
@@ -333,7 +369,8 @@
     "Invasionlevel": 4,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"-",
+    "Coordinates":"40.74120°N, 73.99593°W"
   },
   {
     "Photo": "image38",
@@ -342,7 +379,8 @@
     "Invasionlevel": 5,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"-",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image39",
@@ -351,7 +389,8 @@
     "Invasionlevel": 5,
     "Video":"video39",
     "VideoLength":"► 0:23",
-    "Observations":""
+    "Observations":"Shadows",
+    "Coordinates":"40.74121°N, 73.99582°W"
   },
   {
     "Photo": "image40",
@@ -360,7 +399,8 @@
     "Invasionlevel": 2,
     "Video":"video40",
     "VideoLength":"► 0:18",
-    "Observations":""
+    "Observations":"Late night TV",
+    "Coordinates":"40.74116°N, 73.99592°W"
   },
   {
     "Photo": "image41",
@@ -369,7 +409,8 @@
     "Invasionlevel": 6,
     "Video":"video41",
     "VideoLength":"► 0:15",
-    "Observations":""
+    "Observations":"More late night TV",
+    "Coordinates":"40.74117°N, 73.99594°W"
   },
   {
     "Photo": "image42",
@@ -378,7 +419,8 @@
     "Invasionlevel": 6,
     "Video":"video42",
     "VideoLength":"► 0:26",
-    "Observations":""
+    "Observations":"Ground floor building entrance. Ambulance.",
+    "Coordinates":"40.74117°N, 73.99594°W"
   },
   {
     "Photo": "image43",
@@ -387,7 +429,8 @@
     "Invasionlevel": 9,
     "Video":"video43",
     "VideoLength":"► 0:14",
-    "Observations":""
+    "Observations":"-",
+    "Coordinates":"40.74122°N, 73.99584°W"
   },
   {
     "Photo": "image44",
@@ -396,7 +439,8 @@
     "Invasionlevel": 8,
     "Video":"video44",
     "VideoLength":"► 0:15",
-    "Observations":""
+    "Observations":"Sleep time",
+    "Coordinates":"40.74121°N, 73.99582°W"
   },
   {
     "Photo": "image45",
@@ -405,7 +449,8 @@
     "Invasionlevel": 7,
     "Video":"",
     "VideoLength":"",
-    "Observations":""
+    "Observations":"Basement",
+    "Coordinates":"40.74088°N, 73.99578°W"
   }
   
 ]

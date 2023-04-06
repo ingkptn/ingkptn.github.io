@@ -35,11 +35,12 @@ body{
 
 h1{
     margin: 50px 0vw;
+    width: 80vw;
     position: relative;
     left: 7.5%;
     top:5%;
     font-family: Neuebit;
-    font-size: 100px;
+    font-size: 110px;
     color: black;
     /* animation: changeTextColor 2s linear 1s 1 normal both; */
 }
@@ -49,9 +50,8 @@ h2{
     margin: 0;
     position: relative;
     left: 7.5%;
-    top:7.5%;
     font-family: Segoe;
-    font-size: 17px;
+    font-size: 16px;
     color: black;
     width: 85vw;
 }
@@ -68,7 +68,7 @@ button{
 }
 
 #buttons{
-    margin-top: 60px;
+    margin-top: 100px;
     margin-left: 5vw;
 }
 
@@ -78,9 +78,11 @@ button:hover{
 }
 
 #landing-photo{
-    margin: 20px 7.5vw;
-    width: 350px;
-    height: 480px;
+    margin: 50px 7.5vw;
+    width: 85vw;
+    height: fit-content;
+    overflow: hidden;
+    background-color: black;
 }
 
 .image{
@@ -90,15 +92,16 @@ button:hover{
 
 #landing-overlay{
     position: absolute;
-    opacity: 0.2;
-    width: 350px;
-    height: 480px;
-    margin-top: -0px;
-    margin-left: -350px;
+        opacity: 0;
+        width: 85vw;
+        height: 35%;
+        margin-top: 0px;
+        margin-left: -85vw;
 }
 
 
 /* About page */
+
 
 #about{
     position: absolute;
@@ -108,28 +111,47 @@ button:hover{
     background-color: black;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 
+}
+
+
+
+#background-video{
+    height: 100%;
+    /* top: -10vw; */
+    filter:grayscale(1) brightness(40%) blur(1px);
+}
+
+#background-overlay{
+opacity: 0.1;
+position: absolute;
 }
 
 #about > h1 {
     position: absolute;
-    top:300px;
+    top:350px;
     left: 7.5vw;
     color: white;
+    filter: drop-shadow(0 0 1rem black);
+    
 }
 
 #about > h2 {
     color: white;
-    top:450px;
+    top:550px;
     left: 7.5vw;
+    filter: drop-shadow(0 0 0.75rem black);
 }
 
 
 #homebutton{
     border: 1px solid white;
-    background-color: black;
+    background-color: transparent;
     color: white;
     margin: 3vw 7.5vw;
+    z-index: 100;
+    position: absolute;
     
     }
     
@@ -262,16 +284,20 @@ justify-content: space-around;
 /* Display images */
 
 .textdiv{
-    /* background-color: red; */
     height: 30px;
     width: 100%;
-    z-index: 20;
+    z-index: 110;
     position: absolute;
     bottom: 0px;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
     opacity: 0;
+}
+
+.textdiv > p{
+    font-size: 12px;
 }
 
 p{
@@ -282,8 +308,8 @@ p{
     color: white;
     z-index: 10;
     font-family: segoe;
-    font-size: 15px;
-    filter: blur(0.6px);
+    font-size: 11px;
+    filter: blur(0.3px);
     color: #50C878;
 }
 
@@ -297,7 +323,18 @@ p{
 }
 
 .videodiv > p{
-    font-size: 15px;
+    font-size: 13px;
+}
+
+.info{
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+    overflow-y: scroll;
+    box-sizing: border-box;
 }
 
 video{
@@ -361,6 +398,9 @@ img{
     height: 100%;
     opacity: 0.1;
 }
+
+
+
 
 /* Filter system */
 
@@ -512,22 +552,37 @@ li:hover{
     height: 25vw;
 }
 
+#instructions{
+    color: #50C878;
+    border: 1px solid #50C878;
+    border-radius: 20px;
+    margin-left: 30px;
+    margin-top: -10px;
+    width: fit-content;
+    
+}
 
 
 
 
 
-@media only screen and (max-width: 500px) {
+
+
+
+@media only screen and (max-width: 600px) {
 
 
 .textdiv{
-    flex-direction: column;
+    flex-direction: row;
     line-height: 0;
-    margin-top: -20px;
-}
+    margin-top: 0px;
 }
 
-@media only screen and (min-width: 768px) {
+
+
+}
+
+@media only screen and (min-width: 650px) {
 
 
     #grid-container{
@@ -557,7 +612,7 @@ li:hover{
         margin-left: 7.5vw;
         height: fit-content;
         width: fit-content;
-        margin-top: 320px;
+        margin-top: 12vh;
     }
     button{
         margin-top: 10px;
@@ -568,7 +623,7 @@ li:hover{
     #landing-photo{
         margin-top: 1.5vh;
         width: 85vw;
-        height: 25vh;
+        height: 45vh;
         overflow: hidden;
     }
     
@@ -580,9 +635,9 @@ li:hover{
     
     #landing-overlay{
         position: absolute;
-        opacity: 0.2;
+        opacity: 0.1;
         width: 85vw;
-        height: 25vh;
+        height: 45vh;
         margin-top: 0px;
         margin-left: -85vw;
     }
@@ -591,12 +646,30 @@ li:hover{
         font-size: 25px;
     }
 
+    p{
+        font-size: 15px;
+    }
+
+    .videodiv > p{
+        font-size: 15px;
+    }
+
+    .textdiv > p{
+        font-size: 15px;
+    }
 
 }
 
+@media only screen and (min-width: 785px) {
+
+
+    .info{
+        padding: 15px;
+    }}
 
 
 @media only screen and (min-width: 1200px){
+
      #grid-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr;

@@ -15,6 +15,10 @@ fetch('project2.json')
             const vid = document.createElement('p');
             const img = document.createElement('img');
             const overlay = document.createElement('img');
+            const info = document.createElement('div');
+            const observation = document.createElement('p');
+            const invasion = document.createElement('p');
+            const coordinates = document.createElement('p');
             
             date.textContent = item.Date;
             time.textContent = item.Time;
@@ -22,6 +26,9 @@ fetch('project2.json')
             img.src = "assets/images/" + item.Photo + ".jpg";
             video.src = "assets/videos/" + item.Video + ".mp4";
             overlay.src = "assets/background1.png";
+            observation.textContent = "Notes: " + item.Observations;
+            invasion.textContent = "Invasion Level: " + item.Invasionlevel;
+            coordinates.textContent = item.Coordinates;
             
 
                 textdiv.appendChild(date);
@@ -33,24 +40,50 @@ fetch('project2.json')
                 div.appendChild(videoinfo);
                 div.appendChild(overlay);
                 grid.appendChild(div);
+                info.appendChild(observation);
+                info.appendChild(invasion);
+                info.appendChild(observation);
+                info.appendChild(coordinates);
 
             div.classList.add("container");
             overlay.classList.add("overlay");
             textdiv.classList.add("textdiv");
             videoinfo.classList.add("videodiv");
             video.classList.add("video");
+            info.classList.add("info");
+
+            video
 
             if (item.Video == "") {
                                 img.style.opacity = "1";
                                 overlay.style.opacity = "0.1";
-                                video.style.display = "none"
+                                video.style.display = "none";
                                 
                             } else {
                                 img.style.display = "none";
                                 overlay.style.opacity = "0.2";
                             }
 
+            video.muted = true;
+
+            function displayinfo(){
+                div.appendChild(info);
+            }
+
+            div.addEventListener('click', displayinfo)
+
+            function closeinfo(){
+                div.removeChild(info);
+            }
+
+            div.addEventListener('dblclick', closeinfo)
             
+    
+
+            
+
+
+
     // FILTER SYSTEM
 
     function filterinvasion(){
@@ -62,6 +95,8 @@ fetch('project2.json')
     mediabutton.style.color = "#50C878";
     mediafilter.style.display = "none";
     videogrid.style.display = "none";
+    div.removeChild(info);
+    
     }       
 
     invasionbutton.addEventListener('click',filterinvasion)
@@ -75,10 +110,12 @@ fetch('project2.json')
         mediafilter.style.display = "flex";
         invasionfilter.style.display = "none";
         videogrid.style.display = "none";
+        div.removeChild(info);
         }       
     
         mediabutton.addEventListener('click',filtermedia)
           
+        
 
     // FILTER BY MEDIA
     filterimage.addEventListener("click",() => {
@@ -86,6 +123,8 @@ fetch('project2.json')
         filterimage.style.color= "black";
         filtervideo.style.backgroundColor= "black";
         filtervideo.style.color= "#50C878";
+        filterinfo.style.backgroundColor= "black";
+        filterinfo.style.color= "#50C878";
         if (item.Video == ""){
             div.style.opacity = "1";
             
@@ -93,6 +132,7 @@ fetch('project2.json')
         else {
             div.style.opacity = "0"
         }
+        div.removeChild(info);
     })
 
     filtervideo.addEventListener("click",() => {
@@ -100,12 +140,28 @@ fetch('project2.json')
         filtervideo.style.color= "black";
         filterimage.style.backgroundColor= "black";
         filterimage.style.color= "#50C878";
+        filterinfo.style.backgroundColor= "black";
+        filterinfo.style.color= "#50C878";
         if (item.Video == ""){
             div.style.opacity = "0";
         }
         else {
             div.style.opacity = "1";
         }
+        div.removeChild(info);
+        
+    })
+
+    filterinfo.addEventListener("click",() => {
+        filterinfo.style.backgroundColor= "#50C878";
+        filterinfo.style.color= "black";
+        filterimage.style.backgroundColor= "black";
+        filterimage.style.color= "#50C878";
+        filtervideo.style.backgroundColor= "black";
+        filtervideo.style.color= "#50C878";
+        div.style.opacity = "1";
+        div.appendChild(info);
+        
     })
 
     // FILTER BY INVASION LEVEL
@@ -120,6 +176,7 @@ fetch('project2.json')
                     div.style.display = "none";
                     videogrid.style.display = "none";
                 }
+                div.removeChild(info);
     });
 
     filter2.addEventListener("click",() => {
@@ -131,6 +188,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }    
+        div.removeChild(info);
     });
 
     filter3.addEventListener("click",() => {
@@ -142,6 +200,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
     filter4.addEventListener("click",() => {
@@ -153,6 +212,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
     filter5.addEventListener("click",() => {
@@ -164,6 +224,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
     filter6.addEventListener("click",() => {
@@ -175,6 +236,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
 
@@ -187,6 +249,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
 
@@ -199,6 +262,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
     filter9.addEventListener("click",() => {
@@ -210,6 +274,7 @@ fetch('project2.json')
             div.style.display = "none";
             videogrid.style.display = "none";
         }
+        div.removeChild(info);
     });
 
     filter10.addEventListener("click",() => {
@@ -223,13 +288,28 @@ fetch('project2.json')
     });
 
 
-    // RESET FILTERS
+    // instructions.addEventListener('click', showinstruction)
 
+    // function showinstruction(){
+    //     instructions.textContent = "Hover to play videos. Click to display information, double click to close";
+    // }
+
+
+    // RESET FILTERS
+   
 
     reset.addEventListener("click",() => {
             div.style.opacity= "1";
             div.style.display= "inline-block";
             videogrid.style.display = "none";
+            filtervideo.style.backgroundColor= "black";
+            filtervideo.style.color= "#50C878";
+            filterimage.style.backgroundColor= "black";
+            filterimage.style.color= "#50C878";
+            filterinfo.style.backgroundColor= "black";
+            filterinfo.style.color= "#50C878";
+            div.removeChild(info);
+            
             // invasionfilter.style.display = "none";
             // filter.style.display = "none";
     })
@@ -245,10 +325,14 @@ fetch('project2.json')
         div.addEventListener('mouseleave', () => {
             overlay.style.opacity = "0.15"
             video.pause();
+            
             });
 
 
     })
+
+
+
 
     })
 
@@ -295,6 +379,8 @@ window.onbeforeunload = function () {
 
        returnbutton.addEventListener("click", scrollup);
        cancelButton.addEventListener("click", scrollup);
+
+
 
     
 
@@ -354,6 +440,8 @@ window.onbeforeunload = function () {
     console.log("Something went wrong!");
     });
     }
+
+
 
 
 
