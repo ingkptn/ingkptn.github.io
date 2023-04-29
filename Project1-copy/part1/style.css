@@ -1,0 +1,393 @@
+body{background-color: black;
+    max-height: 100%;
+}
+
+@font-face {
+    font-family: 'Eiko';
+    src: url('Typeface/abcEikomonovariable-trial-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+}
+
+@font-face {
+    font-family: 'Eiko';
+    src: url('/Project1-copy/PPEiko-Regular.woff');
+}
+
+#returnbutton {
+position: absolute;
+ border: 1px solid #F8F5F0;
+ font-family: 'Helvetica';
+ width: 30px;
+ height:30px;
+ display: block;
+ right: 5.3%;
+ top:10%;
+ text-align: center;
+
+
+}
+
+#cross {
+margin-top: 5px;
+color: #F8F5F0;
+}
+
+#returnbutton:hover{
+    background-color:#F8F5F0;
+}
+
+#cross:hover{
+     color:black;
+}
+
+#time {
+ color: #F8F5F0;
+ font-family: 'Eiko';
+ margin-left: 7vw;
+ margin-top: 5vh;
+ font-size: 120%;
+}
+
+#part1 {
+    position: fixed;
+    top: 15%;
+    left: 1%;
+    margin-left: auto;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    display: block;
+    width: 89vw;
+    height: 70vh;
+    overflow-y: scroll;
+    
+
+}
+
+#text {
+    /* border: 1px solid #f8f5f0; */
+    padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    color: #f8f5f0;
+    /* border: 1px solid #f8f5f0; */
+    /* font-family: 'Eiko'; */
+    font-family: 'Eiko';
+    font-size: 1.3vw;
+
+    line-height: 2.2vh;
+
+    
+}
+
+span {
+    border: 1px solid #f8f5f0;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+#section1{
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16vh;
+    border: 1px solid #f8f5f0;
+}
+
+#section2{
+    margin-left: 51%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 16vh;
+}
+
+#section3{
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section4 {
+    margin-left:27%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section5{
+    margin-left:43%;;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section6{
+    margin-left:47.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section7{
+    margin-left:52%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section8{
+    margin-left:56.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 19vh;
+}
+
+#section9 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 22vh;
+}
+
+#section10 {
+    margin-left: 28.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 22vh;
+}
+
+#section11 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 27vh;
+}
+
+#section12 {
+ 
+    margin-left: 73%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 27vh;
+}
+
+#section13 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30vh;
+}
+
+#section14 {
+    margin-left: 51%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30vh;
+}
+
+#section15 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 33vh;
+}
+
+#section16 {
+    margin-left: 35%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 33vh;
+}
+
+#section17 {
+    margin-left: 61%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 33vh;
+}
+
+#section18 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 36vh;
+}
+
+#section19 {
+    margin-left: 23%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 36vh;
+}
+
+#section20 {
+    margin-left: 60.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 36vh;
+}
+
+#section21 {
+    margin-left: 67.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 36vh;
+}
+
+#section22 {
+    margin-left: 77%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 36vh;
+}
+
+#section23 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 39vh;
+}
+
+#section24 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 44vh;
+}
+
+#section25 {
+    margin-left: 72%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 44vh;
+}
+
+#section26 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 47vh;
+}
+
+#section27 {
+    margin-left: 16.7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 47vh;
+}
+
+#section28 {
+    margin-left: 23.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 47vh;
+}
+
+#section29 {
+    margin-left: 30%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 47vh;
+}
+
+#section30 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 52vh;
+}
+
+#section31 {
+    margin-left: 48%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 52vh;
+}
+
+#section32 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55vh;
+}
+
+#section33 {
+    margin-left: 19%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55vh;
+}
+
+#section34 {
+    margin-left: 40%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 55vh;
+}
+
+#section35 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 58vh;
+}
+
+#section36 {
+    margin-left: 45.5%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 58vh;}
+
+#section37 {
+    margin-left: 7%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 61vh;}
+
+
+    #start {
+    margin-left: 30%;
+    font-family: Monument;
+    }
+
+#end {
+    margin-left: 33%;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 70vh;
+    font-family: Monument}
+
+#container {
+    position: absolute;
+    width: 89vw;;
+    height: 78vh;
+    border: 1px solid #f8f5f0;
+    z-index:-10;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-44%);
+
+}
+
+.filler {
+    border: 0px;
+}
+
+/* ::-webkit-scrollbar {
+    position: relative;
+    margin-top: -0%;
+    
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    border: 1px solid #f8f5f0;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    border: 1px solid #f8f5f0;
+    background-color: #f8f5f0;
+  } */

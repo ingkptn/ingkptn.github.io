@@ -1,0 +1,290 @@
+body {
+    background-color: black;;
+}
+
+
+
+#refreshbutton {
+    border: 1px solid #f8f5f0;
+    color: #f8f5f0;
+    background-color: black;
+    /* border-radius: 20%; */
+    padding-top: 0.9%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.9%;
+    position: absolute;
+    right: 5.8%;
+    top: 92%;
+    -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+  z-index: 100;
+    
+}
+
+span{
+    font-family: Monument;
+}
+
+#cross{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#refreshbutton:hover {
+    border: 1px solid #f8f5f0;
+    color: black;
+    background-color:#f8f5f0;
+}
+
+#cross:hover{
+     color:black;
+}
+
+div {
+    border: 1px solid #f8f5f0;
+}
+
+
+#container {
+    position: relative;
+    margin-right: 5vw;
+    margin-top: 7.5vh;
+    width: 40%;
+    height: 80%;
+    float: right;
+    background-color: #f8f5f0;
+    }
+
+
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+    }
+
+    @font-face {
+        font-family: 'Monument';
+        src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+    }
+
+    @font-face {
+        font-family: 'Eiko';
+        src: url('/Project1-copy/PPEiko-Regular.woff');
+    }
+
+    #returnbutton {
+        position: absolute;
+         border: 1px solid #f8f5f0;
+         font-family: 'Favorit';
+         width: 30px;
+         height:30px;
+         display: block;
+         right: 0%;
+         top:-7%;
+         text-align: center;
+         -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+        
+        
+        }
+        
+        #cross {
+        margin-top: 5px;
+        color: #f8f5f0;
+        }
+
+        #returnbutton:hover{
+            background-color:#f8f5f0;
+        }
+        
+        #cross:hover{
+             color:black;
+        }
+
+#text {
+    border: 0px solid black;
+
+}
+
+
+p { font-family: 'Eiko';
+    position: absolute;
+    color: #f8f5f0;
+    width: 40vw;
+    height: 80vh;
+    font-size: 15px;
+    max-width: 25vw;
+    line-height: 1.6vw;
+    z-index: 20;
+    text-align: left;
+    left: 59.5%;
+    top: 22%;
+    -webkit-user-select: none; 
+  -ms-user-select: none; 
+  user-select: none; 
+
+
+}
+
+.hint{
+    position: absolute;
+    opacity: 0;
+    
+}
+
+#hint1{
+    width: 10%;
+    height: 45%;
+    border: 2px dotted grey;
+    left: 54%;
+    top: 44.4%;
+}
+
+#hint2{
+    width: 22%;
+    height: 15%;
+    border: 2px dotted gray;
+    left: 72.2%;
+    top: 9.3%;
+}
+
+#hint3{
+    width: 30%;
+    height: 20%;
+    border: 2px dotted gray;
+    left: 64.2%;
+    top: 24.5%;
+}
+
+#hint4{
+    width: 12%;
+    height: 25%;
+    border: 2px dotted grey;
+    left: 82.2%;
+    top: 64.2%;
+}
+
+
+
+
+#game {
+    position: absolute;
+    border: 2px solid #f8f5f0;
+    width: 89vw;
+    height: 80vh;
+    left:5.5vw;
+    top: 15vh;
+
+}
+
+.puzzle {
+    position:absolute;
+    background-color: black;
+    z-index: 5;
+    
+}
+
+#puzzle1 {
+    top: 7%;
+    left: 3%;
+    width:10%;
+    height: 45%;
+}
+
+#puzzle2 {
+    top: 70%;
+    left: 16%;
+    width:18%;
+    height: 25%;
+}
+
+#puzzle3 {
+    top: 70%;
+    left: 38%;
+    width:12%;
+    height: 25%;
+}
+
+#puzzle4{
+    top: 45%;
+    left: 16%;
+    width:30%;
+    height: 20%;
+}
+
+#puzzle5 {
+    top: 2%;
+    left: 16%;
+    width:8%;
+    height: 15%;
+}
+
+
+#puzzle6 {
+    top: 2%;
+    left: 28%;
+    width:22%;
+    height: 15%;
+}
+
+#puzzle7 {
+    top: 20%;
+    left: 16%;
+    width:30%;
+    height: 20%;
+}
+
+#puzzle8 {
+    top: 60%;
+    left: 3%;
+    width:10%;
+    height:35%;
+}
+
+h3{
+    position: absolute;
+    font-family: 'Monument';
+         font-size:medium;
+         color: #F8F5F0;
+         position: absolute;
+         right: 5.5%;
+         top:2%;
+         text-align: center;
+         border: 1px solid #F8F5F0;
+         padding-top: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 1%;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 100;
+}
+
+h3:hover{
+    border: 1px solid #f8f5f0;
+    color: black;
+    background-color:#f8f5f0;
+}
+
+#hintbutton{
+    padding-top: 0.9%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 0.9%;
+    position: absolute;
+    right: 20%;
+    top: 89.6%;
+}
+
+h2{
+    position: absolute;
+    font-family: Monument;
+         font-size:13px;
+         color: #F8F5F0;
+         position: absolute;
+         right: 5.5%;
+    top: 3%;
+}

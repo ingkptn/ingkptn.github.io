@@ -1,0 +1,253 @@
+body {
+  background-color: black;  
+    
+}
+
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+}
+
+@font-face {
+    font-family: 'Eiko';
+    src: url('/Project1-copy/PPEiko-Regular.woff');
+}
+
+#returnbutton {
+    position: absolute;
+     border: 1px solid #f8f5f0;
+     font-family: 'Favorit';
+     width: 30px;
+     height:30px;
+     display: block;
+     right: 5%;
+     top: 13.5%;
+     text-align: center;
+    
+    
+    }
+    
+    #cross {
+    margin-top: 5px;
+    color: #f8f5f0;
+    font-family: Helvetica;
+    }
+
+    #returnbutton:hover{
+        background-color:#f8f5f0;
+    }
+    
+    #cross:hover{
+         color:black;
+    }
+    
+#box {
+    border: 1px solid #f8f5f0;
+    position: absolute;
+    width: 90vw;
+    height: 68vh;
+    /* padding: 5%; */
+    top: 20vh;
+    left: 5vw;
+    max-width: 90vw;
+    max-height: 68vh;
+    
+    overflow-y: scroll;
+
+}
+
+
+
+#part1 {
+    /* font-family: 'Favorit'; */
+    font-family: 'Eiko';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    max-width: 70vw;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 8%;
+    line-height: 150%;
+    letter-spacing: 0.1vw;
+   
+
+}
+
+@keyframes blurText1{
+    0% {filter: blur(0px);
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;
+    }
+    20% {filter:blur(10px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
+    40% {filter:blur(12px);
+        -webkit-filter: blur(12px);
+        letter-spacing: 0.4vw;}
+    60% {filter:blur(5px);
+        -webkit-filter: blur(9px);
+        letter-spacing: 0.3vw;}
+    80% {filter:blur(0px);
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;}
+    100% {filter:blur(2px);
+        -webkit-filter: blur(2px);
+        letter-spacing: 0.1vw;}
+
+}
+
+
+#part2 {
+    /* font-family: 'Favorit'; */
+    font-family: 'Eiko';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText2;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal; */
+    max-width: 70vw;
+    text-align: right;
+    margin-left: 40%;
+    margin-right: 5%;
+    line-height: 150%;
+    letter-spacing: 0.1vw;
+}
+
+@keyframes blurText2{
+    0% {filter: blur(10px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.3vw;}
+    20% {filter:blur(2px);
+        -webkit-filter: blur(2px);
+        letter-spacing: 0.2vw;}
+    40% {filter:blur(0px);
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.1vw;}
+    60% {filter:blur(10px);
+        letter-spacing: 0.3vw;
+        -webkit-filter: blur(10px);}
+    80% {filter:blur(5px);
+        -webkit-filter: blur(5px);
+        letter-spacing: 0.1vw;}
+    100% {filter:blur(10px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
+
+}
+
+
+
+#part3 {
+    /* font-family: 'Favorit'; */
+    font-family: 'Eiko';
+    color: #f8f5f0;
+    font-size: 100%;
+    filter: blur(5px);
+    /* animation-name: blurText3;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    max-width: 70vw;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 8%;
+    margin-bottom: 7%; 
+    line-height: 150%;
+    letter-spacing: 0.1vw;
+}
+
+
+
+@keyframes blurText3{
+    0% {filter: blur(2px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.2vw;}
+    20% {filter:blur(5px);
+        -webkit-filter: blur(5px);
+        letter-spacing: 0.1vw;}
+    40% {filter:blur(10px);
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.3vw;}
+    60% {filter:blur(0px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.1vw;}
+    80% {filter:blur(0px);
+        -webkit-filter: blur(0px);
+        letter-spacing: 0.2vw;}
+    100% {filter:blur(10px);
+        -webkit-filter: blur(10px);
+        letter-spacing: 0.3vw;}
+
+}
+
+
+#playbutton {
+
+ border: 1px solid #f8f5f0;
+ width: 45vw;
+ height: 40px;
+ /* font-family: 'Favorit'; */
+ font-family: 'Eiko';
+ position: absolute;
+ top: 88vh;
+ left: 5vw;
+}
+
+
+.state {
+    color: #f8f5f0;
+    position: relative;
+    text-align: center;
+    margin-top: 12px;
+    font-family: Monument;
+
+}
+
+#play:hover {
+    color: black;
+}
+
+#pause:hover {
+    color: black;
+}
+
+#playbutton:hover{
+background-color: #f8f5f0;
+}
+
+#pausebutton {
+    border: 1px solid #f8f5f0;
+    width: 45vw;
+    height: 40px;
+    /* font-family: 'Favorit'; */
+    font-family: 'Eiko';
+    position: absolute;
+ top: 88vh;
+ left: 50vw;
+
+}
+
+#pausebutton:hover{
+    background-color: #f8f5f0;
+}
+

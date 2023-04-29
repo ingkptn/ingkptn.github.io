@@ -1,0 +1,279 @@
+body {
+    background-color: black;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'Favorit';
+    src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+}
+
+@font-face {
+    font-family: 'Monument';
+    src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+}
+
+@font-face {
+    font-family: 'Eiko';
+    src: url('/Project1-copy/PPEiko-Regular.woff');
+}
+
+
+#container{
+width: 90vw;
+height: 85vh;
+border: 1px solid #F8F5F0;
+overflow: hidden;
+background-color: #f8f5f0;
+position: absolute;
+left: 50%;
+top:50%;
+transform: translate(-50%,-45%);
+
+}
+
+
+.dot{
+    width: 0.5vw;
+    height: 0.5vw;
+    background-color: black;
+    border-radius: 50%;
+    animation: blur 15s linear infinite normal both;
+    position:relative;
+    /* top: -10vh; */
+}
+
+#dot1{
+    /* background-color: red; */
+   left: 20vw;
+    animation-delay:0s;
+}
+
+#dot2{
+    left: 10vw;
+    animation-delay:4s;
+}
+
+
+#dot3{
+    left: 70vw;
+    animation-delay:7s;
+}
+
+#dot4{
+    left: 40vw;
+    animation-delay:10s;
+}
+
+#dot5{
+    left: 60vw;
+    animation-delay:6s;
+}
+
+
+#dot6{
+    left: 50vw;
+    animation-delay:8s;
+}
+
+#dot7{
+
+    left: 80vw;
+    animation-delay:11s;
+}
+
+#dot8{
+    left: 55vw;
+    animation-delay:13s;
+}
+
+#dot9{
+    left: 25vw;
+    animation-delay:9s;
+}
+
+#dot10{
+    left: 35vw;
+    animation-delay:7s;
+     
+}
+
+
+
+#dot11{
+    left: 8vw;
+    animation-delay:12s;
+}
+
+#dot12{
+    left: 65vw;
+    animation-delay:3s;
+}
+
+#dot13{
+    background-color: black;
+    left: 72vw;
+    animation-delay:4s;
+    animation-duration: 20s;
+    transition: 3s height ease,  3s width ease;
+
+}
+
+#dot14{
+    left: 15vw;
+    animation-delay:2s;
+}
+
+#dot15{
+    left: 45vw;
+    animation-delay:3s;
+}
+
+#dot16{
+    background-color: black;
+    left: 32vw;
+    animation-duration: 20s;
+    animation-delay:7s;
+    transition: 3s height ease,  3s width ease;
+
+}
+
+.spread{
+    background-color: black;
+    left: 32vw;
+    
+}
+
+
+@keyframes parasol{
+    from {
+        width: 0.5vw;
+        height: 0.5vw;
+    }
+
+    to {
+        width: 100vw;
+        height: 100vw;
+    }
+}
+
+
+
+
+@keyframes blur{
+ 0%{ transform:scale(2,2);
+    filter: blur(1px);
+top: -20vh;}
+ 100%{ transform:scale(3,5);
+    filter: blur(2.5px);
+ top: 100vh}
+
+}
+ p{font-family:'Eiko';}
+
+#text1{
+    position: absolute;
+    width: 40vw;
+    left: 5%;
+    top: 5%;
+    font-size:1.1vw;
+}
+
+#text2{
+    text-align: right;
+    position: absolute;
+    width: 80vw;
+    right: 5%;
+    bottom:7%;
+    font-size:1.1vw;
+}
+
+#text3{
+    text-align: right;
+    font-size:1.1vw;
+    position: absolute;
+    opacity:0;
+    width: 80vw;
+    right: 5%;
+    bottom:3.5%;
+    animation: show 1s linear 4s 1 normal both;
+}
+
+@keyframes show{
+    from{opacity: 0;}
+    to {opacity: 0.6}
+}
+
+#text4, #text5, #text6, #text7, #text8, #text9{
+    color: black;
+    font-size: 1.1vw;
+    position: relative;
+    width: 50vw;
+
+    
+    
+} 
+
+#page2{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:-10;
+    opacity: 0; 
+}
+
+#light{
+    position: absolute;
+    background-color:#f8f5f0;
+    height: 3vw;
+    width: 52vw;
+    filter: blur(3px);
+    top:2%;
+    left:-2%;
+    z-index:-5;
+    transform: skewX(-20deg);
+    
+}
+
+
+
+#returnbutton {
+    position: absolute;
+     border: 1px solid #F8F5F0;
+     width: 30px;
+     height:30px;
+     display: block;
+     right: 5%;
+     top:6%;
+     text-align: center;
+    
+    
+    }
+
+#returnbutton > p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+    #cross {
+    margin-top: 5px;
+    color: #F8F5F0;
+    }
+    
+    #returnbutton:hover{
+        background-color:#F8F5F0;
+    }
+    
+    #cross:hover{
+         color:black;
+    }
+    
+ 
+
+
+
+
+
+
+
+
