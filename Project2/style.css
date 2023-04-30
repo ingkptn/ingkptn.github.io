@@ -631,7 +631,7 @@ li:hover{
 
 }
 
-@media only screen and (min-width: 650px) {
+@media only screen and (min-width: 700px) {
 
     
 
@@ -717,6 +717,12 @@ li:hover{
         font-size: 15px;
     }
 
+}
+
+@media only screen and (min-width: 750px){
+    .info{
+        line-height:0.8;
+    }
 }
 
 
