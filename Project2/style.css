@@ -29,75 +29,170 @@ body{
     position: relative;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 255, 255);
+    background-color:black;
     overflow: hidden;
 }
 
+
+
 h1{
-    margin: 50px 0vw;
-    width: 80vw;
-    position: relative;
-    left: 7.5%;
-    top:5%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -200%);
+    text-align: left;
     font-family: Neuebit;
-    font-size: 110px;
+    font-size: 80px;
     color: black;
-    /* animation: changeTextColor 2s linear 1s 1 normal both; */
+    z-index: 10;
+    line-height: 0.7;
+    filter: blur(5px);
+    animation: text-blur 1s ease-in-out 5s 1 normal forwards;
 }
 
 
-h2{
-    margin: 0;
-    position: relative;
-    left: 7.5%;
-    font-family: Segoe;
+
+#aboutText{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+    font-family: Neuebit;
     font-size: 16px;
     color: black;
-    width: 85vw;
+    width: 220px;
+    z-index: 10;
+    animation: about 1s ease-in-out 0s 1 normal forwards paused;
+    opacity: 0;
 }
 
+#instructionText{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, 100%);
+    font-family: Neuebit;
+    font-size: 17px;
+    color: black;
+    width: 220px;
+    z-index: 10;
+    animation: about 1s ease-in-out 0s 1 normal forwards paused;
+    opacity: 0;
+}
+
+#instructionText > span{
+    font-size: 13px;
+}
+
+
 button{
-    margin: 20px;
-    background-color: white;
-    border: 1px solid black;
-    padding: 10px 30px;
+    margin: 20px 10px;
+    color: #50C878;
+    background-color: transparent;
+    border: 1px solid #50C878 ;
     border-radius: 30px;
     font-size: 20px;
-    font-family: Segoe;
-    display: block;
+    font-family: Neuebit;
+    display: inline;
+    z-index: 100;
+    opacity: 0;
+    padding: 5px;
+    animation: showButton 0.8s ease-in-out 5s 1 normal forwards;
+
 }
 
 #buttons{
-    margin-top: 100px;
-    margin-left: 5vw;
+    
+    display: flex;
+    justify-content: center;
+    filter: blur(0.5px);
+    z-index: 10;
+    
 }
 
 button:hover{
-    background-color: black;
-    color: white;
+    background-color: #50C878;
+    color: black;
+    
+
 }
 
-#landing-photo{
-    margin: 50px 7.5vw;
-    width: 85vw;
-    height: fit-content;
-    overflow: hidden;
-    background-color: black;
+@keyframes showButton{
+    100% {opacity: 1;}
 }
 
-.image{
-    width: 100%;
-    height: 100%;
-}
-
-#landing-overlay{
+#flashlight{
     position: absolute;
-        opacity: 0;
-        width: 85vw;
-        height: 35%;
-        margin-top: 0px;
-        margin-left: -85vw;
+    top: 0%;
+    left: 0%;
+    width: 310px;
+    height: 200px;
+    background-color: #50C878 ;
+    border-radius: 5px;
+    z-index: 0;
+    filter: blur(10px);
+    animation: landing-animation 6s ease-in-out 0s 1 normal forwards;
+    /* animation: instructions 2s ease-in-out 0s 1 normal forwards; */
 }
+
+
+
+
+@keyframes landing-animation{
+    0%{top: 0%;
+        left: 0%;}
+    20%{top: 30%;
+        left: 70%;}
+    40%{top: 90%;
+        left: 0%;}
+    60%{top: 90%;
+        left: 80%;}
+    80%{top: 50%;
+        left:50%;
+         transform: translate(-50%,-102%);}
+    90%{
+        filter: blur(8px);
+        top: 50%;
+        left:50%;
+         transform: translate(-50%,-102%);}
+    100%{
+        filter: blur(6px);
+        top: 50%;
+        left:50%;
+         transform: translate(-50%,-102%);}
+    }
+
+    @keyframes about{
+        100%{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -15%);
+            opacity: 1;
+        }
+    }
+
+    @keyframes instructions{
+        100%{
+            width: 90vw;
+            left: 5vw;
+            top: 60vh;
+        }
+    }
+
+    @keyframes text-blur{
+        0%{
+            filter: blur(5px);
+        }
+        100%{
+            filter: blur(1px);
+        }
+    }
+
+
+
+
+
+
 
 
 /* About page */
@@ -112,54 +207,9 @@ button:hover{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
+    display: none;
 
 }
-
-
-
-#background-video{
-    height: 100%;
-    /* top: -10vw; */
-    filter:grayscale(1) brightness(40%) blur(1px);
-}
-
-#background-overlay{
-opacity: 0.1;
-position: absolute;
-}
-
-#about > h1 {
-    position: absolute;
-    top:350px;
-    left: 7.5vw;
-    color: white;
-    filter: drop-shadow(0 0 1rem black);
-    
-}
-
-#about > h2 {
-    color: white;
-    top:550px;
-    left: 7.5vw;
-    filter: drop-shadow(0 0 0.75rem black);
-}
-
-
-#homebutton{
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    margin: 3vw 7.5vw;
-    z-index: 100;
-    position: absolute;
-    
-    }
-    
-#homebutton:hover{
-    background-color: white;
-    color: black;
-    }
-
 
 
 
@@ -603,22 +653,31 @@ li:hover{
         height: 15vw;
     }
 
-    h2{
-        width: 45vw;
+    h1{
+        transform: translate(-50%, -180%);
+        font-size: 120px;
+        width: 370px;
+     
+    }
+    #aboutText, #instructionText{
+        font-size: 20px;
+        width: 370px;
         margin: 0vw;
     }
 
-    #buttons{
-        margin-left: 7.5vw;
-        height: fit-content;
-        width: fit-content;
-        margin-top: 12vh;
+    #flashlight{
+        width: 500px;
+        height: 270px;
     }
+
+
     button{
-        margin-top: 10px;
+        margin-top: 30px;
         margin-left: 0px;
         margin-right: 20px;
         display: inline;
+        font-size: 25px;
+        padding: 5px 15px;
     }
     #landing-photo{
         margin-top: 1.5vh;
@@ -660,17 +719,44 @@ li:hover{
 
 }
 
-@media only screen and (min-width: 785px) {
-
-
-    .info{
-        padding: 15px;
-    }}
-
-    
-
 
 @media only screen and (min-width: 1200px){
+
+    
+    button{
+        font-size: 28px;
+        padding: 5px 20px;
+        margin: 70px 30px;
+    }
+
+    h1{
+        width: 600px;
+    }
+
+    #aboutText, #instructionText{
+        font-size: 23px;
+        width: 600px;
+        margin: 0vw;
+    }
+
+    #flashlight{
+        width: 700px;
+    }
+
+    @keyframes about{
+        100%{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -5%);
+            opacity: 1;
+        }
+    } 
+
+
+
+
+
+
 
      #grid-container{
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -688,4 +774,6 @@ li:hover{
         display: inline-block;
         height: 12vw;
     }
+
+
 }

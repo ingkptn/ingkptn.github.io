@@ -355,52 +355,38 @@ window.onbeforeunload = function () {
 
         test.addEventListener("click", scrolldown);
 
-        function scrollright(){
-            document.body.style.overflowX = 'scroll';
-            document.body.style.overflowY = 'hidden';
-            window.scrollTo({left: 2000, behavior: 'smooth'})
-        }
-
-       aboutbutton.addEventListener("click", scrollright);
-
-       function scrollback(){
-            document.body.style.overflowX = 'scroll';
-            document.body.style.overflowY = 'hidden';
-            window.scrollTo({left: 0, behavior: 'smooth'})
-        }
-
-       homebutton.addEventListener("click", scrollback);
-
-       function scrollup(){
-            document.body.style.overflowY = 'scroll';
-            document.body.style.overflowX = 'hidden';
-            window.scrollTo({top: 0, behavior: 'smooth'})
-        }
-
-       returnbutton.addEventListener("click", scrollup);
-       cancelButton.addEventListener("click", scrollup);
 
 
+      
 
+
+       function showAbout(){
+        flashlight.style.paddingBottom = 300 + 'px';
+        flashlight.style.marginTop = 300+'px';
+        flashlight.style.transition = 'padding 2s margin 2s';
+        aboutText.style.animationPlayState = 'running';
+        aboutText.style.display = 'block';
+        instructionText.style.display = 'none';
+
+    }
+
+    aboutButton.addEventListener("click", showAbout);
+
+    function showInstruction(){
+        flashlight.style.paddingBottom = 300 + 'px';
+        flashlight.style.marginTop = 300+'px';
+        aboutText.style.display = 'none';
+        instructionText.style.display = 'block';
+        instructionText.style.animationPlayState = 'running';
+    }
+
+    instruction.addEventListener("click", showInstruction);
     
 
     //    WARNING WINDOW POPUP
 
 
-       let gridcontainer = document.getElementById('grid-container');
-       let filter = document.getElementById('filter-system');
 
-       function proceed(){
-        warningButtons.style.display = "none";
-        loading.style.display = "block";
-        warningWindow.style.animationPlayState = "running";
-        gridcontainer.style.animationPlayState = "running";
-        filter.style.animationPlayState = "running";
-        warning.textContent = "Proceeding...";
-       }
-
-
-       proceedButton.addEventListener("click", proceed);
 
 
 

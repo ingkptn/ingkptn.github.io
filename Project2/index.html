@@ -12,16 +12,28 @@
 <body>
     
     <div id="landing-page">
+        <!-- <div id="buttons"><button id="aboutbutton">ABOUT</button><button id="test">CONTINUE</button></div>
         <div><h1 class="header">LOOKING IN</h1>
-        <h2 class="header">A collection of images and videos taken between 18:00 and 06:00 in New York city, looking into different spaces through different frames.</h2></div>
+        <h2 class="header">A collection of images and videos taken between 18:00 and 06:00 in New York city, looking into different spaces through different frames.</h2></div> -->
+        <!-- <div id="flashlight"></div> -->
 
-        <div id="buttons">
-            <button id="aboutbutton">About →</button>
-            <button id="test">Continue ↓</button>
-        </div>
+        <div id="buttons"><button id="aboutButton">ABOUT</button><button id="instruction">INSTRUCTIONS</button><button id="test">CONTINUE</button></div>
+        <h1 id="small-text">LOOKING<br> IN</h1>
+        <div><h2 id="aboutText">"Looking In" is a collection of images and videos taken between 18:00 and 06:00 in New York city. Each image looks into a space through a frame, whether it be windows, doors, holes, etc. <br><br>
+            The collection as a whole challenges the concept of privacy, and explores ideas of invasion and intrusion. Though the identities of the people who own, occupy or use each space remain anonymous, questions on the morals or ethics of looking into a space from the positions of an outsider arise. 
+            <br><br>Where does the boundary of privacy invasion lie? What factors play a part in creating this boundary?
+            </h2></div>
+        <h2 id="instructionText">
+            <span>⓵</span> Click the continue button and give permission to proceed<br><br>
+            <span>⓶</span> Hover over media to see Date and Time, <br><br>
+            <span>⓷</span> Videos will play automatically upon hover<br><br>
+            <span>⓸</span> Click once to view additional information<br><br>
+            <span>⓹</span> Double-click to switch back to media<br><br>
+            <span>⓺</span> Filter by Invasion Level or Media using the buttons<br><br>
+            * View on Desktop and allow page to access webcam for full experience*
+        </h2>
 
-        <div id="landing-photo"><video autoplay loop muted src="assets/backgroundvid.mp4" id="background-video"></video>
-        <img src="assets/background1.png" class="image" id="landing-overlay"></div>
+        <div id="flashlight"></div>
     </div>
 
     <div id="about">
@@ -35,6 +47,11 @@
             <br><br>Where does the boundary of privacy invasion lie? What factors play a part in creating this boundary?
             </h2>
     </div>
+
+
+
+
+
 
 <button id="returnbutton">↑</button>
 
@@ -99,5 +116,30 @@
 </div>
 
 <!-- <h5 id="instructions">?</h5> -->
+
+<script>
+        function scrollup(){
+        document.body.style.overflowY = 'scroll';
+        document.body.style.overflowX = 'hidden';
+        window.scrollTo({top: 0, behavior: 'smooth'})
+    }
+
+   cancelButton.addEventListener("click", scrollup);
+
+       let gridcontainer = document.getElementById('grid-container');
+       let filter = document.getElementById('filter-system');
+
+       function proceed(){
+        warningButtons.style.display = "none";
+        loading.style.display = "block";
+        warningWindow.style.animationPlayState = "running";
+        gridcontainer.style.animationPlayState = "running";
+        filter.style.animationPlayState = "running";
+        warning.textContent = "Proceeding...";
+       }
+
+
+       proceedButton.addEventListener("click", proceed);
+</script>
 
 </body>
