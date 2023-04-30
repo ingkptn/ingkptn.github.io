@@ -47,7 +47,7 @@ h1{
     z-index: 10;
     line-height: 0.7;
     filter: blur(5px);
-    animation: text-blur 1s ease-in-out 5s 1 normal forwards;
+    animation: text-blur 1s ease-in-out 6s 1 normal forwards;
 }
 
 
@@ -97,7 +97,7 @@ button{
     z-index: 100;
     opacity: 0;
     padding: 5px;
-    animation: showButton 0.8s ease-in-out 5s 1 normal forwards;
+    animation: showButton 0.8s ease-in-out 6s 1 normal forwards;
 
 }
 
@@ -131,7 +131,7 @@ button:hover{
     border-radius: 5px;
     z-index: 0;
     filter: blur(10px);
-    animation: landing-animation 6s ease-in-out 0s 1 normal forwards;
+    animation: landing-animation 6s ease-out 1s 1 normal forwards;
     /* animation: instructions 2s ease-in-out 0s 1 normal forwards; */
 }
 
@@ -145,7 +145,7 @@ button:hover{
         left: 70%;}
     40%{top: 90%;
         left: 0%;}
-    60%{top: 90%;
+    60%{top: 80%;
         left: 80%;}
     80%{top: 50%;
         left:50%;
