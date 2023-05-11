@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <title>Elevators in NYC</title>
+</head>
+<body>
+
+<div id="container">
+    <div id="left"><h1>ELEVATORS<br>IN NYC</h1>
+    <div id="buttons">
+        <div id="aboutbutton"><div id="button1"></div><h4>ABOUT</h4></div>
+        <div id="factsbutton"><div id="button3"></div><h4>ELEVATOR FACTS</h4></div>
+        <div id="databutton"><a href="/PROJECT_3_Data_VIsualization_FINAL_copy_2023_05_08_22_29_48/index.html"><div id="button2"></div></a><h4>DATA PAGE</h4></div>
+        
+    </div>
+</div>
+
+<div id="right">
+    <div id="about">
+        <h2>ABOUT...</h2>
+        <h3>A data visualization of registered elevators in New York City recorded between 2013 and 2015. <br><br>
+
+        Elevators can tell us a lot about the buildings they are situated in, and in turn reveal more about the wider environment the buildings themselves are located in.  By creating clear distinctions between the elevators in the different boroughs of NYC, this visualization attempts to find trends and patterns, as well as identify anomalies, within the data.
+        <br><br>Data categories incorporated into the visualization include speed, capacicity, the floor the elevator reaches, and boroughs.<br><br>
+        (It’s also just fun to look at :D)
+        
+        <br><br>Dataset from <a href="https://www.kaggle.com/datasets/new-york-city/nyc-elevators">https://www.kaggle.com/datasets/new-york-city/nyc-elevators</a></h3></div>
+        <div id="facts">
+            <h2>ELEVATOR FACTS!</h2>
+            <h3>
+                As of 2015, there were roughly 76,000 elevator devices in New York — that means basically anything that moves people up and down.<br><br>
+                There are about 1,570 miles of elevator shafts (assuming a reasonable average floor height, etc.) compared to 840 miles of subway tracks.<br><br>
+                Most New York elevators top out at the sixth floor, as the six-story building is the staple of New York housing stock<br><br>
+                The 57 percent of the city’s elevators are in Manhattan. Brooklyn has 18 percent of them. Queens has 13 percent. And the Bronx has 10 percent.<br><br>
+                Across the city, New Yorkers take elevators on roughly 4 million rides on the average day.<br><br>
+                Barclays Center has two freight elevators that each have a capacity of 80,000 pounds (13 or so elephants)<br><br>
+                The average listed capacity of the city’s elevators is about 2,750 pounds. That means that approximately 18 percent of the city’s adult population could be safely suspended in an elevators.
+            </h3>
+        </div>
+    </div>
+
+
+</div>
+<script>
+     button1.addEventListener('click', () => {
+    about.style.animationPlayState = "running";
+    about.style.display = "block";
+    facts.style.display = "none";
+  });
+
+  button3.addEventListener('click', () => {
+    facts.style.animationPlayState = "running";
+    facts.style.display = "block";
+    about.style.display = "none";
+  });
+</script>
+</body>
+
+</html>

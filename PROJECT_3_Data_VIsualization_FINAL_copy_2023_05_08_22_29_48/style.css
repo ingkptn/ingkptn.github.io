@@ -1,0 +1,247 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(200,200,200);
+}
+
+
+#dataPage{
+  margin: 4vh 2.5vw;
+  width: 95vw;
+  height: 90vh;
+  overflow: hidden;
+}
+
+iframe{
+  position: relative;
+  margin-left: -13px;
+  margin-top: -45px;
+  width: 102%;
+  height: 105%;
+}
+
+#fullscreen{
+ display: block;
+ z-index: 10;
+}
+
+.disappear{
+  display: none;
+  z-index: -10;
+ }
+
+#withText{
+  display: block;
+  z-index: 0;
+  
+ }
+
+ #buttons{
+  width: fit-content;
+  height: 30px;
+  position: absolute;
+  right: 2.5vw;
+  bottom: 0.5vh;
+  display: flex;
+ }
+
+ #button1, #button2{
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+  bottom: 1vh;
+ }
+
+ i{
+  margin-left: 5px;
+ }
+
+ #info{
+  border-radius: 15px;
+  z-index: 20;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 400px;
+  height: 30vh;
+  background-color: rgb(240, 240, 240);
+  opacity: 0.75;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  z-index: -10;
+
+ }
+
+ #menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+ }
+
+ h3{
+  color: rgb(100,100,100);
+  margin-top: 0;
+  text-align: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 600;
+  border-bottom: 2px solid rgb(190,190,190);
+  border-right: 2px solid rgb(190,190,190);
+  flex-grow: 1;
+  flex-grow: 1;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 15px;
+ }
+
+ #instructions{
+  background-color: rgb(100,100,100);
+  color: white;
+ }
+
+#key{
+  flex-basis: 30%;
+}
+
+
+
+ h4{
+  margin-top: 2%;
+  font-family: 'IBM Plex Mono', monospace;
+  letter-spacing: 0.2px;
+  font-size: 12px;
+  box-sizing: border-box;
+  padding-left: 20px;
+  font-weight: 400;
+
+ }
+
+.keyTitle{
+  font-weight: 600;
+  padding: 0;
+  text-decoration: underline;
+
+ }
+
+ #viewingInstructions > h4{
+  padding-left: 30px;
+  padding-right: 30px;
+ }
+
+
+ #viewingKey{
+  margin-left: 20px;
+  opacity: 0;
+  display: flex;
+  flex-direction: row;
+ }
+
+ #viewingKey > div > div > div{
+  box-sizing: border-box;
+  padding: 10px;
+ width: 15%;
+ border: 1.5px solid rgb(100,100,100);
+
+ }
+
+ #boroughs{
+  flex-basis: 50%;
+  flex-grow: 0;
+  height: 50%;
+
+ }
+
+ #capacity{
+  flex-basis: 40%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-Y: scroll;
+ }
+
+ #capacity > div> h4{
+  flex-basis: 100%;
+  margin: 0;
+  padding: 0;
+ }
+
+
+
+#boroughs > div{
+  height: 10%;
+  width:90%;
+ margin-bottom: 10px;
+ display: flex;
+ 
+
+ }
+
+#Manhattan{
+  background-color:rgb(111,115,218);
+  
+}
+
+#Queens{
+  background-color:rgb(77,204,232) ;
+}
+
+#Brooklyn{
+  background-color:rgb(212, 97, 61) ;
+}
+
+#TheBronx{
+  background-color:rgb(98, 219, 117) ;
+}
+
+#StatenIsland{
+  background-color:rgb(237,189,65) ;
+}
+
+
+
+#capacityKey, #speedKey{
+  display: flex;
+  flex-direction: row;
+}
+
+#diagram{
+  background-color:  rgb(100,100,100);
+  color: white;
+  box-sizing: border-box;
+  width: 80%;
+  padding: 10px;
+  border-radius: 10px;
+
+}
+
+#background{
+  padding-left: 5px;
+}
+
+#infobutton{
+  position: absolute;
+  left:5vw;
+  bottom: 1.3vh;
+  font-size: 25px;
+}
+
+#infobutton:hover{
+  color: white;
+}
+
+#returnbutton{
+  font-size: 15px;
+  position: absolute;
+  left:2vw;
+  bottom: 2vh;
+}
+
+
+#closeinfo{
+  font-weight: bolder;
+  flex-basis: 10%;
+}
+
+

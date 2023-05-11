@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f14ed7f8bf.js" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <div id="landingPage">
+      
+
+    </div>
+    <div id="dataPage">
+      <iframe src="https://editor.p5js.org/ingkptn/full/qFs4y3YDX"  seamless frameBorder = 0 id = "fullscreen"></iframe>
+      <iframe src="https://editor.p5js.org/ingkptn/full/v5QH1bslY"  seamless frameBorder = 0 id = "withText"></iframe>
+    </div>
+    <div id="buttons">
+     
+      <i class="fa-solid fa-down-left-and-up-right-to-center fa-xl" style="color: #646464;" id="button1" ></i>
+      <i class="fa-sharp fa-solid fa-expand fa-xl" style="color: #646464;" id="button2"></i>
+      
+    </div>
+
+    <div id="info">
+      <div id="menu">
+        <h3 id="instructions">INSTRUCTIONS</h3>
+        <h3 id="key">KEY</h3>
+        <h3 id="closeinfo">x</h3>
+      </div>
+      <div id="viewingInstructions">
+        <h4>
+          ❏ Each moving rectangle represents one elevator in NYC
+          <br><br>❏ Click on buttons on lower right corner to show or hide data
+          <br><br>❏ When showing data, hover over each column for additional information on each elevator
+          <br><br>❏ View key for additional information
+        </h4>
+      </div>
+      <div id="viewingKey">
+        <div id="boroughs">
+        <h4 class="keyTitle">BOROUGHS</h4>
+        <div><div id="Manhattan"></div><h4>Manhattan</h4></div>
+        <div><div id="Queens"></div><h4>Queens</h4></div>
+        <div><div id="Brooklyn"></div><h4>Brooklyn</h4></div>
+        <div><div id="TheBronx"></div><h4>The Bronx</h4></div>
+        <div><div id="StatenIsland"></div><h4>Staten Island</h4></div>
+        <h4 class="keyTitle"><br><br>DATA PANEL</h4>
+        <h4 id="diagram">BOROUGH &nbsp&nbsp STATUS <br>
+        Address<br>Device Type</h4>
+        <h4 id="background"> (background color: borough)</h4>
+      </div>
+      <div id="capacity">
+        <h4 class="keyTitle">CAPACITY</h4>
+          <div id="capacityKey"><h4>Height of each rectangle correlates with each elevator's capacity.<br><br><em>(Equation used:<br> height of rectangle = elevator capacity/60)</em></h4>
+          </div>
+          <br><br><br><h4 class="keyTitle">SPEED</h4>
+          <div id="speedKey"><h4>Speed of moving rectangles correlate with speed of each elevator <br><br><em>(Equation used:<br> speed of rectangles = speed of elevator/300)</em><br><br></h4></div>
+      </div>
+      </div>
+    </div>
+    <div id="returnbutton"><a href="/PROJECT3HOME/index.html"><i class="fa-solid fa-chevron-left fa-2xl" style="color: #646464;"></i></a></div>
+    <div id="infobutton"><i class="fa-solid fa-circle-info" style="color: #646464;"></i></div>
+    
+    
+    
+
+    <div id="homepage">
+
+    </div>
+
+
+    <script>
+
+
+  button1.addEventListener('click', () => {
+    fullscreen.style.display = "none";
+  });
+
+  button2.addEventListener('click', () => {
+    fullscreen.style.display = "block";
+  });
+
+  key.addEventListener('click', () => {
+    viewingInstructions.style.display = "none";
+    viewingKey.style.opacity = "1";
+    info.style.overflow = "scroll";
+    key.style.backgroundColor = "rgb(100,100,100)";
+    key.style.color = "white";
+    instructions.style.backgroundColor = "rgb(240,240,240)";
+    instructions.style.color = "rgb(100,100,100)";
+  });
+
+  instructions.addEventListener('click', () => {
+    viewingInstructions.style.display = "block";
+    viewingKey.style.opacity = "0";
+    info.style.overflow = "hidden";
+    instructions.style.backgroundColor = "rgb(100,100,100)";
+    instructions.style.color = "white";
+    key.style.backgroundColor = "rgb(240,240,240)";
+    key.style.color = "rgb(100,100,100)";
+  });
+
+  infobutton.addEventListener('click', () => {
+    info.style.zIndex = "20";
+    info.style.opacity= "0.9";
+  });
+
+  closeinfo.addEventListener('click', () => {
+    info.style.opacity= "0";
+  });
+
+    </script>
+  </body>
+</html>
