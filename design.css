@@ -1,0 +1,43 @@
+@font-face {
+    font-family:"monument" ;
+    src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Regular-Trial.woff2);
+}
+
+@font-face {
+    font-family:"bold" ;
+    src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
+}
+
+
+#navigation{
+    position: absolute;
+    margin-left: 2.5vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    flex-wrap: wrap;
+}
+
+
+h2{
+    font-family: monument;
+    font-size: 15px;
+    line-height: 0.2;
+}
+
+.navButtons{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+    }
+
+    #designButton{
+        background-color: #5e7bbaeb;
+    }

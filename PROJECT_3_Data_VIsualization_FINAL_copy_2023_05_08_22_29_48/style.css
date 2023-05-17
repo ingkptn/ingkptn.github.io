@@ -25,10 +25,7 @@ iframe{
  z-index: 10;
 }
 
-.disappear{
-  display: none;
-  z-index: -10;
- }
+
 
 #withText{
   display: block;

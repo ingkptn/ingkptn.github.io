@@ -1,65 +1,77 @@
 
+@font-face {
+    font-family:"monument" ;
+    src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Regular-Trial.woff2);
+}
 
 @font-face {
-    font-family:"favorit" ;
-    src: url(assets/typefaces/abcfavoritmonovariable-trial-webfont.woff2);
+    font-family:"bold" ;
+    src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
-
-
-
-#aboutme{
-    
-    border: 1px solid black;
+#navigation{
     position: absolute;
-    left: 50%;
+    margin-left: 2.5vw;
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    flex-wrap: wrap;
+    
+
+}
+
+h2{
+    font-family: monument;
+    font-size: 15px;
+    line-height: 0.2;
+}
+
+.navButtons{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+h3{
+    width: 70vw;
+    font-family: monument;
+    font-size: 13px;
+    position: absolute;
     top: 50%;
+    left: 50%;
     transform: translate(-50%,-50%);
-    width: 30vw;
-    padding: 0vw;
-}
-
-h4{
-  
-    font-size: 1.5vh;
-    font-family: "favorit";
-    line-height: 150%;
-    width: 70%;
-    margin: 10%
-    
-}
-#titlecontainer {
-    border-bottom: 1px solid black;
-    width: 100%;
-    height: 3vh;
-
-}
-
-#title {
-    font-size: 2.0vh;
-    line-height: normal;
-    margin-left: 10%;
-    margin-top: 2%;
-    
-}
-
-#return{
-    font-family: 'favorit';
-    text-decoration: none;
-    color: black;
     border: 1px solid black;
-    width: fit-content;
-    padding:0.5vw;
-    border-radius: 50px;
-    position: absolute;
-    margin: 2%;
+    padding: 30px;
+    border-radius: 30px;
+    max-width: 450px;
+    color: white;
+    background-color: #5e7bbaeb;
 }
 
-#return:hover{
-    background-color: #FADA5E;
+span{
+    font-family: bold;
+}
+#title{
+    font-family: bold;
+    text-decoration: underline;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    }
 
+.links{
+    text-decoration: underline;
+}
 
+#aboutButton{
+    background-color: #5e7bbaeb;
+}
 
+#homeButton, #artButton, #designButton, #interactionButton{
+    color: black;
+}
 
