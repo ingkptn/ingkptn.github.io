@@ -8,6 +8,7 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+/* navigation bar */
 
 #navigation{
     position: absolute;
@@ -44,6 +45,8 @@ a{
         color:white;
     }
 
+
+/* text styling */
 
     h1{
         font-size: 30px;

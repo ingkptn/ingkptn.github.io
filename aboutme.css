@@ -9,6 +9,8 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+/* navigation bar */
+
 #navigation{
     position: absolute;
     right:5vw;
@@ -35,6 +37,25 @@ h2{
     margin-right: 20px;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+    }
+
+.links{
+    text-decoration: underline;
+}
+
+#aboutButton{
+    background-color: #5e7bbaeb;
+}
+
+#homeButton, #artButton, #designButton, #interactionButton{
+    color: black;
+}
+
+/* introduction window */
+
 h3{
     width: 70vw;
     font-family: monument;
@@ -59,20 +80,5 @@ span{
     text-decoration: underline;
 }
 
-a{
-    color: white;
-    text-decoration: none;
-    }
 
-.links{
-    text-decoration: underline;
-}
-
-#aboutButton{
-    background-color: #5e7bbaeb;
-}
-
-#homeButton, #artButton, #designButton, #interactionButton{
-    color: black;
-}
 

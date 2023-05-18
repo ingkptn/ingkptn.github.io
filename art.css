@@ -8,6 +8,8 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+/* navigation bar */
+
 #artButton{
     color: white;
     background-color:#5e7bbaeb;
@@ -49,6 +51,9 @@ a{
     text-decoration: underline;
 }
 
+
+/* images */
+
 img{
     width: 300px;
     border-radius: 10px 10px 10px 10px;
@@ -59,6 +64,8 @@ img{
 img:hover{
     filter: grayscale(0);
 }
+
+/* container styling */
 
 #gridContainer{
     position: absolute;
@@ -101,6 +108,8 @@ h3{
     position: absolute;
    top: 130px;
 }
+
+/* media queries for larger screens */
 
 @media only screen and (min-width: 600px) {
 

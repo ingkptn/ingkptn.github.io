@@ -8,6 +8,7 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+/* navigation bar */
 
 #navigation{
     position: absolute;
@@ -43,6 +44,8 @@ a{
         background-color: #5e7bbaeb;
         color:white;
     }
+
+/* projects and lab assignments */
 
 #container{
     position: absolute;
@@ -85,7 +88,6 @@ h1{
 }
 
 #projects, #assignments{
-
     height: 80vh;
     overflow-y: scroll;
     
@@ -98,9 +100,6 @@ h1{
     border-radius: 10px;
     margin-top: 10px
 }
-
-
-
 
 #projects, #assignments{
     flex-basis: 48%;
@@ -118,6 +117,8 @@ h5 > a , h4 > a{
     text-decoration: underline;
 }
 
+
+/* media queries for larger screens */
 
 @media only screen and (max-width: 600px) {
     
