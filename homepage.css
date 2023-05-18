@@ -12,11 +12,11 @@
 
 #navigation{
     position: absolute;
-    margin-left: 2.5vw;
+    margin-left: 2vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     height: 50px;
     flex-wrap: wrap;
 }
@@ -32,6 +32,7 @@ h2{
     border: 1px solid black;
     padding: 10px;
     border-radius: 20px;
+    margin-right: 20px;
 }
 
 a{
@@ -41,6 +42,7 @@ a{
 
     #homeButton{
         background-color: #5e7bbaeb;
+        color:white;
     }
 
 #interaction{
@@ -50,7 +52,15 @@ a{
     bottom: 0px;
 }
 
+
+
 h1{
+    font-size: 20px;
+    text-align: center;;
     font-family: monument;
-font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color:black;
+    transform: translate(-50%,200%);
 }
