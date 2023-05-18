@@ -12,11 +12,11 @@
 
 #navigation{
     position: absolute;
-    margin-left: 2vw;
+    right:5vw;
     width: 90vw;
     display: flex;
     flex-direction: row;
-    justify-content: start;
+    justify-content: center;
     height: 50px;
     flex-wrap: wrap;
 }
@@ -54,7 +54,7 @@ a{
 
 
 
-h1{
+h6{
     font-size: 20px;
     text-align: center;;
     font-family: monument;
@@ -63,4 +63,24 @@ h1{
     left: 50%;
     color:black;
     transform: translate(-50%,200%);
+}
+
+
+
+#face{
+    border: 1.5px solid black;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #5e7bbaeb;
+    position: absolute;
+    left: 50%;
+    top: 53%;
+    transform: translate(-50%,-70%) rotate(90deg);
+
+}
+
+h1{
+    font-family: monument;
+    transform: translate(55%,40%);
 }

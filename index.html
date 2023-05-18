@@ -27,10 +27,20 @@
             <a href="assignments.html"><h2 class="navButtons" id="interactionButton">core 2: interaction</h2></a>
           </div>
 
-
-            <h1>welcome to ing's website!</h1>
+            <div id="face"><h1 id="smile">:)</h1></div>
+            <h6>welcome to ing's website!</h6>
          
-    
+    <script>
+        face.onmouseover = function(){
+            document.getElementById("smile").innerHTML = ":D";
+            face.style.backgroundColor = "#F9E076";
+        };
+        face.onmouseleave = function(){
+            document.getElementById("smile").innerHTML = ":)";
+            face.style.backgroundColor = "";
+        };
+    </script>
     
     </body>
+
     </html>
