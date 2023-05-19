@@ -9,6 +9,10 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+body{
+    background-color: rgb(230, 230, 230);
+}
+
 /* navigation bar */
 
 #navigation{
@@ -52,6 +56,10 @@ a{
 
 #homeButton, #artButton, #designButton, #interactionButton{
     color: black;
+}
+
+.navButtons:hover{
+    background-color: #5e7bbaeb;
 }
 
 /* introduction window */

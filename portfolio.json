@@ -96,5 +96,20 @@
         "Medium":"Oil paint, acrylic paint, acrylic pens, spray paint on canvas",
         "Dimensions":"31.5 x 39.4 inches",
         "Description":"Mixed media piece under theme of 'Co-existence'"
+    },
+    {
+        "Photo": "artwork15",
+        "Year": "2022",
+        "Medium":"Linoleum prints/printing ink, colored pencils, acrylic pens",
+        "Dimensions":"24 x 36inches",
+        "Description":"Visual Ecologies Journal of NYC"
+    },
+    {
+        "Photo": "artwork16",
+        "Year": "2022",
+        "Medium":"Digital illustration",
+        "Dimensions":"-",
+        "Description":"Proxy Portrait"
     }
+
 ]

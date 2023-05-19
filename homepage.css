@@ -9,6 +9,10 @@
     src: url(assets/typefaces/ABCMonumentGroteskSemi-Mono-Bold-Trial.woff2);
 }
 
+body{
+    background-color: rgb(230, 230, 230);
+}
+
 /* navigation bar */
 
 #navigation{
@@ -47,6 +51,9 @@ a{
     }
 
 
+    .navButtons:hover{
+        background-color: #5e7bbaeb;
+    }
 
 /* styling text and smiley face */
 
@@ -73,12 +80,12 @@ h6{
     position: absolute;
     left: 50%;
     top: 53%;
-    transform: translate(-50%,-70%) rotate(90deg);
-
+    transform: translate(-50%,-70%) ;
 }
 
 h1{
     font-family: monument;
-    transform: translate(55%,40%);
+    transform: translate(10%,250%) rotate(90deg);
 }
+
 
