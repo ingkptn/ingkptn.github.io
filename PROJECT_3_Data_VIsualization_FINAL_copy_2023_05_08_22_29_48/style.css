@@ -67,7 +67,7 @@ iframe{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  z-index: -10;
+  z-index: 10;
 
  }
 
