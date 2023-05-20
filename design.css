@@ -67,7 +67,7 @@ a{
     .projects{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.5fr 2.5fr 2fr;
+        grid-template-rows: 0.8fr 2.5fr 2fr;
     }
 
     h1{
