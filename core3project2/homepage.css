@@ -1,0 +1,321 @@
+@font-face {
+    font-family: 'FoundersGrotesk';
+    src: url('typefaces/Test Founders Grotesk/test-founders-grotesk-medium.woff2');
+}
+
+@font-face {
+    font-family: 'FoundersRegular';
+    src: url('typefaces/Test Founders Grotesk/test-founders-grotesk-regular.woff2');
+}
+
+body{
+    background-color: #161616;
+    overflow: hidden;
+}
+
+/* #search{
+    border: 1px solid rgb(247, 247, 131);
+    position:absolute;
+    top: 3vw;
+    left: 3vw;
+    width: 500px;
+    height: 55px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+#search > p{
+font-family: FoundersRegular;
+color: rgb(247, 247, 131);
+opacity: 0.5;
+margin-left: 20px;;
+} */
+
+/* #main{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 40vw;
+    max-width: 500px;
+    z-index: 100;
+
+}
+#mainImage{
+width: 100%;
+filter: drop-shadow(10px 20px 10px black);
+} */
+
+/* MAP */
+
+#mapPopup{
+    position: absolute;
+    bottom: 4vw;
+    left: 3vw;
+    width: 550px;
+    height: 380px;
+    filter: drop-shadow(10px -15px 15px black);
+    background-color:rgb(247, 247, 131);
+    /* border: 1px solid rgb(0, 255, 55); */
+    border-radius: 10px;
+}
+
+#mapContainer{
+    height: 360px;
+    position: relative;
+    border-radius: 0px 0px 10px 10px;
+    top: 5px;
+    overflow: scroll;
+}
+
+
+
+#head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+}
+
+p{
+    font-family: FoundersGrotesk;
+}
+
+#buttons{
+    width: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: row;
+}
+
+#buttons>div{
+    width: 25px;
+    height: 25px;
+    margin: 3px 3px 0px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+#buttons>div>p{
+margin: 0px 2.5px;
+color:rgb(247, 247, 131);
+}
+
+
+
+.buttons{
+    margin-top: 0px;
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+}
+
+#location{
+    height: 10px;
+    margin: 5px 15px 0px;
+
+}
+
+#map{
+    width: 100%;
+    filter: grayscale(1) ;
+}
+
+#map:hover{
+    animation: zoomIn 3s ease-in-out 0s 1 alternate;
+    animation-fill-mode: forwards;
+    filter: grayscale(0)
+}
+
+@keyframes zoomIn{
+    0%{width: 100%;}
+    100%{width: 600%;
+    margin-left: -1600px;
+    margin-top: -1000px;}
+    }
+
+
+/* LENS */
+
+#googleLens{
+    position: absolute;
+    top: 3vw;
+    right: 3vw;
+    height: 100vh;
+    width: 500px;
+    background-color: rgb(255, 255, 156);
+    border-radius: 12px;
+
+    filter: drop-shadow(10px -10px 15px black);
+}
+
+#picBox{
+    width: 92%;
+    height:fit-content;
+    margin:4%;
+    overflow: hidden;
+    
+}
+
+#sneakers{
+width: 100%;
+filter: brightness(0.2);
+}
+
+
+#scanButton{
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(247, 247, 131);
+    width: 150px;
+    text-align: center;
+    transform: translate(150px,-420px);
+    z-index: 100;
+}
+
+#scanBox{
+    transform: translate(100px,-280px);
+    opacity: 0;
+}
+
+#loadingBox{
+    width: 92%;
+    height: 10px;
+    border: 2px solid #3e3e3e;
+    border-radius: 5px;
+    transform: translate(4% ,-280px);
+    opacity: 0;
+}
+
+#loadingBar{
+    background-color: #161616;
+    height: 10px;
+    width: 0%;
+    border-radius: 5px;
+}
+
+@keyframes startLoading{
+    0% {width:0%;}
+    99.5% {width: 100%;
+    opacity: 1;}
+    100%{opacity:0%;}
+}
+
+@keyframes hideBox{
+    0% {opacity: 1;}
+    99.5% {opacity: 1;}
+    100%{opacity:0%;}
+}
+
+#results{
+    margin: -300px 5%;
+    width: 90%;
+    position: absolute;
+    height: calc(100vh - 430px);
+    overflow-y: scroll;
+    opacity: 0;
+    filter: grayscale(1);
+}
+
+#resultsList{
+    width: 100%;
+}
+
+#results:hover{
+    filter: grayscale(0);
+}
+
+
+@keyframes showResults{
+    0% {opacity: 0;}
+    99.5% {opacity: 0;}
+    100%{opacity:1;}
+}
+
+
+#reddit1{
+    position: absolute;
+    top: 10vw;
+    left: 4vw;
+    background-color: rgb(255, 255, 215);
+    width: 550px;
+    height: 260px;
+    padding: 5px 20px 0px;
+    border-radius: 10px;
+    filter: drop-shadow(10px 15px 15px black);
+    
+}
+
+#reddit1>p{
+    font-size: 11px;
+    line-height: 1.3;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235,84,40);
+    margin: 15px 0px 20px;
+    font-size: 25px;
+    
+}
+
+h4{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(235,84,40);
+    font-size: 15px;
+    margin: 20px 0px 0px;
+    font-weight: lighter;
+}
+
+#reddit2{
+    position: absolute;
+    left: 40vw;
+    bottom: 7vw;
+    width: 300px;
+    height: 500px;
+    /* z-index: 10; */
+    background-color:rgb(238, 238, 226);
+    padding: 10px 15px;
+    height: fit-content;
+    border-radius: 10px;
+    filter: drop-shadow(10px 15px 15px black);
+
+}
+
+#reddit2photo{
+width: 100%;
+border-radius: 10px;
+margin-top: 0;
+}
+
+#reddit3{
+    position: absolute;
+    left: 40vw;
+    bottom: 7vw;
+    width: 250px;
+    height: 500px;
+    /* z-index: 10; */
+    background-color:rgb(238, 238, 226);
+    padding: 10px 15px;
+    height: fit-content;
+    border-radius: 10px;
+    filter: drop-shadow(10px 15px 15px black);
+
+}
+
+#reddit3photo{
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 0;
+    }
+
+a{
+    text-decoration: none;
+}
