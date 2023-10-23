@@ -151,7 +151,7 @@ h4{
 }
 
 .containers{
-    filter: drop-shadow(5px 5px 15px black);
+    filter: drop-shadow(3px 3px 10px black);
 }
 
 #comment1{
@@ -582,14 +582,39 @@ position: absolute;
     font-size: 14px;
 }
 
-#jb>p>span{
+#archLink{
     text-decoration: underline;
     font-weight: bolder;
     font-style: italic;
     color: rgb(18, 58, 191)
 }
 
-#jb>p>span:hover{
+#archLinkn:hover{
 background-color: #13366f;
 color: white;
+}
+
+#archetypes{
+    background-color: rgb(168, 218, 95);
+    padding: 10px;
+    width: 90vw;
+    position: absolute;
+    left: 5vw;
+    z-index: 200;
+    top: 30px;
+    display: none;
+}
+
+.arch{
+  position: absolute;
+  background-color: rgb(131, 63, 63);
+  filter: drop-shadow(0);
+  padding: 1px;
+  width: 200px;
+  display: none;
+  z-index: 200px;
+}
+
+.arch>h4{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
