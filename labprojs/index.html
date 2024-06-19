@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="homepage.css" />
+        <title>ing's website!</title>
+    </head>
+    <body>
+
+        <!-- navigation bar -->
+
+        <div id="navigation">
+            <a href="index.html"><h2 class="navButtons" id="homeButton">home</h2></a>
+            <a href="aboutme.html"><h2 class="navButtons" id="aboutButton">about me</h2></a>
+            <a href="design.html"><h2 class="navButtons" id="designButton">design</h2></a>
+            <a href="art.html"><h2 class="navButtons" id="artButton">art</h2></a>
+            <a href="assignments.html"><h2 class="navButtons" id="interactionButton">core 2: interaction</h2></a>
+          </div>
+
+        <!-- smiley face :) -->
+
+            <div id="face"><h1 id="smile">:)</h1></div>
+            <h6>welcome to ing's website!</h6>
+         
+    <script>
+        face.onmouseover = function(){
+            document.getElementById("smile").innerHTML = ":D";
+            face.style.backgroundColor = "#F9E076";
+        };
+        face.onmouseleave = function(){
+            document.getElementById("smile").innerHTML = ":)";
+            face.style.backgroundColor = "";
+        };
+    </script>
+    
+    </body>
+
+    </html>
