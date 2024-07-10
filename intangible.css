@@ -151,6 +151,9 @@ img{
 
 video{
     padding-bottom: 30px;
+    border-radius: 8px;
+    padding-bottom: 0px;
+    margin-bottom: 30px;
 }
 
 #spreads{
@@ -163,28 +166,7 @@ video{
     margin-bottom: 30px;
 }
 
-#specimen1{
-    border: 0.5px solid black;
-    margin-top: 0px;
-    flex-shrink: 1;
-    padding-bottom: 0px;
-}
 
-#specimen2{
-    border: 0.5px solid black;
-    margin-top: 30px;
-    flex-shrink: 1;
-    padding-bottom: 0px;
-    
-}
-
-.specimens{
-    display: flex;
-    flex-direction: column;
-    
-    
-    
-}
 
 
 @media only screen and (min-width: 700px) {
