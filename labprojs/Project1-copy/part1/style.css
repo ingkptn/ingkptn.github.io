@@ -4,17 +4,17 @@ body{background-color: black;
 
 @font-face {
     font-family: 'Eiko';
-    src: url('Typeface/abcEikomonovariable-trial-webfont.woff');
+    src: url('/labprojs/Typeface/abcEikomonovariable-trial-webfont.woff');
 }
 
 @font-face {
     font-family: 'Monument';
-    src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+    src: url('/labprojs/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
 }
 
 @font-face {
     font-family: 'Eiko';
-    src: url('/Project1-copy/PPEiko-Regular.woff');
+    src: url('/labprojs/Project1-copy/PPEiko-Regular.woff');
 }
 
 #returnbutton {

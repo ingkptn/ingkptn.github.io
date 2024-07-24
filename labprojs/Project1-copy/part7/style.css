@@ -1,16 +1,16 @@
 @font-face {
     font-family: 'Favorit';
-    src: url('/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
+    src: url('/labprojs/Project1/part1/Typeface/abcfavoritmonovariable-trial-webfont.woff');
 }
 
 @font-face {
     font-family: 'Monument';
-    src: url('/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
+    src: url('/labprojs/Project1-copy/ABCMonumentGroteskMono-Bold-Trial.woff2');
 }
 
 @font-face {
     font-family: 'Eiko';
-    src: url('/Project1-copy/PPEiko-Regular.woff');
+    src: url('/labprojs/Project1-copy/PPEiko-Regular.woff');
 }
 
 body {
