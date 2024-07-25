@@ -58,10 +58,6 @@ body{
 #landingContainer{
     width: calc(95vw);
     height: calc(95vh);
-    border-radius: 30px;
-    background-color: lightgray;
-    margin-left: 2.5vw;
-    margin-top: 2.5vh;
 }
 
 h1{
@@ -77,22 +73,34 @@ h2{
 
 #name{
     position: absolute;
-    margin: 5vw;
+    margin: 4%;
 }
 
-#thaiName{
-    font-size: 30px;
-    letter-spacing: -1px;
-    font-family: monument;
-}
+
 
 #role{
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    bottom: 5vh;
-    left: 5vw;
-    width: 80%;
-    max-width: 400px;
+    bottom: 4%;
+    left: 4%;
+    width: 92%;
     letter-spacing: 0px;
+}
+
+#role>span{
+    max-width: 80%;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-right: 5%;
+    margin-top: 4%;
+}
+
+span>i{
+    border:0px;
+    color: black;
+    padding: 0;
+    text-decoration: underline;
 }
 
 #thai{
@@ -102,6 +110,11 @@ h2{
 
 
 
+#thaiName{
+    font-size: 50px;
+    letter-spacing: 0.1;
+    font-family: monument;
+}
 
 #header{
     /* border: 1px solid black; */
@@ -270,6 +283,22 @@ video{
 
 
 @media only screen and (min-width: 700px) {
+
+    #role{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items: first baseline;
+        position: absolute;
+        bottom: 4%;
+        left: 4%;
+        width: 92%;
+        letter-spacing: 0px;
+    }
+
+    #role>span{
+        max-width: 25%;
+    }
 
     #landingPage>div{
         font-size: 120px;
