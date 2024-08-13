@@ -143,45 +143,19 @@ p{
 
 img{
     width: 100%;
-    padding-bottom: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 video{
-
+    margin-bottom: 20px;
+    border-radius: 8px;
 }
 
 #spreads{
     filter: brightness(0.85) contrast(1.3);
 }
 
-#specimen{
-    border-radius: 8px;
-    padding-bottom: 0px;
-    margin-bottom: 30px;
-}
-
-#specimen1{
-    border: 0.5px solid black;
-    margin-top: 0px;
-    flex-shrink: 1;
-    padding-bottom: 0px;
-}
-
-#specimen2{
-    border: 0.5px solid black;
-    margin-top: 30px;
-    flex-shrink: 1;
-    padding-bottom: 0px;
-    
-}
-
-.specimens{
-    display: flex;
-    flex-direction: column;
-    
-    
-    
-}
 
 span{
     border: 1.3px solid black;
@@ -203,8 +177,8 @@ span{
         justify-content: space-between;
         box-sizing: border-box;
         width: 100%;
-        height: 60px;
-        padding: 40px 40px;
+        height: 50px;
+        padding: 30px 30px;
         z-index: 20;
     }
 
