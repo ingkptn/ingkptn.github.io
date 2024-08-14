@@ -12,7 +12,7 @@
     <body>
         <div id="notice">
             this website is currently under construction!
-            <div id="continue">continue</div>
+            <div id="continue" onclick="closeNotice()">continue</div>
         </div>
         <div id="big-container">
         
@@ -149,6 +149,16 @@
         </div>
 
         </div>
+
+        </body>
+
+    <script>
+            
+            function closeNotice() {
+                document.getElementById("big-container").style.opacity ="1";
+                document.getElementById("notice").style.display ="none";
+    }
+    </script>
 
 
     <!-- <script>
