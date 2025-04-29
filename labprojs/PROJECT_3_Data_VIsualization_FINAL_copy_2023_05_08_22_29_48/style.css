@@ -95,7 +95,7 @@ iframe{
 
  #instructions{
   background-color: rgb(100,100,100);
-  color: white;
+  color: black;
  }
 
 #key{
@@ -205,7 +205,7 @@ iframe{
 
 #diagram{
   background-color:  rgb(100,100,100);
-  color: white;
+  color: black;
   box-sizing: border-box;
   width: 80%;
   padding: 10px;
@@ -225,7 +225,7 @@ iframe{
 }
 
 #infobutton:hover{
-  color: white;
+  color: black;
 }
 
 #returnbutton{

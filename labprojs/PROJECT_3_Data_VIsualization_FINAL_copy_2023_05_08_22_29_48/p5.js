@@ -165,7 +165,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between white and black.</p>\n',
+                      'description': '<p>number specifying value between black and black.</p>\n',
                       'type': 'Number'
                     },
                     {
@@ -347,7 +347,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>specifies a value between white and black</p>\n',
+                      'description': '<p>specifies a value between black and black</p>\n',
                       'type': 'Number'
                     },
                     {
@@ -7561,7 +7561,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between\n                                 white and black</p>\n',
+                      'description': '<p>number specifying value between\n                                 black and black</p>\n',
                       'type': 'Number'
                     },
                     {
@@ -7634,7 +7634,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between\n                                 white and black</p>\n',
+                      'description': '<p>number specifying value between\n                                 black and black</p>\n',
                       'type': 'Number'
                     }
                   ],
@@ -8511,7 +8511,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between\n                        white and black</p>\n',
+                      'description': '<p>number specifying value between\n                        black and black</p>\n',
                       'type': 'Number'
                     }
                   ],
@@ -8564,7 +8564,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between\n                        white and black</p>\n',
+                      'description': '<p>number specifying value between\n                        black and black</p>\n',
                       'type': 'Number'
                     }
                   ],
@@ -8591,7 +8591,7 @@
                   'params': [
                     {
                       'name': 'gray',
-                      'description': '<p>number specifying value between white and black.</p>\n',
+                      'description': '<p>number specifying value between black and black.</p>\n',
                       'type': 'Number'
                     },
                     {
@@ -13728,7 +13728,7 @@
               'params': [
                 {
                   'name': 'type',
-                  'description': '<p>\'white\', \'pink\' or \'brown\'</p>\n',
+                  'description': '<p>\'black\', \'pink\' or \'brown\'</p>\n',
                   'type': 'String',
                   'optional': true
                 }
@@ -37625,7 +37625,7 @@
               '001.001',
               '001.002',
               '001.003',
-              'Black',
+              'black',
               'Bold',
               'Book',
               'Light',
@@ -38852,7 +38852,7 @@
             };
             /**
    * Draw lines indicating important font measurements.
-   * Black lines indicate the origin of the coordinate system (point 0,0).
+   * black lines indicate the origin of the coordinate system (point 0,0).
    * Blue lines indicate the glyph bounding box.
    * Green line indicates the advance width of the glyph.
    * @param  {CanvasRenderingContext2D} ctx - A 2D drawing context, like Canvas.
@@ -48007,7 +48007,7 @@
             };
             /**
    * Draw lines indicating important font measurements for all glyphs in the text.
-   * Black lines indicate the origin of the coordinate system (point 0,0).
+   * black lines indicate the origin of the coordinate system (point 0,0).
    * Blue lines indicate the glyph bounding box.
    * Green line indicates the advance width of the glyph.
    * @param {CanvasRenderingContext2D} ctx - A 2D drawing context, like Canvas.
@@ -48165,7 +48165,7 @@
               SEMI_BOLD: 600,
               BOLD: 700,
               EXTRA_BOLD: 800,
-              BLACK: 900
+              black: 900
             }; // The `fvar` table stores font variation axes and instances.
             function addName(name, names) {
               var nameString = JSON.stringify(name);
@@ -50539,7 +50539,7 @@
             h: 0,
             s: 0,
             b: 1,
-            name: 'white'
+            name: 'black'
           },
           {
             h: 0,
@@ -51140,7 +51140,7 @@
               hsb[i] = 1;
             }
           } //after rounding, if the values are hue 0, saturation 0 and brightness 1
-          //look at color exceptions which includes several tones from white to gray
+          //look at color exceptions which includes several tones from black to gray
 
           if (hsb[0] === 0 && hsb[1] === 0 && hsb[2] === 1) {
             //round original hsb values
@@ -51153,8 +51153,8 @@
                 colortext = colorExceptions[e].name;
                 break;
               } else {
-                //if there is no match return white
-                colortext = 'white';
+                //if there is no match return black
+                colortext = 'black';
               }
             }
           } else {
@@ -51909,8 +51909,8 @@
               shapes: {
               },
               colors: {
-                background: 'white',
-                fill: 'white',
+                background: 'black',
+                fill: 'black',
                 stroke: 'black'
               },
               pShapes: ''
@@ -52967,7 +52967,7 @@
  * fill(value);
  * rect(50, 20, 35, 60);
  * describe(`Left half of canvas salmon pink and the right half with its
- * brightness colored white.`);
+ * brightness colored black.`);
  * </code>
  * </div>
  *
@@ -53009,7 +53009,7 @@
  * used.
  *
  * @method color
- * @param  {Number} gray number specifying value between white and black.
+ * @param  {Number} gray number specifying value between black and black.
  * @param  {Number} [alpha] alpha value relative to current color range
  *                                 (default is 0-255)
  * @return {p5.Color} resulting color
@@ -53264,7 +53264,7 @@
  * rect(50, 20, 20, 60);
  * fill(to);
  * rect(70, 20, 20, 60);
- * describe(`4 rects one tan, brown, brownish purple, purple, with white
+ * describe(`4 rects one tan, brown, brownish purple, purple, with black
  * outlines & 20×60`);
  * </code>
  * </div>
@@ -53991,7 +53991,7 @@
           turquoise: '#40e0d0',
           violet: '#ee82ee',
           wheat: '#f5deb3',
-          white: '#ffffff',
+          black: '#ffffff',
           whitesmoke: '#f5f5f5',
           yellow: '#ffff00',
           yellowgreen: '#9acd32'
@@ -54274,7 +54274,7 @@
                 results[i] = Math.max(Math.min(results[i], 1), 0);
               }
               return _color_conversion.default._hsbaToRGBA(results);
-            } // Input did not match any CSS color pattern: default to white.
+            } // Input did not match any CSS color pattern: default to black.
 
             results = [
               1,
@@ -54556,7 +54556,7 @@
  */
         /**
  * @method background
- * @param {Number} gray   specifies a value between white and black
+ * @param {Number} gray   specifies a value between black and black
  * @param {Number} [a]
  * @chainable
  */
@@ -54613,14 +54613,14 @@
  * // Clear the screen on mouse press.
  * function draw() {
  *   ellipse(mouseX, mouseY, 20, 20);
- *   describe(`small white ellipses are continually drawn at mouse’s x and y
+ *   describe(`small black ellipses are continually drawn at mouse’s x and y
  *   coordinates.`);
  * }
  * function mousePressed() {
  *   clear();
  *   background(128);
  *   describe(
- *     'canvas is cleared, small white ellipse is drawn at mouse X and mouse Y'
+ *     'canvas is cleared, small black ellipse is drawn at mouse X and mouse Y'
  *   );
  * }
  * </code>
@@ -54686,7 +54686,7 @@
  *   }
  * }
  * describe(`Rainbow gradient from left to right.
- * Brightness increasing to white at top.`);
+ * Brightness increasing to black at top.`);
  * </code>
  * </div>
  *
@@ -54916,7 +54916,7 @@
  * rect(15, 10, 55, 55);
  * noFill();
  * rect(20, 20, 60, 60);
- * describe(`White rect at top middle and noFill rect center,
+ * describe(`black rect at top middle and noFill rect center,
  * both with black outlines.`);
  * </code>
  * </div>
@@ -54954,7 +54954,7 @@
  * <code>
  * noStroke();
  * rect(20, 20, 60, 60);
- * describe('White rect at center; no outline.');
+ * describe('black rect at center; no outline.');
  * </code>
  * </div>
  *
@@ -55011,7 +55011,7 @@
  * strokeWeight(4);
  * stroke(51);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with dark charcoal grey outline.');
+ * describe('black rect at center with dark charcoal grey outline.');
  * </code>
  * </div>
  *
@@ -55021,7 +55021,7 @@
  * stroke(255, 204, 0);
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with yellow outline.');
+ * describe('black rect at center with yellow outline.');
  * </code>
  * </div>
  *
@@ -55032,7 +55032,7 @@
  * strokeWeight(4);
  * stroke(255, 204, 100);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with royal blue outline.');
+ * describe('black rect at center with royal blue outline.');
  * </code>
  * </div>
  *
@@ -55042,7 +55042,7 @@
  * stroke('red');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with red outline.');
+ * describe('black rect at center with red outline.');
  * </code>
  * </div>
  *
@@ -55052,7 +55052,7 @@
  * stroke('#fae');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with pink outline.');
+ * describe('black rect at center with pink outline.');
  * </code>
  * </div>
  *
@@ -55062,7 +55062,7 @@
  * stroke('#222222');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with black outline.');
+ * describe('black rect at center with black outline.');
  * </code>
  * </div>
  *
@@ -55072,7 +55072,7 @@
  * stroke('rgb(0,255,0)');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with bright green outline.');
+ * describe('black rect at center with bright green outline.');
  * </code>
  * </div>
  *
@@ -55082,7 +55082,7 @@
  * stroke('rgba(0,255,0,0.25)');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with soft green outline.');
+ * describe('black rect at center with soft green outline.');
  * </code>
  * </div>
  *
@@ -55092,7 +55092,7 @@
  * stroke('rgb(100%,0%,10%)');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with red outline.');
+ * describe('black rect at center with red outline.');
  * </code>
  * </div>
  *
@@ -55102,7 +55102,7 @@
  * stroke('rgba(100%,0%,100%,0.5)');
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with dark fuchsia outline.');
+ * describe('black rect at center with dark fuchsia outline.');
  * </code>
  * </div>
  *
@@ -55112,7 +55112,7 @@
  * stroke(color(0, 0, 255));
  * strokeWeight(4);
  * rect(20, 20, 60, 60);
- * describe('White rect at center with blue outline.');
+ * describe('black rect at center with blue outline.');
  * </code>
  * </div>
  */
@@ -55173,7 +55173,7 @@
  * ellipse(25, 30, 30);
  * noErase();
  * describe(`60×60 centered pink rect, purple background.
- * Elliptical area in top-left of rect is erased white.`);
+ * Elliptical area in top-left of rect is erased black.`);
  * </code>
  * </div>
  *
@@ -55359,7 +55359,7 @@
  * </code></div>
  *
  * @alt
- * 80×80 white quarter-circle with curve toward bottom right of canvas.
+ * 80×80 black quarter-circle with curve toward bottom right of canvas.
  */
         exports.WAIT = WAIT;
         var HALF_PI = _PI / 2;
@@ -55378,7 +55378,7 @@
  * </code></div>
  *
  * @alt
- * white half-circle with curve toward bottom of canvas.
+ * black half-circle with curve toward bottom of canvas.
  */
         exports.HALF_PI = HALF_PI;
         var PI = _PI;
@@ -55397,7 +55397,7 @@
  * </code></div>
  *
  * @alt
- * white eighth-circle rotated about 40 degrees with curve bottom right canvas.
+ * black eighth-circle rotated about 40 degrees with curve bottom right canvas.
  */
         exports.PI = PI;
         var QUARTER_PI = _PI / 4;
@@ -55416,7 +55416,7 @@
  * </code></div>
  *
  * @alt
- * 80×80 white ellipse shape in center of canvas.
+ * 80×80 black ellipse shape in center of canvas.
  */
         exports.QUARTER_PI = QUARTER_PI;
         var TAU = _PI * 2;
@@ -55435,7 +55435,7 @@
  * </code></div>
  *
  * @alt
- * 80×80 white ellipse shape in center of canvas.
+ * 80×80 black ellipse shape in center of canvas.
  */
         exports.TAU = TAU;
         var TWO_PI = _PI * 2;
@@ -56558,7 +56558,7 @@
  * </code></div>
  *
  * @alt
- * cursor becomes 10×10 white ellipse the moves with mouse x and y.
+ * cursor becomes 10×10 black ellipse the moves with mouse x and y.
  */
         _main.default.prototype.noCursor = function () {
           this._curElement.elt.style.cursor = 'none';
@@ -56767,8 +56767,8 @@
  * </div>
  *
  * @alt
- * fuzzy 50×50 white ellipse with black outline in center of canvas.
- * sharp 50×50 white ellipse with black outline in center of canvas.
+ * fuzzy 50×50 black ellipse with black outline in center of canvas.
+ * sharp 50×50 black ellipse with black outline in center of canvas.
  */
         /**
  * @method pixelDensity
@@ -56807,7 +56807,7 @@
  * </div>
  *
  * @alt
- * 50×50 white ellipse with black outline in center of canvas.
+ * 50×50 black ellipse with black outline in center of canvas.
  */
         _main.default.prototype.displayDensity = function () {
           return window.devicePixelRatio;
@@ -57294,7 +57294,7 @@
             //const astrixBgColor = 'transparent';
             //const astrixTxtColor = '#ED225D';
             //const welcomeBgColor = '#ED225D';
-            //const welcomeTextColor = 'white';
+            //const welcomeTextColor = 'black';
             var welcomeMessage = (0, _internationalization.translator) ('fes.pre', {
               message: (0, _internationalization.translator) ('fes.welcome')
             });
@@ -57976,7 +57976,7 @@
           window.addEventListener('error', _main.default._fesErrorMonitor, false);
           window.addEventListener('unhandledrejection', _main.default._fesErrorMonitor, false);
           /**
-   * Prints out all the colors in the color pallete with white text.
+   * Prints out all the colors in the color pallete with black text.
    * For color blindness testing.
    */
           /* function testColors() {
@@ -62451,8 +62451,8 @@
  * </code></div>
  *
  * @alt
- * A white line on a black background stays still on the top-left half.
- * A black line animates from top to bottom on a white background on the right half.
+ * A black line on a black background stays still on the top-left half.
+ * A black line animates from top to bottom on a black background on the right half.
  * When clicked, the black line starts back over at the top.
  */
         _main.default.Graphics.prototype.reset = function () {
@@ -64581,7 +64581,7 @@
  * </div>
  *
  * @alt
- * Black line extending from top-left of canvas to bottom right.
+ * black line extending from top-left of canvas to bottom right.
  */
         _main.default.prototype.createCanvas = function (w, h, renderer) {
           _main.default._validateParameters('createCanvas', arguments); //optional: renderer, otherwise defaults to p2d
@@ -64757,7 +64757,7 @@
  * </div>
  *
  * @alt
- * 4 grey squares alternating light and dark grey. White quarter circle mid-left.
+ * 4 grey squares alternating light and dark grey. black quarter circle mid-left.
  */
         _main.default.prototype.createGraphics = function (w, h, renderer) {
           _main.default._validateParameters('createGraphics', arguments);
@@ -64869,7 +64869,7 @@
  * </div>
  *
  * @alt
- * white ellipse with shadow blur effect around edges
+ * black ellipse with shadow blur effect around edges
  */
         var _default = _main.default;
         exports.default = _default;
@@ -65099,7 +65099,7 @@
  * arc(50, 55, 70, 70, PI, PI + QUARTER_PI);
  * arc(50, 55, 80, 80, PI + QUARTER_PI, TWO_PI);
  * describe(
- *   'shattered outline of ellipse with a quarter of a white circle bottom-right'
+ *   'shattered outline of ellipse with a quarter of a black circle bottom-right'
  * );
  * </code>
  * </div>
@@ -65107,21 +65107,21 @@
  * <div>
  * <code>
  * arc(50, 50, 80, 80, 0, PI + QUARTER_PI);
- * describe('white ellipse with top right quarter missing');
+ * describe('black ellipse with top right quarter missing');
  * </code>
  * </div>
  *
  * <div>
  * <code>
  * arc(50, 50, 80, 80, 0, PI + QUARTER_PI, OPEN);
- * describe('white ellipse with black outline with top right missing');
+ * describe('black ellipse with black outline with top right missing');
  * </code>
  * </div>
  *
  * <div>
  * <code>
  * arc(50, 50, 80, 80, 0, PI + QUARTER_PI, CHORD);
- * describe('white open arc with black outline with top right missing');
+ * describe('black open arc with black outline with top right missing');
  * </code>
  * </div>
  *
@@ -65129,7 +65129,7 @@
  * <code>
  * arc(50, 50, 80, 80, 0, PI + QUARTER_PI, PIE);
  * describe(
- *   'white ellipse with top right quarter missing with black outline around the shape'
+ *   'black ellipse with top right quarter missing with black outline around the shape'
  * );
  * </code>
  * </div>
@@ -65199,7 +65199,7 @@
  * <div>
  * <code>
  * ellipse(56, 46, 55, 55);
- * describe('white ellipse with black outline in middle of a gray canvas');
+ * describe('black ellipse with black outline in middle of a gray canvas');
  * </code>
  * </div>
  *
@@ -65239,7 +65239,7 @@
  * <code>
  * // Draw a circle at location (30, 30) with a diameter of 20.
  * circle(30, 30, 20);
- * describe('white circle with black outline in mid of gray canvas');
+ * describe('black circle with black outline in mid of gray canvas');
  * </code>
  * </div>
  *
@@ -65443,7 +65443,7 @@
  * <div>
  * <code>
  * quad(38, 31, 86, 20, 69, 63, 30, 76);
- * describe('irregular white quadrilateral with black outline');
+ * describe('irregular black quadrilateral with black outline');
  * </code>
  * </div>
  *
@@ -65512,7 +65512,7 @@
  * <code>
  * // Draw a rectangle at location (30, 20) with a width and height of 55.
  * rect(30, 20, 55, 55);
- * describe('white rect with black outline in mid-right of canvas');
+ * describe('black rect with black outline in mid-right of canvas');
  * </code>
  * </div>
  *
@@ -65521,7 +65521,7 @@
  * // Draw a rectangle with rounded corners, each having a radius of 20.
  * rect(30, 20, 55, 55, 20);
  * describe(
- *   'white rect with black outline and round edges in mid-right of canvas'
+ *   'black rect with black outline and round edges in mid-right of canvas'
  * );
  * </code>
  * </div>
@@ -65531,7 +65531,7 @@
  * // Draw a rectangle with rounded corners having the following radii:
  * // top-left = 20, top-right = 15, bottom-right = 10, bottom-left = 5.
  * rect(30, 20, 55, 55, 20, 15, 10, 5);
- * describe('white rect with black outline and round edges of different radii');
+ * describe('black rect with black outline and round edges of different radii');
  * </code>
  * </div>
  *
@@ -65578,7 +65578,7 @@
  * <code>
  * // Draw a square at location (30, 20) with a side size of 55.
  * square(30, 20, 55);
- * describe('white square with black outline in mid-right of canvas');
+ * describe('black square with black outline in mid-right of canvas');
  * </code>
  * </div>
  *
@@ -65587,7 +65587,7 @@
  * // Draw a square with rounded corners, each having a radius of 20.
  * square(30, 20, 55, 20);
  * describe(
- *   'white square with black outline and round edges in mid-right of canvas'
+ *   'black square with black outline and round edges in mid-right of canvas'
  * );
  * </code>
  * </div>
@@ -65597,7 +65597,7 @@
  * // Draw a square with rounded corners having the following radii:
  * // top-left = 20, top-right = 15, bottom-right = 10, bottom-left = 5.
  * square(30, 20, 55, 20, 15, 10, 5);
- * describe('white square with black outline and round edges of different radii');
+ * describe('black square with black outline and round edges of different radii');
  * </code>
  * </div>
  *
@@ -65653,7 +65653,7 @@
  * <div>
  * <code>
  * triangle(30, 75, 58, 20, 86, 75);
- * describe('white triangle with black outline in mid-right of canvas');
+ * describe('black triangle with black outline in mid-right of canvas');
  * </code>
  * </div>
  *
@@ -65822,7 +65822,7 @@
  * // Example showing RADIUS and CENTER ellipsemode with 2 overlaying ellipses
  * ellipseMode(RADIUS);
  * fill(255);
- * ellipse(50, 50, 30, 30); // Outer white ellipse
+ * ellipse(50, 50, 30, 30); // Outer black ellipse
  * ellipseMode(CENTER);
  * fill(100);
  * ellipse(50, 50, 30, 30); // Inner gray ellipse
@@ -65834,7 +65834,7 @@
  * // Example showing CORNER and CORNERS ellipseMode with 2 overlaying ellipses
  * ellipseMode(CORNER);
  * fill(255);
- * ellipse(25, 25, 50, 50); // Outer white ellipse
+ * ellipse(25, 25, 50, 50); // Outer black ellipse
  * ellipseMode(CORNERS);
  * fill(100);
  * ellipse(25, 25, 50, 50); // Inner gray ellipse
@@ -65842,8 +65842,8 @@
  * </div>
  *
  * @alt
- * 60×60 white ellipse and 30×30 grey ellipse with black outlines at center.
- * 60×60 white ellipse and 30×30 grey ellipse top-right with black outlines.
+ * 60×60 black ellipse and 30×30 grey ellipse with black outlines at center.
+ * 60×60 black ellipse and 30×30 grey ellipse top-right with black outlines.
  */
 
         _main.default.prototype.ellipseMode = function (m) {
@@ -65879,7 +65879,7 @@
  * </div>
  *
  * @alt
- * 2 pixelated 36×36 white ellipses to left & right of center, black background
+ * 2 pixelated 36×36 black ellipses to left & right of center, black background
  */
         _main.default.prototype.noSmooth = function () {
           if (!this._renderer.isP3D) {
@@ -65923,7 +65923,7 @@
  * <code>
  * rectMode(CORNER);
  * fill(255);
- * rect(25, 25, 50, 50); // Draw white rectangle using CORNER mode
+ * rect(25, 25, 50, 50); // Draw black rectangle using CORNER mode
  *
  * rectMode(CORNERS);
  * fill(100);
@@ -65935,7 +65935,7 @@
  * <code>
  * rectMode(RADIUS);
  * fill(255);
- * rect(50, 50, 30, 30); // Draw white rectangle using RADIUS mode
+ * rect(50, 50, 30, 30); // Draw black rectangle using RADIUS mode
  *
  * rectMode(CENTER);
  * fill(100);
@@ -65944,8 +65944,8 @@
  * </div>
  *
  * @alt
- * 50×50 white rect at center and 25×25 grey rect in the top left of the other.
- * 50×50 white rect at center and 25×25 grey rect in the center of the other.
+ * 50×50 black rect at center and 25×25 grey rect in the top left of the other.
+ * 50×50 black rect at center and 25×25 grey rect in the center of the other.
  */
         _main.default.prototype.rectMode = function (m) {
           _main.default._validateParameters('rectMode', arguments);
@@ -65981,7 +65981,7 @@
  * </div>
  *
  * @alt
- * 2 pixelated 36×36 white ellipses one left one right of center. On black.
+ * 2 pixelated 36×36 black ellipses one left one right of center. On black.
  */
         _main.default.prototype.smooth = function () {
           this.setAttributes('antialias', true);
@@ -66223,7 +66223,7 @@
  *
  * @alt
  * stretched black s-shape in center with orange lines extending from end points.
- * a white colored curve on black background from the upper-right corner to the lower right corner.
+ * a black colored curve on black background from the upper-right corner to the lower right corner.
  */
         /**
  * @method bezier
@@ -66532,7 +66532,7 @@
  * </div>
  *
  * @alt
- * white arch shape with a low level of curve detail.
+ * black arch shape with a low level of curve detail.
  */
         _main.default.prototype.curveDetail = function (d) {
           _main.default._validateParameters('curveDetail', arguments);
@@ -66623,7 +66623,7 @@
  * </code>
  * </div>
  *
- *line hooking down to right-bottom with 13 5×5 white ellipse points
+ *line hooking down to right-bottom with 13 5×5 black ellipse points
  */
         _main.default.prototype.curvePoint = function (a, b, c, d, t) {
           _main.default._validateParameters('curvePoint', arguments);
@@ -66839,7 +66839,7 @@
  * </div>
  *
  * @alt
- * white rect and smaller grey rect with red outlines in center of canvas.
+ * black rect and smaller grey rect with red outlines in center of canvas.
  */
         _main.default.prototype.beginContour = function () {
           contourVertices = [
@@ -67036,17 +67036,17 @@
  * </div>
  *
  * @alt
- * white square-shape with black outline in middle-right of canvas.
+ * black square-shape with black outline in middle-right of canvas.
  * 4 black points in a square shape in middle-right of canvas.
  * 2 horizontal black lines. In the top-right and bottom-right of canvas.
  * 3 line shape with horizontal on top, vertical in middle and horizontal bottom.
  * square line shape in middle-right of canvas.
- * 2 white triangle shapes mid-right canvas. left one pointing up and right down.
- * 5 horizontal interlocking and alternating white triangles in mid-right canvas.
- * 4 interlocking white triangles in 45 degree rotated square-shape.
- * 2 white rectangle shapes in mid-right canvas. Both 20×55.
- * 3 side-by-side white rectangles center rect is smaller in mid-right canvas.
- * Thick white l-shape with black outline mid-top-left of canvas.
+ * 2 black triangle shapes mid-right canvas. left one pointing up and right down.
+ * 5 horizontal interlocking and alternating black triangles in mid-right canvas.
+ * 4 interlocking black triangles in 45 degree rotated square-shape.
+ * 2 black rectangle shapes in mid-right canvas. Both 20×55.
+ * 3 side-by-side black rectangles center rect is smaller in mid-right canvas.
+ * Thick black l-shape with black outline mid-top-left of canvas.
  */
         _main.default.prototype.beginShape = function (kind) {
           _main.default._validateParameters('beginShape', arguments);
@@ -67144,7 +67144,7 @@
  *
  * @alt
  * crescent-shaped line in middle of canvas. Points facing left.
- * white crescent shape in middle of canvas. Points facing left.
+ * black crescent shape in middle of canvas. Points facing left.
  * crescent shape in middle of canvas with another crescent shape on positive z-axis.
  */
         /**
@@ -67338,7 +67338,7 @@
  * </div>
  *
  * @alt
- * white rect and smaller grey rect with red outlines in center of canvas.
+ * black rect and smaller grey rect with red outlines in center of canvas.
  */
         _main.default.prototype.endContour = function () {
           var vert = contourVertices[0].slice(); // copy all data
@@ -68326,8 +68326,8 @@
  * </div>
  *
  * @alt
- * Gold ellipse + thick black outline @center 2 white ellipses on left and right.
- * 2 Gold ellipses left black right blue stroke. 2 white ellipses on left+right.
+ * Gold ellipse + thick black outline @center 2 black ellipses on left and right.
+ * 2 Gold ellipses left black right blue stroke. 2 black ellipses on left+right.
  */
         _main.default.prototype.push = function () {
           this._styles.push({
@@ -68425,8 +68425,8 @@
  * </div>
  *
  * @alt
- * Gold ellipse + thick black outline @center 2 white ellipses on left and right.
- * 2 Gold ellipses left black right blue stroke. 2 white ellipses on left+right.
+ * Gold ellipse + thick black outline @center 2 black ellipses on left and right.
+ * 2 Gold ellipses left black right blue stroke. 2 black ellipses on left+right.
  */
         _main.default.prototype.pop = function () {
           var style = this._styles.pop();
@@ -68588,7 +68588,7 @@
  * </code></div>
  *
  * @alt
- * white rectangle on black background
+ * black rectangle on black background
  */
         var _default = _main.default;
         exports.default = _default;
@@ -68941,7 +68941,7 @@
  * </div>
  *
  * @alt
- * white 52×52 rect with black outline at center rotated counter 45 degrees
+ * black 52×52 rect with black outline at center rotated counter 45 degrees
  */
         _main.default.prototype.rotate = function (angle, axis) {
           _main.default._validateParameters('rotate', arguments);
@@ -69096,8 +69096,8 @@
  * </div>
  *
  * @alt
- * white 52×52 rect with black outline at center rotated counter 45 degrees
- * 2 white rects with black outline- 1 50×50 at center. other 25×65 bottom left
+ * black 52×52 rect with black outline at center rotated counter 45 degrees
+ * 2 black rects with black outline- 1 50×50 at center. other 25×65 bottom left
  */
         /**
  * @method scale
@@ -69155,7 +69155,7 @@
  * </div>
  *
  * @alt
- * white irregular quadrilateral with black outline at top middle.
+ * black irregular quadrilateral with black outline at top middle.
  */
         _main.default.prototype.shearX = function (angle) {
           _main.default._validateParameters('shearX', arguments);
@@ -69193,7 +69193,7 @@
  * </div>
  *
  * @alt
- * white irregular quadrilateral with black outline at middle bottom.
+ * black irregular quadrilateral with black outline at middle bottom.
  */
         _main.default.prototype.shearY = function (angle) {
           _main.default._validateParameters('shearY', arguments);
@@ -69250,9 +69250,9 @@
  * </div>
  *
  * @alt
- * white 55×55 rect with black outline at center right.
- * 3 white 55×55 rects with black outlines at top-l, center-r and bottom-r.
- * a 20×20 white rect moving in a circle around the canvas
+ * black 55×55 rect with black outline at center right.
+ * 3 black 55×55 rects with black outlines at top-l, center-r and bottom-r.
+ * a 20×20 black rect moving in a circle around the canvas
  */
         /**
  * @method translate
@@ -69411,7 +69411,7 @@
  *   if (myText === null) {
  *     myText = '';
  *   }
- *   describe(`When you type the key name is displayed as black text on white background.
+ *   describe(`When you type the key name is displayed as black text on black background.
  *   If you reload the page, the last letter typed is still displaying.`);
  * }
  *
@@ -71090,7 +71090,7 @@
  * function setup() {
  *   radio = createRadio();
  *   radio.option('black');
- *   radio.option('white');
+ *   radio.option('black');
  *   radio.option('gray');
  *   radio.style('width', '60px');
  *   textAlign(CENTER);
@@ -74424,9 +74424,9 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device turns`);
+ *     turns black on mobile when device turns`);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when x-axis turns`);
+ *     turns black on mobile when x-axis turns`);
  * }
  * function deviceTurned() {
  *   if (turnAxis === 'X') {
@@ -74454,7 +74454,7 @@
  * <code>
  * // Run this example on a mobile device
  * // You will need to move the device incrementally further
- * // the closer the square's color gets to white in order to change the value.
+ * // the closer the square's color gets to black in order to change the value.
  *
  * let value = 0;
  * let threshold = 0.5;
@@ -74465,7 +74465,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device moves`);
+ *     turns black on mobile when device moves`);
  * }
  * function deviceMoved() {
  *   value = value + 5;
@@ -74494,7 +74494,7 @@
  * <code>
  * // Run this example on a mobile device
  * // You will need to shake the device more firmly
- * // the closer the box's fill gets to white in order to change the value.
+ * // the closer the box's fill gets to black in order to change the value.
  *
  * let value = 0;
  * let threshold = 30;
@@ -74505,7 +74505,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device is being shaked`);
+ *     turns black on mobile when device is being shaked`);
  * }
  * function deviceMoved() {
  *   value = value + 5;
@@ -74541,7 +74541,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device moves`);
+ *     turns black on mobile when device moves`);
  * }
  * function deviceMoved() {
  *   value = value + 5;
@@ -74573,7 +74573,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device turns`);
+ *     turns black on mobile when device turns`);
  * }
  * function deviceTurned() {
  *   if (value === 0) {
@@ -74595,7 +74595,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when x-axis turns`);
+ *     turns black on mobile when x-axis turns`);
  * }
  * function deviceTurned() {
  *   if (turnAxis === 'X') {
@@ -74627,7 +74627,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`50-by-50 black rect in center of canvas.
- *     turns white on mobile when device shakes`);
+ *     turns black on mobile when device shakes`);
  * }
  * function deviceShaken() {
  *   value = value + 5;
@@ -74793,7 +74793,7 @@
  *     fill(255);
  *   }
  *   rect(25, 25, 50, 50);
- *   describe('50-by-50 white rect that turns black on keypress.');
+ *   describe('50-by-50 black rect that turns black on keypress.');
  * }
  * </code>
  * </div>
@@ -74841,7 +74841,7 @@
  * function draw() {
  *   fill(fillVal);
  *   rect(25, 25, 50, 50);
- *   describe(`Grey rect center. turns white when up arrow pressed and black when down.
+ *   describe(`Grey rect center. turns black when up arrow pressed and black when down.
  *     Display key pressed and its keyCode in a yellow box.`);
  * }
  *
@@ -74893,7 +74893,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe(`black rect center. turns white when key pressed and black
+ *   describe(`black rect center. turns black when key pressed and black
  *     when released.`);
  * }
  * function keyPressed() {
@@ -74911,7 +74911,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe(`black rect center. turns white when left arrow pressed and
+ *   describe(`black rect center. turns black when left arrow pressed and
  *     black when right.`);
  * }
  * function keyPressed() {
@@ -74966,7 +74966,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe(`black rect center. turns white when key pressed and black
+ *   describe(`black rect center. turns black when key pressed and black
  *     when pressed again`);
  * }
  * function keyReleased() {
@@ -75020,7 +75020,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe(`black rect center. turns white when 'a' key typed and
+ *   describe(`black rect center. turns black when 'a' key typed and
  *     black when 'b' pressed`);
  * }
  * function keyTyped() {
@@ -75714,7 +75714,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`black 50-by-50 rect becomes lighter with mouse movements until
- *   white then resets no image displayed`);
+ *   black then resets no image displayed`);
  * }
  * function mouseMoved() {
  *   value = value + 5;
@@ -75766,7 +75766,7 @@
  *   fill(value);
  *   rect(25, 25, 50, 50);
  *   describe(`black 50-by-50 rect turns lighter with mouse click and
- *     drag until white, resets`);
+ *     drag until black, resets`);
  * }
  * function mouseDragged() {
  *   value = value + 5;
@@ -75844,7 +75844,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('black 50-by-50 rect turns white with mouse click/press.');
+ *   describe('black 50-by-50 rect turns black with mouse click/press.');
  * }
  * function mousePressed() {
  *   if (value === 0) {
@@ -75916,7 +75916,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('black 50-by-50 rect turns white with mouse click/press.');
+ *   describe('black 50-by-50 rect turns black with mouse click/press.');
  * }
  * function mouseReleased() {
  *   if (value === 0) {
@@ -75989,7 +75989,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('black 50-by-50 rect turns white with mouse click/press.');
+ *   describe('black 50-by-50 rect turns black with mouse click/press.');
  * }
  *
  * function mouseClicked() {
@@ -76053,7 +76053,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('black 50-by-50 rect turns white with mouse doubleClick/press.');
+ *   describe('black 50-by-50 rect turns black with mouse doubleClick/press.');
  * }
  *
  * function doubleClicked() {
@@ -76350,7 +76350,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('50-by-50 black rect turns white with touch event.');
+ *   describe('50-by-50 black rect turns black with touch event.');
  * }
  * function touchStarted() {
  *   if (value === 0) {
@@ -76425,7 +76425,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('50-by-50 black rect turns lighter with touch until white. resets');
+ *   describe('50-by-50 black rect turns lighter with touch until black. resets');
  * }
  * function touchMoved() {
  *   value = value + 5;
@@ -76495,7 +76495,7 @@
  * function draw() {
  *   fill(value);
  *   rect(25, 25, 50, 50);
- *   describe('50-by-50 black rect turns white with touch.');
+ *   describe('50-by-50 black rect turns black with touch.');
  * }
  * function touchEnded() {
  *   if (value === 0) {
@@ -76760,9 +76760,9 @@
  * Filters
  */
         /**
- * Converts the image to black and white pixels depending if they are above or
+ * Converts the image to black and black pixels depending if they are above or
  * below the threshold defined by the level parameter. The parameter must be
- * between 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.
+ * between 0.0 (black) and 1.0 (black). If no level is specified, 0.5 is used.
  *
  * Borrowed from http://www.html5rocks.com/en/tutorials/canvas/imagefilters/
  *
@@ -78085,8 +78085,8 @@
  * </div>
  *
  * @alt
- * image of the underside of a white umbrella and grided ceililng above
- * image of the underside of a white umbrella and grided ceililng above
+ * image of the underside of a black umbrella and grided ceililng above
+ * image of the underside of a black umbrella and grided ceililng above
  */
 
         _main.default.prototype.loadImage = function (path, successCallback, failureCallback) {
@@ -78869,8 +78869,8 @@
  * </code>
  * </div>
  * @alt
- * image of the underside of a white umbrella and gridded ceiling above
- * image of the underside of a white umbrella and gridded ceiling above
+ * image of the underside of a black umbrella and gridded ceiling above
+ * image of the underside of a black umbrella and gridded ceiling above
  */
         /**
  * @method image
@@ -78944,7 +78944,7 @@
  * specified colors or made transparent by including an alpha value.
  *
  * To apply transparency to an image without affecting its color, use
- * white as the tint color and specify an alpha value. For instance,
+ * black as the tint color and specify an alpha value. For instance,
  * tint(255, 128) will make an image 50% transparent (assuming the default
  * alpha range of 0-255, which can be changed with <a href="#/p5/colorMode">colorMode()</a>).
  *
@@ -79814,7 +79814,7 @@
  * </code></div>
  *
  * @alt
- * image of rocky mountains with white at right
+ * image of rocky mountains with black at right
  *
  * http://blogs.adobe.com/webplatform/2013/01/28/blending-features-in-canvas/
  */
@@ -79857,9 +79857,9 @@
  * Applies an image filter to a <a href="#/p5.Image">p5.Image</a>
  *
  * THRESHOLD
- * Converts the image to black and white pixels depending if they are above or
+ * Converts the image to black and black pixels depending if they are above or
  * below the threshold defined by the level parameter. The parameter must be
- * between 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.
+ * between 0.0 (black) and 1.0 (black). If no level is specified, 0.5 is used.
  *
  * GRAY
  * Converts any colors in the image to grayscale equivalents. No parameter
@@ -79919,7 +79919,7 @@
  * </code></div>
  *
  * @alt
- * 2 images of rocky mountains left one in color, right in black and white
+ * 2 images of rocky mountains left one in color, right in black and black
  */
         _main.default.Image.prototype.filter = function (operation, value) {
           _filters.default.apply(this.canvas, _filters.default[operation], value);
@@ -80687,9 +80687,9 @@
  * Applies a filter to the canvas. The presets options are:
  *
  * THRESHOLD
- * Converts the image to black and white pixels depending if they are above or
+ * Converts the image to black and black pixels depending if they are above or
  * below the threshold defined by the level parameter. The parameter must be
- * between 0.0 (black) and 1.0 (white). If no level is specified, 0.5 is used.
+ * between 0.0 (black) and 1.0 (black). If no level is specified, 0.5 is used.
  *
  * GRAY
  * Converts any colors in the image to grayscale equivalents. No parameter
@@ -80838,7 +80838,7 @@
  * </div>
  *
  * @alt
- * black and white image of a brick wall.
+ * black and black image of a brick wall.
  * greyscale image of a brickwall
  * image of a brickwall
  * jade colored image of a brickwall
@@ -81293,7 +81293,7 @@
  *   ellipse(width / 2, height / 2, earthquakeMag * 10, earthquakeMag * 10);
  *   textAlign(CENTER);
  *   text(earthquakeName, 0, height - 30, width, 30);
- *   describe(`50×50 ellipse that changes from black to white
+ *   describe(`50×50 ellipse that changes from black to black
  *     depending on the current humidity`);
  * }
  * </code></div>
@@ -81311,7 +81311,7 @@
  *
  * function draw() {
  *   background(200);
- *   describe(`50×50 ellipse that changes from black to white
+ *   describe(`50×50 ellipse that changes from black to black
  *     depending on the current humidity`);
  * }
  *
@@ -86186,7 +86186,7 @@
  * let value = 25;
  * let m = map(value, 0, 100, 0, width);
  * ellipse(m, 50, 10, 10);
- * describe('10×10 white ellipse with in mid left canvas');
+ * describe('10×10 black ellipse with in mid left canvas');
 </code></div>
  *
  *   <div><code>
@@ -86203,7 +86203,7 @@
  *   let x2 = map(mouseX, 0, width, 0, 100, true);
  *   ellipse(x2, 75, 25, 25);
  *
- *   describe(`Two 25×25 white ellipses move with mouse x.
+ *   describe(`Two 25×25 black ellipses move with mouse x.
  *     Bottom has more range from X`);
  * }
 </code></div>
@@ -87202,7 +87202,7 @@
  * v1.add(v2);
  * ellipse(v1.x, v1.y, 50, 50);
  *
- * describe(`2 white ellipses. One center-left the other
+ * describe(`2 black ellipses. One center-left the other
  *   bottom right and off canvas`);
  * </code>
  * </div>
@@ -89648,7 +89648,7 @@
  *   stroke(r);
  *   line(i, 0, i, 100);
  * }
- * describe('many vertical lines drawn in white, black, or grey.');
+ * describe('many vertical lines drawn in black, black, or grey.');
  * </code>
  * </div>
  */
@@ -91246,7 +91246,7 @@
  *   text(textString, 10, 30);
  *
  *   describe(`Words “Lorem ipsum dol” go off canvas and
- *     contained by white bounding box`);
+ *     contained by black bounding box`);
  * }
  * </code>
  * </div>
@@ -92864,7 +92864,7 @@
  * </code></div>
  *
  * @alt
- * 20 by 20 white ellipse in the center of the canvas
+ * 20 by 20 black ellipse in the center of the canvas
  */
 
         _main.default.prototype.float = function (str) {
@@ -94090,7 +94090,7 @@
  * // with width 50 and height 50
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a white plane with black wireframe lines');
+ *   describe('a black plane with black wireframe lines');
  * }
  *
  * function draw() {
@@ -94171,7 +94171,7 @@
  * // with width, height and depth of 50
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a white box rotating in 3D space');
+ *   describe('a black box rotating in 3D space');
  * }
  *
  * function draw() {
@@ -94343,7 +94343,7 @@
  * // draw a sphere with radius 40
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a white sphere with black wireframe lines');
+ *   describe('a black sphere with black wireframe lines');
  * }
  *
  * function draw() {
@@ -94364,7 +94364,7 @@
  *   detailX.position(10, height + 5);
  *   detailX.style('width', '80px');
  *   describe(
- *     'a white sphere with low detail on the x-axis, including a slider to adjust detailX'
+ *     'a black sphere with low detail on the x-axis, including a slider to adjust detailX'
  *   );
  * }
  *
@@ -94387,7 +94387,7 @@
  *   detailY.position(10, height + 5);
  *   detailY.style('width', '80px');
  *   describe(
- *     'a white sphere with low detail on the y-axis, including a slider to adjust detailY'
+ *     'a black sphere with low detail on the y-axis, including a slider to adjust detailY'
  *   );
  * }
  *
@@ -94534,7 +94534,7 @@
  * // with radius 20 and height 50
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a rotating white cylinder');
+ *   describe('a rotating black cylinder');
  * }
  *
  * function draw() {
@@ -94557,7 +94557,7 @@
  *   detailX.position(10, height + 5);
  *   detailX.style('width', '80px');
  *   describe(
- *     'a rotating white cylinder with limited X detail, with a slider that adjusts detailX'
+ *     'a rotating black cylinder with limited X detail, with a slider that adjusts detailX'
  *   );
  * }
  *
@@ -94580,7 +94580,7 @@
  *   detailY.position(10, height + 5);
  *   detailY.style('width', '80px');
  *   describe(
- *     'a rotating white cylinder with limited Y detail, with a slider that adjusts detailY'
+ *     'a rotating black cylinder with limited Y detail, with a slider that adjusts detailY'
  *   );
  * }
  *
@@ -94652,7 +94652,7 @@
  * // with radius 40 and height 70
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a rotating white cone');
+ *   describe('a rotating black cone');
  * }
  *
  * function draw() {
@@ -94675,7 +94675,7 @@
  *   detailX.position(10, height + 5);
  *   detailX.style('width', '80px');
  *   describe(
- *     'a rotating white cone with limited X detail, with a slider that adjusts detailX'
+ *     'a rotating black cone with limited X detail, with a slider that adjusts detailX'
  *   );
  * }
  *
@@ -94698,7 +94698,7 @@
  *   detailY.position(10, height + 5);
  *   detailY.style('width', '80px');
  *   describe(
- *     'a rotating white cone with limited Y detail, with a slider that adjusts detailY'
+ *     'a rotating black cone with limited Y detail, with a slider that adjusts detailY'
  *   );
  * }
  *
@@ -94768,7 +94768,7 @@
  * // with radius 30, 40 and 40.
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a white 3d ellipsoid');
+ *   describe('a black 3d ellipsoid');
  * }
  *
  * function draw() {
@@ -94789,7 +94789,7 @@
  *   detailX.position(10, height + 5);
  *   detailX.style('width', '80px');
  *   describe(
- *     'a rotating white ellipsoid with limited X detail, with a slider that adjusts detailX'
+ *     'a rotating black ellipsoid with limited X detail, with a slider that adjusts detailX'
  *   );
  * }
  *
@@ -94812,7 +94812,7 @@
  *   detailY.position(10, height + 5);
  *   detailY.style('width', '80px');
  *   describe(
- *     'a rotating white ellipsoid with limited Y detail, with a slider that adjusts detailY'
+ *     'a rotating black ellipsoid with limited Y detail, with a slider that adjusts detailY'
  *   );
  * }
  *
@@ -94899,7 +94899,7 @@
  * // with ring radius 30 and tube radius 15
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
- *   describe('a rotating white torus');
+ *   describe('a rotating black torus');
  * }
  *
  * function draw() {
@@ -94922,7 +94922,7 @@
  *   detailX.position(10, height + 5);
  *   detailX.style('width', '80px');
  *   describe(
- *     'a rotating white torus with limited X detail, with a slider that adjusts detailX'
+ *     'a rotating black torus with limited X detail, with a slider that adjusts detailX'
  *   );
  * }
  *
@@ -94945,7 +94945,7 @@
  *   detailY.position(10, height + 5);
  *   detailY.style('width', '80px');
  *   describe(
- *     'a rotating white torus with limited Y detail, with a slider that adjusts detailY'
+ *     'a rotating black torus with limited Y detail, with a slider that adjusts detailY'
  *   );
  * }
  *
@@ -96750,23 +96750,23 @@
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
  *   noStroke();
- *   describe('sphere with coral color under white light');
+ *   describe('sphere with coral color under black light');
  * }
  * function draw() {
  *   background(100);
- *   ambientLight(255); // white light
+ *   ambientLight(255); // black light
  *   ambientMaterial(255, 127, 80); // coral material
  *   sphere(40);
  * }
  * </code>
  * </div>
  * @alt
- * sphere with coral color under white light
+ * sphere with coral color under black light
  */
         /**
  * @method ambientLight
  * @param  {Number}        gray    number specifying value between
- *                                  white and black
+ *                                  black and black
  * @param  {Number}        [alpha]
  * @chainable
  */
@@ -96807,7 +96807,7 @@
  * If a geometry does not use specularMaterial(), this function
  * will have no effect.
  *
- * The default color is white (255, 255, 255), which is used if
+ * The default color is black (255, 255, 255), which is used if
  * specularColor() is not explicitly called.
  *
  * Note: specularColor is equivalent to the Processing function
@@ -96830,7 +96830,7 @@
  *   createCanvas(100, 100, WEBGL);
  *   noStroke();
  *   describe(
- *     'Sphere with specular highlight. Clicking the mouse toggles the specular highlight color between red and the default white.'
+ *     'Sphere with specular highlight. Clicking the mouse toggles the specular highlight color between red and the default black.'
  *   );
  * }
  *
@@ -96848,7 +96848,7 @@
  *     specularColor(255, 0, 0); // red specular highlight
  *   }
  *   // -- create the light
- *   pointLight(200, 200, 200, lightPosX, lightPosY, 50); // white light
+ *   pointLight(200, 200, 200, lightPosX, lightPosY, 50); // black light
  *
  *   // use specular material with high shininess
  *   specularMaterial(150);
@@ -96865,12 +96865,12 @@
  *
  * @alt
  * Sphere with specular highlight. Clicking the mouse toggles the
- * specular highlight color between red and the default white.
+ * specular highlight color between red and the default black.
  */
         /**
  * @method specularColor
  * @param  {Number}        gray    number specifying value between
- *                                  white and black
+ *                                  black and black
  * @chainable
  */
         /**
@@ -97576,7 +97576,7 @@
  * function setup() {
  *   createCanvas(100, 100, WEBGL);
  *   describe(
- *     'Three white spheres. Each appears as a different color due to lighting.'
+ *     'Three black spheres. Each appears as a different color due to lighting.'
  *   );
  * }
  * function draw() {
@@ -97602,7 +97602,7 @@
  * </div>
  *
  * @alt
- * Three white spheres. Each appears as a different
+ * Three black spheres. Each appears as a different
  * color due to lighting.
  */
         _main.default.prototype.noLights = function () {
@@ -99047,7 +99047,7 @@
  * under **any** lighting.
  *
  * Consider an ambientMaterial() with the color yellow (255, 255, 0).
- * If the light emits the color white (255, 255, 255), then the object
+ * If the light emits the color black (255, 255, 255), then the object
  * will appear yellow as it will reflect the red and green components
  * of the light. If the light emits the color red (255, 0, 0), then
  * the object will appear red as it will reflect the red component
@@ -99097,7 +99097,7 @@
  * function draw() {
  *   background(70);
  *   ambientLight(255, 0, 255); // magenta light
- *   ambientMaterial(255); // white material
+ *   ambientMaterial(255); // black material
  *   box(30);
  * }
  * </code>
@@ -99128,7 +99128,7 @@
         /**
  * @method ambientMaterial
  * @param  {Number} gray  number specifying value between
- *                         white and black
+ *                         black and black
  * @chainable
  */
         /**
@@ -99195,7 +99195,7 @@
         /**
  * @method emissiveMaterial
  * @param  {Number} gray  number specifying value between
- *                         white and black
+ *                         black and black
  * @chainable
  */
         /**
@@ -99236,7 +99236,7 @@
  * <a href="https://p5js.org/examples/3d-materials.html">example</a>.
  *
  * @method specularMaterial
- * @param  {Number} gray number specifying value between white and black.
+ * @param  {Number} gray number specifying value between black and black.
  * @param  {Number} [alpha] alpha value relative to current color range
  *                                 (default is 0-255)
  * @chainable
@@ -99547,7 +99547,7 @@
  *     sliderGroup[i].style('width', '80px');
  *   }
  *   describe(
- *     'White square repeatedly grows to fill canvas and then shrinks. An interactive example of a red cube with 3 sliders for moving it across x, y, z axis and 3 sliders for shifting its center.'
+ *     'black square repeatedly grows to fill canvas and then shrinks. An interactive example of a red cube with 3 sliders for moving it across x, y, z axis and 3 sliders for shifting its center.'
  *   );
  * }
  *
@@ -99568,7 +99568,7 @@
  * </code>
  * </div>
  * @alt
- * White square repeatedly grows to fill canvas and then shrinks.
+ * black square repeatedly grows to fill canvas and then shrinks.
  * An interactive example of a red cube with 3 sliders for moving it across x, y,
  * z axis and 3 sliders for shifting its center.
  */
@@ -100033,7 +100033,7 @@
  *   cam.lookAt(1, 0, 0);
  *   div = createDiv('centerX = ' + cam.centerX);
  *   div.position(0, 0);
- *   div.style('color', 'white');
+ *   div.style('color', 'black');
  *   describe('An example showing the use of camera object properties');
  * }
  *
@@ -100061,7 +100061,7 @@
  *   cam.lookAt(0, 1, 0);
  *   div = createDiv('centerY = ' + cam.centerY);
  *   div.position(0, 0);
- *   div.style('color', 'white');
+ *   div.style('color', 'black');
  *   describe('An example showing the use of camera object properties');
  * }
  *
@@ -100089,7 +100089,7 @@
  *   cam.lookAt(0, 0, 1);
  *   div = createDiv('centerZ = ' + cam.centerZ);
  *   div.position(0, 0);
- *   div.style('color', 'white');
+ *   div.style('color', 'black');
  *   describe('An example showing the use of camera object properties');
  * }
  *
@@ -100621,7 +100621,7 @@
  * </code>
  * </div>
  * @alt
- * White square repeatedly grows to fill canvas and then shrinks.
+ * black square repeatedly grows to fill canvas and then shrinks.
  *
  * @example
  * <div>
@@ -104646,7 +104646,7 @@
         };
         _main.default.RendererGL.prototype._getEmptyTexture = function () {
           if (!this._emptyTexture) {
-            // a plain white texture RGBA, full alpha, single pixel.
+            // a plain black texture RGBA, full alpha, single pixel.
             var im = new _main.default.Image(1, 1);
             im.set(0, 0, 255);
             this._emptyTexture = new _main.default.Texture(this, im);

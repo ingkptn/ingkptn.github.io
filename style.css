@@ -1,463 +1,209 @@
 @font-face {
-    font-family:"formula" ;
-    src: url("typefaces/Formula Condensed/PPFormula-Medium.woff2");
+    font-family:"montreal" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Regular.woff2");
 }
 
 @font-face {
-    font-family:"monument" ;
-    src: url("typefaces/ABC Monument Grotesk/ABC Monument-Grotesk/ABCMonumentGrotesk-Regular-Trial.woff2");
-}
-@font-face {
-    font-family:"monument-semi" ;
-    src: url("typefaces/ABC Monument Grotesk Semi-Mono/ABCMonumentGroteskSemi-Mono-Regular-Trial.woff2");
+    font-family:"montreal-italic" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Italic.woff2");
 }
 
 @font-face {
-    font-family:"monument-italic" ;
-    src: url("typefaces/ABC Monument Grotesk/ABC Monument-Grotesk/ABCMonumentGrotesk-RegularItalic-Trial.woff2");
+    font-family:"montreal-light" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Light.woff2");
 }
 
 @font-face {
-    font-family:"hatton" ;
-    src: url("typefaces/PPEditorialNew-UltralightItalic.woff2");
-}
-
-
-
-@font-face {
-    font-family:"editorial" ;
-    src: url("typefaces/Editorial New/EditorialNew-Regular.woff");
+    font-family:"montreal-bold" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Bold.woff2");
 }
 
 
 @font-face {
-    font-family:"editorial-italic" ;
-    src: url("typefaces/PPEditorialNew-Italic.woff2");
+    font-family:"montreal-lightItalic" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-LightItalic.woff2");
 }
 
-
-
-#notice{
-    box-sizing:border-box;
-    position: fixed;
-    bottom: 15px;
-    left: 2vw;
-    z-index: 100;
-    border-radius: 8px;
-    padding: 20px 30px;
-    width: 96vw;
-    font-family: monument-italic;
-    font-size: 13px;
-    text-align: center;
-    color: white;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    
+@font-face {
+    font-family:"cirka" ;
+    src: url("typefaces/PPCirka-Variable.woff");
 }
 
-#continue{
-    font-family: monument;
-    padding: 5px 5px;
-    border: 1px solid;
-    text-align: center;
-    width: 30%;
-    flex-basis: 15%;
-    border-radius: 5px;
-    margin-top: 15px;
-}
-
-#continue:hover{
-    background-color: white;
-    color: black;
-}
 
 body{
-    margin: 0;
-}
-
-#big-container{
-    opacity: 0.3;
-}
-
-#landingPage{
-    width: 100vw;
-    height: 100vh;
-}
-
-#landingPage>div{
-    font-size: 50px;
-    line-height: 1.1;
-    font-family: monument;
-    letter-spacing: -1px;
-  
-}
-
-#landingContainer{
-    width: calc(95vw);
-    height: calc(95vh);
-}
-
-h1{
-    font-family: monument;
-    font-size: 17px;
-}
-
-h2{
-    font-family: monument;
-    font-size: 17px;
-    color: rgb(126, 126, 126);
-}
-
-#name{
-    position: absolute;
-    margin: 4%;
-}
-
-
-
-#role{
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 4%;
-    left: 4%;
-    width: 92%;
-    letter-spacing: 0px;
-}
-
-#role>span{
-    max-width: 80%;
-    font-size: 17px;
-    line-height: 1.2;
-    margin-right: 5%;
-    margin-top: 4%;
-}
-
-span>i{
-    border:0px;
-    color: black;
-    padding: 0;
-    text-decoration: underline;
-}
-
-#thai{
-    font-family: trirong;
-    font-weight: 300;
-}
-
-
-
-#thaiName{
-    font-size: 50px;
-    letter-spacing: 0.1;
-    font-family: monument;
+    background-color: white;
+    color: rgb(0, 0, 0);
+    margin: 0%;
+    padding: 0% 6%;
+    overflow-x: hidden;
 }
 
 #header{
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
-    height: 50px;
-    padding: 0px 15px;
-    align-items: center;
-    background-color: white;
     position: sticky;
-    top: 0;
-
-}
-
-h3{
-    font-family: monument;
-    font-size: 13px;
-    color: black;
-    margin: 0;
-    line-height:1.6;
-}
-
-/* #filter{
-    display: flex;
-    align-items: center;
-    width: 94%;
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    flex-wrap: wrap;
-    position: sticky;
-    top: 60px;
-    background-color: white;
-    gap: 8px 0px;
-    z-index: 100;
-
-} */
-
-/* #filter>h3{
-    flex-grow: 1;
-} */
-
-/* .categories{
-    border: 1px solid black;
-    padding: 5px 10px;
-    border-radius: 5px;
-    background-color: white;
-    margin-left: 10px;
-    width: fit-content;
-}
-
-.categories:hover{
-    filter: drop-shadow(3px 3px black);
-}
-
-#resetButton{
-    background-color: black;
-    color: white;
-    border: 1px solid white
-} */
-
-#gridContainer{
-    display: grid;
-    width: 94%;
-    margin: auto;
-    margin-top: 20px;
-
-}
-
-.projects{
-    height: fit-content;
-    grid-template-columns: span;
-    display: block;
-}
-
-img{
-    width: 100%;
-    border-radius: 5px;
-}
-
-#desc{
-margin-top: 10px;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-between;
-padding-bottom: 15px;
-
-}
-
-#descText{
-    flex-basis: 80%;
-}
-
-i{
-    color:rgb(89, 89, 89);
-    border: 1.5px solid rgb(89, 89, 89);
-    padding: 7px 15px;
-    border-radius: 30px;
-    align-self:first baseline;
+    top: 0px;
+    background-color:  white;
+    padding: 1px;
+    width: 100vw;
+    z-index: 10;
     
-}
-
-i:hover{
-    color: white;
-    background-color: black;
-}
-
-h4{
-    font-family: monument;
-    font-size: 13px;
-    color: black;
-    margin: 0;
-}
-
-h5{
-    font-family: monument-italic;
-    font-size: 13px;
-    margin: 0;
-    color:rgb(89, 89, 89);
-    line-height:1.4;
-    
-}
-
-p{
-    font-family: monument;
-    font-size: 13px;
-    margin: 0;
-    color:rgb(95, 95, 95);
-    line-height:1.4;
-    margin-top: 10px;
-    box-sizing: border-box;
-    padding-top: 10px;
-    margin-bottom: 50px;
 }
 
 span{
-    /* font-family: monument-italic; */
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: lighter;
 }
 
-a{
-    text-decoration: none;
+h2{
+    font-family: montreal;
+    font-size: 18px;
 }
 
-#credits{
+h5{
+    font-size: 14px;
+    font-family: montreal-italic;
+    margin-top: -14px;
+    color: grey;
+}
+
+
+
+.project{
+    margin-bottom: 60px;
+ 
+}
+
+.project:hover{
+    animation: expand 0.1s linear 1 infinite forwards;
+}
+
+@keyframes expand{
+    0% {transform: translate(0,0);}
+    100% {transform: translate(-10px,-10px);}
+}
+
+@keyframes example{
+  from {background-color: white;}
+  to {background-color: red;}
+}
+
+
+
+
+  
+img, video{
     width: 100%;
-    height: fit-content;
+    margin-top: 20px;
+}
+
+p{
+    font-family: montreal;
+    font-size: 15px;
+}
+
+.proj-no{
+    font-family: cirka;
+    font-size: 35px;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+
+}
+
+.proj-title{
+    color: grey;
+}
+
+.proj-category,.proj-softwares, .proj-deliverables{
+    /* color: grey; */
+    border-bottom: 1px solid black;
+    margin: 0px;
+    padding: 7px 0px;
+}
+
+/* .button{
+    margin-top: 10px;
     text-align: center;
+    border: 1px solid grey;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: montreal
+} */
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+
 }
 
-h6{
-    font-family: monument-italic;
-    font-size: 12px;
-    margin: 0;
-    color:rgb(128, 128, 128);
-    line-height:1.4;
-    
+
+@media only screen and (min-width: 800px) {
+  .flexbox{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .proj-title{
+    font-size: 30px;
+    color: grey;
 }
 
-video{
-    border-radius: 5px;
+  .info{
+    width: 40%;
+  }
+
+  .desc{
+    width: 60%;
+    margin-left: 40px;
+  }
+
+  p{
+    font-family: montreal;
+    font-size: 16px;
+  }
+
 }
 
-@media only screen and (min-width: 500px) {
 
-    #notice{
-        box-sizing: border-box;
-        position: fixed;
-        bottom: 20px;
-        left: 2vw;
-        z-index: 100;
-        border-radius: 8px;
-        padding: 10px 20px;
-        width: 96vw;
-        font-family: monument-italic;
-        font-size: 13px;
-        text-align: center;
-        color: white;
-        background-color: black;
+@media only screen and (min-width: 1100px) {
+
+    .flexbox{
+        display: block;
+        margin-left: 30px;
+    }
+    body{
+        background-color: white;
+        color: rgb(0, 0, 0);
+        margin: 0%;
+        padding: 0% 2%;
+        overflow-x: hidden;
+    }
+
+    .project{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items:center;
-        
-    }
-    
-    #continue{
-        font-family: monument;
-        margin-top: 0px;
-        border: 1px solid;
-        text-align: center;
-        width: 30%;
-        flex-basis: 15%;
-        border-radius: 5px;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-
-
-
-    #role{
-        display: flex;
-        flex-direction: row;
-        justify-content:space-between;
-        align-items: first baseline;
-        position: absolute;
-        bottom: 4%;
-        left: 4%;
-        width: 92%;
-        letter-spacing: 0px;
+        padding: 10px 20px 30px;
     }
 
-    #role>span{
-        max-width: 25%;
-    }
-
-    #landingPage>div{
-        font-size: 120px;
-        line-height: 0.9;
-        letter-spacing: -3px;
-    }
-
-    #header{
-        /* border: 1px solid black; */
-        display: flex;
-        justify-content: space-between;
-        box-sizing: border-box;
+    .info{
         width: 100%;
-        height: 60px;
-        padding: 40px 40px;
-        z-index: 20;
+      }
+    
+      .desc{
+        width: 100%;
+        margin-left: 0px;
+      }
+
+    img, video{
+        width: 65%;
+        margin-left: 50px;
     }
-
-    h1{
-        margin-left:-13px;
-        font-size:20px;
-    }
-
-    h2{
-        font-size:22px;
-    }
-
-    h3, h4{
-        font-size: 13px;
-    }
-
-    span{
-        /* font-family: monument-italic; */
-        font-size: 22px;
-    }
-
-    #filter{
-        top: 80px;
-    }
-
-    #gridContainer {
-        box-sizing: border-box;
-        display: grid;
-        grid-template-columns: 1fr 1fr; /* Two columns of equal width */
-        grid-template-rows: fit-content fit-content; /* Rows adjust to their content */
-        grid-column-gap: 30px; /* Gap between columns */
-    }
-
-
-
-    }
-
-   
-
+}
 
 
 @media only screen and (min-width: 1200px) {
 
-    h3, h4{
-        font-size: 14px;
-    }
-
-    #filter{
-        position: sticky;
-        display:block;
-        left: 2.5%;
-        z-index: 10;
-        margin: 0;
-        width: fit-content;
-        border: none;
-    }
-
-    #filter>h3{
-        margin-left: 10px;
-    }
-
-    .categories{
-        margin-top: 10px;
-    }
-
-
-
-    body{
-        height: 350vh;
-    }
-
 }
+

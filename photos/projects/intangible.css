@@ -34,7 +34,7 @@ height: 80px;
 display: flex;
 align-items: center;
 padding: 10px;
-background-color: white;
+background-color: black;
 z-index: 100;
 }
 
@@ -107,7 +107,7 @@ h3{
 
 h3:hover{
     background-color: black;
-    color: white;
+    color: black;
 }
 
 img{

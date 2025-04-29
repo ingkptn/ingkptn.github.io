@@ -42,7 +42,7 @@ h2{
 }
 
 a{
-    color: white;
+    color: black;
     text-decoration: none;
     }
 
@@ -76,7 +76,7 @@ h3{
     padding: 30px;
     border-radius: 30px;
     max-width: 450px;
-    color: white;
+    color: black;
     background-color: #5e7bbaeb;
 }
 

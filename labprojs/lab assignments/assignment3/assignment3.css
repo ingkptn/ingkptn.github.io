@@ -62,7 +62,7 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    background-color: white;
+    background-color: black;
     z-index: 10;
 }
 
@@ -107,7 +107,7 @@ flex-basis: 80%;
 
 
 #section1{
-    color: white;
+    color: black;
 }
 
 #section1 > p{
@@ -140,7 +140,7 @@ flex-basis: 80%;
 /* section 2 - grid*/
 
 #section2{
-    color: white;
+    color: black;
     margin-top: -50px;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -210,7 +210,7 @@ flex-basis: 80%;
 /* section 6 - grid*/
 #section6{
     display: grid;
-    background-color: white;
+    background-color: black;
     margin-top: -20px;
     width: 100vw;
     grid-template-columns: 1fr;
@@ -276,7 +276,7 @@ flex-basis: 80%;
 #section7 > div > div{
     margin: 5vw;
     width: 90vw;
-    background: white;
+    background: black;
     text-align: left;
 
 }
@@ -303,7 +303,7 @@ flex-basis: 80%;
     width: 90%;
     margin: 0% 5% 5%;
     background-color:#2263F5;
-    color: white;
+    color: black;
     font-weight: 600;
 }
 
@@ -351,7 +351,7 @@ flex-basis: 80%;
 
 #section10{
     padding-top: 50px;
-    color: white;
+    color: black;
     text-align: center;
 }
 
@@ -389,7 +389,7 @@ flex-basis: 80%;
 /* section 12 - plans flexbox*/
 
 #section12{
-    color: white;
+    color: black;
     margin: 0vw;
     display: flex;
     flex-direction: column;
@@ -424,7 +424,7 @@ flex-basis: 80%;
 #section13{
 padding-top: 100px;
 background-color: black;
-color: white;
+color: black;
 display: grid;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr 1fr;
@@ -464,7 +464,7 @@ grid-gap: 4vw 1vw;
         background-color: #2263F5;
         flex-basis: 40%;
         line-height: 20px;
-        color: white;
+        color: black;
     
     }
 
