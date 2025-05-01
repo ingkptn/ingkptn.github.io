@@ -51,7 +51,6 @@ body{
 
 #landing{
     height: 100vh;
-    
 }
 
 h1{
@@ -61,18 +60,26 @@ h1{
     letter-spacing: -3px;
 }
 
-#landing>h3{
+#landing>div>h3{
     font-size: 30px;
-    margin-top: -35px;
+    margin-top: -22px;
+    color: grey;
+}
 
+#landing>div>h3:hover{
+    color: black;
 }
 
 h3{
     font-size: 45px;
     font-family: montreal-light;
     /* font-style: italic; */
-    letter-spacing: 0.5px;
     /* color: grey; */
+}
+
+#nav-buttons{
+    position: absolute;
+    bottom: 0px;
 }
 
 #thai{
@@ -81,7 +88,7 @@ h3{
 }
 
 .italicize{
-    font-style: italic;
+    /* font-style: italic; */
     color: grey;
 }
 
@@ -97,29 +104,15 @@ h5{
     color: grey;
 }
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 .project{
     margin-bottom: 60px;
  
 }
-
-.project:hover{
-    animation: expand 0.1s linear 1 infinite forwards;
-}
-
-@keyframes expand{
-    0% {transform: translate(0,0);}
-    100% {transform: translate(-10px,-10px);}
-}
-
-@keyframes example{
-  from {background-color: white;}
-  to {background-color: red;}
-}
-
-
-
 
   
 img, video{
@@ -136,7 +129,6 @@ p{
     font-family: cirka;
     font-size: 35px;
     margin-top: 30px;
-    margin-bottom: 0px;
     letter-spacing: -1px;
 
 }
@@ -145,12 +137,16 @@ p{
     color: grey;
 }
 
-.proj-category,.proj-softwares, .proj-deliverables{
-    /* color: grey; */
-    border-bottom: 1px solid black;
-    margin: 0px;
-    padding: 7px 0px;
+.proj-category{
+    margin-top: -25px;
+    color: grey;
 }
+
+.proj-desc{
+    margin-top: 0px;
+    color: grey;
+}
+
 
 /* .button{
     margin-top: 10px;
@@ -173,6 +169,7 @@ p{
 
 
 @media only screen and (min-width: 800px) {
+    
 
     h1{
         font-size: 100px;
@@ -181,9 +178,9 @@ p{
         letter-spacing: -4px;
     }
 
-    #landing>h3{
+    #landing>div>h3{
         font-size: 45px;
-        margin-top: -50px;
+        margin-top: -35px;
     }
 
   .flexbox{
@@ -210,12 +207,31 @@ p{
     font-size: 15px;
   }
 
+  .project{
+    margin-bottom: 60px;
+  }
+
 }
 
 
 @media only screen and (min-width: 1100px) {
 
-    .flexbox{
+    body{
+        margin: 0%;
+        padding: 0% 3%;
+    }
+
+    #grid-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .project{
+        margin-bottom: 20px;
+      }
+
+    /* .flexbox{
         display: block;
         margin-left: 30px;
     }
@@ -230,6 +246,8 @@ p{
         flex-direction: row;
     }
 
+
+
     .info{
         width: 100%;
       }
@@ -241,9 +259,9 @@ p{
 
     img, video{
         width: 65%;
-        margin-left: 50px;
+        margin-left: 50px; */
     }
-}
+
 
 
 @media only screen and (min-width: 1200px) {

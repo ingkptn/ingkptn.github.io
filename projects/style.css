@@ -1,0 +1,166 @@
+@font-face {
+    font-family:"montreal" ;
+    src: url("/typefaces/Neue Montreal/NeueMontreal-Regular.woff2");
+}
+
+@font-face {
+    font-family:"montreal-italic" ;
+    src: url("/typefaces/Neue Montreal/NeueMontreal-Italic.woff2");
+}
+
+@font-face {
+    font-family:"montreal-light" ;
+    src: url("/typefaces/Neue Montreal/NeueMontreal-Light.woff2");
+}
+
+@font-face {
+    font-family:"montreal-bold" ;
+    src: url("/typefaces/Neue Montreal/NeueMontreal-Bold.woff2");
+}
+
+
+@font-face {
+    font-family:"montreal-lightItalic" ;
+    src: url("/typefaces/Neue Montreal/NeueMontreal-LightItalic.woff2");
+}
+
+@font-face {
+    font-family:"cirka" ;
+    src: url("/typefaces/PPCirka-Variable.woff");
+}
+
+
+body{
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+    margin: 0%;
+    padding: 0% 6%;
+    overflow-x: hidden;
+}
+
+#header{
+    position: sticky;
+    top: 0px;
+    background-color: rgb(245, 245, 245);
+    padding: 1px;
+    width: 100vw;
+    z-index: 10;
+    display: flex;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+h3{
+    font-size: 45px;
+    font-family: cirka;
+    font-weight: lighter;
+    letter-spacing: -1.2px;
+    /* font-style: italic; */
+    /* color: grey; */
+}
+
+#nav-buttons{
+    position: absolute;
+    bottom: 0px;
+}
+
+#thai{
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.italicize{
+    /* font-style: italic; */
+    color: grey;
+}
+
+h2{
+    font-family: montreal;
+    font-size: 18px;
+}
+
+h5{
+    font-size: 14px;
+    font-family: montreal-italic;
+    margin-top: -14px;
+    color: grey;
+}
+
+img, video{
+    width: 100%;
+    margin-top: 20px;
+}
+
+p{
+    font-family: montreal;
+    font-size: 15px;
+}
+
+.proj-no{
+    font-family: cirka;
+    font-size: 35px;
+    margin-top: 30px;
+    letter-spacing: -1px;
+
+}
+
+.proj-title{
+    color: grey;
+}
+
+.proj-category{
+    margin-top: -25px;
+    color: grey;
+}
+
+
+.proj-desc, .proj-softwares, .proj-deliverables{
+    margin-top: -6px;
+    color: grey;
+    border-top: 1px solid grey;
+    padding-top: 8px;
+}
+
+#footer{
+    color: grey;
+    margin: 40px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 1100px) {
+
+    body{
+        margin: 0%;
+        padding: 0% 3%;
+    }
+
+    /* #project1{
+        display: grid;
+        grid-template-columns: 1fr 2.25fr;
+        grid-gap: 50px;
+    } */
+
+
+
+    #photos{
+        width: 65%;
+        position: relative;
+        margin-top: -102vh;
+        margin-left: 35%;
+
+    }
+
+    #info{
+        position: sticky;
+        top: 120px;
+        width: 30%;
+        height: 100vh;
+    }
+    
+}
+    
