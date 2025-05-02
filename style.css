@@ -70,18 +70,6 @@ h1{
     color: black;
 }
 
-h3{
-    font-size: 45px;
-    font-family: montreal-light;
-    /* font-style: italic; */
-    /* color: grey; */
-}
-
-#nav-buttons{
-    position: absolute;
-    bottom: 0px;
-}
-
 #thai{
     font-weight: lighter;
     font-size: 22px;
@@ -106,7 +94,19 @@ h5{
 
 a{
     text-decoration: none;
-    color: black;
+    color: inherit;
+}
+
+h3{
+    font-size: 45px;
+    font-family: montreal-light;
+    color: grey;
+}
+
+
+#nav-buttons{
+    position: absolute;
+    bottom: 0px;
 }
 
 .project{
@@ -130,12 +130,11 @@ p{
     font-size: 35px;
     margin-top: 30px;
     letter-spacing: -1px;
+    color: black;
 
 }
 
-.proj-title{
-    color: grey;
-}
+
 
 .proj-category{
     margin-top: -25px;
