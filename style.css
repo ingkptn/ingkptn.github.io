@@ -211,6 +211,13 @@ p{
     margin-bottom: 60px;
   }
 
+
+  #misc-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+
 }
 
 
@@ -234,7 +241,7 @@ p{
       #misc-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 40px;
+        grid-gap: 20px;
     }
 
     /* .flexbox{
