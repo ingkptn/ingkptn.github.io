@@ -231,6 +231,12 @@ p{
         margin-bottom: 20px;
       }
 
+      #misc-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 40px;
+    }
+
     /* .flexbox{
         display: block;
         margin-left: 30px;
