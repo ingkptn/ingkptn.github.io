@@ -49,6 +49,8 @@ body{
 
 }
 
+
+
 #landing{
     height: 100vh;
 }
@@ -78,6 +80,11 @@ h1{
 .italicize{
     /* font-style: italic; */
     color: grey;
+}
+
+.year{
+    font-style: italic;
+
 }
 
 h2{
