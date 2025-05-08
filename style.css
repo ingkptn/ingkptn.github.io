@@ -29,6 +29,9 @@
     src: url("typefaces/PPCirka-Variable.woff");
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background-color: rgb(245, 245, 245);
@@ -80,10 +83,13 @@ h1{
 .italicize{
     /* font-style: italic; */
     color: grey;
+ 
 }
 
 .year{
     font-style: italic;
+    font-size: 22px;
+    color: grey;
 
 }
 
