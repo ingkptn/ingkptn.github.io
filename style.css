@@ -225,8 +225,8 @@ width: 100%;
 
 .linkButtons{
     font-size: 18px;
-    border: 1.5px solid grey;
-    color: grey;
+    border: 1.5px solid black;
+    color: black;
     width: fit-content;
     padding: 10px 20px;
     border-radius: 30px;
@@ -234,7 +234,7 @@ width: 100%;
 }
 
 .linkButtons:hover{
-    background-color: grey;
+    background-color: black;
     color: white;
 }
 
