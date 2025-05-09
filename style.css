@@ -149,7 +149,6 @@ p{
     margin-top: 30px;
     letter-spacing: -1px;
     color: black;
-
 }
 
 
@@ -189,6 +188,7 @@ font-family: cirka;
 font-weight: lighter;
 letter-spacing: -1px;
 font-size: 30px;
+width: 100%;
 /* font-style: italic; */
 }
 
@@ -221,6 +221,21 @@ font-size: 30px;
     width:100%;
     z-index: 10;
     margin-top: 0;
+}
+
+.linkButtons{
+    font-size: 18px;
+    border: 1.5px solid grey;
+    color: grey;
+    width: fit-content;
+    padding: 10px 20px;
+    border-radius: 30px;
+    margin-top: -10px;
+}
+
+.linkButtons:hover{
+    background-color: grey;
+    color: white;
 }
 
 
@@ -269,6 +284,8 @@ font-size: 30px;
 }
 
   .info{
+    display: flex;
+    flex-direction: column;
     width: 40%;
   }
 
@@ -298,6 +315,13 @@ font-size: 30px;
     height:55vh;
     transform: translate(-50%,-40%);
 }
+
+
+
+h4{
+    width: 70%;
+    /* font-style: italic; */
+    }
 
 }
 
@@ -346,13 +370,25 @@ font-size: 30px;
         display: block;
         object-fit: contain;
       }
+
+
+        #info{
+    display: flex;
+    flex-direction:row;
+        }
+
+     #info>div{
+        width: 50%;
+     }
     }
+
 
 
 
 @media only screen and (min-width: 1400px) {
     #work-showcase{
         width: 55%;    
+
 
     }
 }
