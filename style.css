@@ -194,7 +194,7 @@ width: 100%;
 
 /* laning page showcase */
 
-#work-showcase{
+/* #work-showcase{
     position: absolute;
     display: flex;
     width: 88vw;
@@ -221,7 +221,7 @@ width: 100%;
     width:100%;
     z-index: 10;
     margin-top: 0;
-}
+} */
 
 .linkButtons{
     font-size: 18px;
