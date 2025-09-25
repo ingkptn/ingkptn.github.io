@@ -160,7 +160,7 @@ video, img {
 
 /* media queries */
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
 body{
     margin: 0;
     padding: 10px 20px;
@@ -169,7 +169,7 @@ body{
 
 h1{
     font-family:helvetica;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 0.5;
 }
 
@@ -187,15 +187,73 @@ h2{
     /* background-color: red; */
 }
 
+    #header{
+        display:flex;
+    }
+
+#intro{
+    margin-top: -10px;
+}
+
 #intro>span{
     display: none;
 }
 
+       #header>span{
+        display: none;
+    }
+
 
 }
 
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 450px) {
+
+body{
+    margin: 0;
+    padding: 10px 20px;
+    flex-direction: column;
+}
+
+h1{
+    font-family:helvetica;
+    font-size: 28px;
+    line-height: 0.5;
+}
+
+h2{
+    font-family:"montreal";
+    font-size: 14px;
+}
+
+#left{
+    width: 100%;
+}
+
+#right{
+    width:100%;
+    /* background-color: red; */
+}
+
+    #header{
+        display:flex;
+    }
+
+#intro{
+    margin-top: -10px;
+}
+
+#intro>span{
+    display: block;
+}
+
+       #header>span{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 700px) {
 
     body{
     height: 100vh;
@@ -214,10 +272,23 @@ h2{
         width: 100%;
     }
 
+    #header{
+        display:flex;
+    }
+
+    #header>span{
+        display: inline-block;
+    }
+
+    #intro{
+        margin-top: 0px;
+    }
+
+
 
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1000px) {
 
     #left{
         display: flex;
@@ -228,6 +299,10 @@ h2{
         #intro{
         margin-top: 0px;
         flex-basis: 0.5;
+    }
+
+           #header>span{
+        display: none;
     }
 
 
