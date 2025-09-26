@@ -39,6 +39,7 @@
 
 /* text */
 
+
 h1{
     font-family:helvetica;
     font-size: 40px;
@@ -283,6 +284,17 @@ h2{
     #intro{
         margin-top: 0px;
     }
+
+    h1{
+    font-family:helvetica;
+    font-size: 35px;
+    line-height: 0.5;
+}
+
+h2{
+    font-family:"montreal";
+    font-size: 16px;
+}
 
 
 
