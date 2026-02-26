@@ -31,7 +31,6 @@
 
 body{
     padding: 0px 20px;
-    font-size: 13px;
 }
 
 #header{
@@ -257,7 +256,7 @@ h3, p, h4{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     border-top: 0.75px solid black;
-    margin-bottom: 15px;
+    margin-bottom: 15px;}
 
     img{
     width: 95%;
@@ -280,7 +279,7 @@ h3, p, h4{
 
 
 }
-}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {}
@@ -288,17 +287,26 @@ h3, p, h4{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
 
-    #header{
 
+    #flex{
+        display: flex;
+        width: 100%;
+        border-bottom: 0.75px solid black;
+    }
+
+    #header{
+        position: sticky;
+        top: 0px;
     }
 
 #wide-screen{
     display:block;
-    width: 18vw;
-    float:left;
-    border-right: 0.75px solid black;
+    width: 25%;
     padding-right: 1vw;
-    height: 100vh;
+    height: 100%;
+    margin-top: 10px;
+    position: sticky;
+    top: 90px;
 
 
 }
@@ -306,12 +314,13 @@ h3, p, h4{
 body{
     padding: 10px 30px;
 }
-#filter{
-    width: 75vw;
-    float: right;
+
+
+#main{
+    width: 95%;
+    padding-left: 2%;
+    border-left: 0.75px solid black;
 }
-#projects{
-    width: 75vw;
-    float: right;
-}
+
+
 }
