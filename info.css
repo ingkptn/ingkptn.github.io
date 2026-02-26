@@ -1,0 +1,205 @@
+@font-face {
+    font-family:"montreal" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Regular.woff2");
+}
+
+@font-face {
+    font-family:"montreal-italic" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Italic.woff2");
+}
+
+@font-face {
+    font-family:"montreal-light" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Light.woff2");
+}
+
+@font-face {
+    font-family:"montreal-bold" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-Bold.woff2");
+}
+
+
+@font-face {
+    font-family:"montreal-lightItalic" ;
+    src: url("typefaces/Neue Montreal/NeueMontreal-LightItalic.woff2");
+}
+
+@font-face {
+    font-family:"cirka" ;
+    src: url("typefaces/PPCirka-Variable.woff");
+}
+
+body{
+    padding: 0px 20px;
+    font-size: 13px;
+}
+
+#header{
+    background-color: white;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 1px;
+
+}
+
+
+#header-flex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+#filter{
+    border-top: 0.75px solid black;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#filter>h3{
+    border: 0.75px solid black;
+    margin-right: 7px;
+    padding: 8px 10px 6px;
+    border-radius: 20px;
+    transition: padding 0.5s;
+    margin-bottom: 12px;
+    margin-top: 12px;
+
+}
+
+#filter>h3:hover{
+    background-color: rgb(79, 79, 79);
+    color: white;
+    padding:8px 20px 6px;
+    font-weight: bolder;
+
+}
+
+.proj{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+    border-top: 0.75px solid black;
+    margin-bottom: 15px;
+}
+
+#ing-info{
+    margin-top:-12px;
+    color:rgb(79, 79, 79);
+}
+
+
+
+
+#credits{
+    text-align: center;
+}
+
+
+
+
+/* text styling */
+h1{
+    font-family: cirka;
+    font-size: 25px;
+}
+
+h2{
+    font-family: cirka;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+h3{
+    font-family: cirka;
+    font-size: 15px;
+    line-height: 1.1;
+    font-weight: 10;
+}
+
+h4{
+    font-family: cirka;
+    font-size: 16px;
+    font-style: italic;
+}
+
+p{
+    font-family: cirka;
+    font-size: 15px;
+    line-height: 1.05;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+#services{
+    position: absolute;
+    left: 75px;
+    width: 300px;
+    transform: rotate(-5deg);
+    filter: drop-shadow(2px 3px 2px #898989);
+}
+
+#contact{
+    position: absolute;
+    right: 50px;
+    width: 350px;
+    height: 200px;
+    background-color: rgb(29, 29, 29);
+    color: white;
+    padding: 10px 0px 10px 20px;
+    filter: drop-shadow(2px 3px 2px #898989);
+}
+
+#contact>h2{
+    margin: 60px 0px 0px;
+    line-height: 1.1;
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+
+
+
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+body{
+    padding: 10px 30px;
+}
+#filter{
+        width: 75vw;
+    float: right;
+}
+#projects{
+    width: 75vw;
+    float: right;
+}
+}
