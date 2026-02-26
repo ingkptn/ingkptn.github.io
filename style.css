@@ -176,7 +176,16 @@ img:hover{
     filter: brightness(0.4);
 }
 
-
+/* #archive{
+    position:sticky;
+    background-color: white;
+    width: fit-content;
+    height: 40px;
+    border: 0.75px solid black;
+    bottom: 40px;
+    left: 98%;
+    padding: 00px 20px;
+} */
 
 
 
@@ -226,7 +235,11 @@ h2{
 
 h3, p, h4{
     font-size: 13px;
-}}
+}
+
+
+
+}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -275,6 +288,7 @@ h3, p, h4{
 
 
 }
+
 
 
 
