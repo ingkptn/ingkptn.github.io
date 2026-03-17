@@ -51,49 +51,15 @@ body{
 }
 
 
-#filter{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: -5px;
-    margin-top: 10px;
-
-}
-
-#filter>h3{
-    border: 0.75px solid black;
-    margin-right: 7px;
-    padding: 8px 10px 6px;
-    border-radius: 20px;
-    transition: padding 0.5s;
-    margin-bottom: 0x;
-    margin-top: 0px;
-
-
-}
-
-#filter>h3:hover{
-    background-color: rgb(79, 79, 79);
-    color: white;
-    padding:8px 20px 6px;
-    font-weight: bolder;
-
-}
-
-#filter h3.active{
-  background-color: rgb(79, 79, 79);
-  color: white;
-  font-weight: bolder;
-  padding: 8px 20px 6px; /* matches your hover expansion */
-}
 
 
 
-.proj{
+/* .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     border-top: 0.75px solid black;
     margin-bottom: 15px;
-}
+} */
 
 #ing-info{
     margin-top:-12px;
@@ -172,12 +138,16 @@ a{
     color: black;
 }
 
-
+#flex{
+    display: flex;
+    flex-direction: column;
+}
 
 img video{
     width: 95%;
     margin-left: 5%;
     margin-top: 20px;
+    
 }
 
 
@@ -202,33 +172,17 @@ img video{
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-    #wide-screen{
-    display: none;
-}
-        .proj{
+
+        /* .proj{
     display: grid;
     grid-template-columns: 1fr;
     border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;} */
 
     img, video{
     width: 100%;
     margin-left: 0%;
     margin-top: 5px;
-}
-
-#filter{
-    margin-bottom: 5px;
-}
-#filter>h3{
-    border: 0.75px solid black;
-    margin-right: 7px;
-    padding: 8px 10px 6px;
-    border-radius: 20px;
-    transition: padding 0.5s;
-    margin-bottom: 5px;
-    margin-top: 0px;
-
 }
 
 h1{
@@ -250,11 +204,11 @@ h3, p, h4{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    .proj{
+    /* .proj{
     display: grid;
     grid-template-columns: 1fr;
     border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;} */
 
     img, video{
     width: 100%;
@@ -262,20 +216,28 @@ h3, p, h4{
     margin-top: 5px;
 }
 
-    #wide-screen{
-    display: block;
-}
 
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 992px) {
-    .proj{
+    /* .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
     border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    margin-bottom: 15px;
+} */
+
+#flex{
+    display: flex;
+    flex-direction: row;
+}
+
+    .desc{
+    width: 20%;
+    padding-right: 2%;
+}
 
     img, video{
     width: 100%;
@@ -283,17 +245,6 @@ h3, p, h4{
     margin-top: 20px;
 }
 
-#filter>h3{
-    border: 0.75px solid black;
-    margin-right: 7px;
-    padding: 8px 10px 6px;
-    border-radius: 20px;
-    transition: padding 0.5s;
-    margin-bottom: 0x;
-    margin-top: 0px;
-
-
-}
 
 
 
@@ -302,13 +253,18 @@ h3, p, h4{
 
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1500px) {
+        .desc{
+    display:block;
+    width: 25%;
+    padding-right: 1vw;
+    height: 100%;
+    position: sticky;
+    top: 90px;
+}
 
-
-    #flex{
+        #flex{
         display: flex;
         width: 100%;
         border-bottom: 0.75px solid black;
@@ -319,7 +275,7 @@ h3, p, h4{
         top: 0px;
     }
 
-#wide-screen{
+/* #wide-screen{
     display:block;
     width: 25%;
     padding-right: 1vw;
@@ -327,9 +283,10 @@ h3, p, h4{
     margin-top: 10px;
     position: sticky;
     top: 90px;
+    
 
 
-}
+} */
 
 body{
     padding: 10px 30px;
@@ -340,7 +297,15 @@ body{
     width: 95%;
     padding-left: 2%;
     border-left: 0.75px solid black;
+    
 }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+
+
 
 
 }
