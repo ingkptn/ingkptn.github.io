@@ -111,7 +111,7 @@ background-color: rgb(79, 79, 79);
 /* text styling */
 h1{
     font-family: cirka;
-    font-size: 25px;
+    font-size: 22px;
 }
 
 h2{
@@ -129,7 +129,7 @@ h3{
 
 h4{
     font-family: cirka;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
 }
 
@@ -315,7 +315,7 @@ h3, p, h4{
 } */
 
 body{
-    padding: 10px 30px;
+    padding: 0px 20px;
 }
 
 
