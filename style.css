@@ -39,8 +39,10 @@ body{
     top: 0px;
     padding:3px 0px 5px 0px;
     border-bottom: 0.75px solid black;
+    z-index: 20;
 
 }
+
 
 
 #header-flex{
@@ -54,6 +56,8 @@ body{
     flex-basis: 95%;
     height: fit-content;
 }
+
+
 
 
 #filter{
@@ -259,6 +263,10 @@ h3, p, h4{
     
 }
 
+#header-flex>a>h1{
+    margin-left: 20px;
+}
+
 }
 
 
@@ -284,6 +292,10 @@ h3, p, h4{
     height: 45px;
     padding-right: 10px;
     
+}
+
+#header-flex>a>h1{
+    margin-left: 20px;
 }
 
 
