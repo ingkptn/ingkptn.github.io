@@ -63,7 +63,7 @@ body{
 #filter{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: -5px;
+    margin-bottom: 0px;
     margin-top: 10px;
 
 }
@@ -71,10 +71,10 @@ body{
 #filter>h3{
     border: 0.75px solid black;
     margin-right: 7px;
-    padding: 8px 10px 6px;
+    padding: 6px 10px 6px;
     border-radius: 20px;
     transition: padding 0.5s;
-    margin-bottom: 0x;
+    margin-bottom: 10px;
     margin-top: 0px;
 
 
@@ -83,7 +83,7 @@ body{
 #filter>h3:hover{
     background-color: rgb(79, 79, 79);
     color: white;
-    padding:8px 20px 6px;
+    padding:6px 20px 6px;
     font-weight: bolder;
 
 }
@@ -92,7 +92,7 @@ body{
   background-color: rgb(79, 79, 79);
   color: white;
   font-weight: bolder;
-  padding: 8px 20px 6px; /* matches your hover expansion */
+  padding: 6px 20px 6px; /* matches your hover expansion */
 }
 
 
@@ -162,22 +162,22 @@ h2{
 }
 
 h3{
-    font-family: cirka;
-    font-size: 15px;
-    line-height: 1.1;
+    font-family: montreal;
+    font-size: 12px;
+    line-height: 1.35;
     font-weight: 10;
 }
 
 h4{
-    font-family: cirka;
+    font-family: montreal;
     font-size: 14px;
     font-style: italic;
 }
 
 p{
-    font-family: cirka;
-    font-size: 15px;
-    line-height: 1.05;
+    font-family: montreal;
+    font-size: 12px;
+    line-height: 1.2;
 }
 
 a{
@@ -236,7 +236,7 @@ img:hover, video:hover{
 #filter>h3{
     border: 0.75px solid black;
     margin-right: 7px;
-    padding: 8px 10px 6px;
+    padding: px 10px 6px;
     border-radius: 20px;
     transition: padding 0.5s;
     margin-bottom: 5px;
@@ -253,7 +253,7 @@ h2{
 }
 
 h3, p, h4{
-    font-size: 13px;
+    font-size: 11px;
 }
 
 #header-flex>img{
@@ -287,6 +287,8 @@ h3, p, h4{
     #wide-screen{
     display: none;
 }
+
+
 #header-flex>img{
     width: 45px;
     height: 45px;
