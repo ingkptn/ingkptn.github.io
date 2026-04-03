@@ -81,7 +81,7 @@ body{
 }
 
 #filter>h3:hover{
-    background-color: rgb(79, 79, 79);
+    background-color: rgb(144, 144, 144);
     color: white;
     padding:8px 20px 6px;
     font-weight: bolder;
@@ -89,7 +89,7 @@ body{
 }
 
 #filter h3.active{
-  background-color: rgb(79, 79, 79);
+  background-color: rgb(144, 144, 144);
   color: white;
   font-weight: bolder;
   padding: 8px 20px 6px; /* matches your hover expansion */
@@ -150,38 +150,34 @@ background-color: rgb(79, 79, 79);
 
 
 /* text styling */
+
 h1{
     font-family: cirka;
-    font-size: 22px;
 }
 
 h2{
     font-family: cirka;
-    font-size: 20px;
     font-weight: 1000;
 }
 
 h3{
     font-family: cirka;
-    font-size: 15px;
     line-height: 1.1;
     font-weight: 10;
 }
 
 h4{
     font-family: cirka;
-    font-size: 14px;
     font-style: italic;
 }
 
 p{
     font-family: cirka;
-    font-size: 15px;
     line-height: 1.05;
 }
 
 a{
-    text-decoration: none;
+    text-decoration:none;
     color: black;
 }
 
@@ -298,11 +294,23 @@ h3, p, h4{
     margin-left: 20px;
 }
 
+h1{
+    font-size: 19px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h3, p, h4{
+    font-size: 13px;
+}
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 850px) {
     .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -333,14 +341,23 @@ h3, p, h4{
     
 }
 
+h1{
+    font-size: 21px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3, p, h4{
+    font-size: 14px;
+}
 
 
 
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {}
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
@@ -359,12 +376,12 @@ h3, p, h4{
 
 #wide-screen{
     display:block;
-    width: 25%;
-    padding-right: 1vw;
+    width: 20%;
+    padding-right: 1.5vw;
     height: 100%;
     margin-top: 10px;
     position: sticky;
-    top: 90px;
+    top: 100px;
 }
 
 #wide-screen>h3{
@@ -372,7 +389,7 @@ h3, p, h4{
     font-size: 16px;
 }
 
-#wide-screen>h3:hover{
+h3>a:hover{
     font-style: italic;
 }
 

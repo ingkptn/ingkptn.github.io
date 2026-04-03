@@ -144,6 +144,7 @@ a{
     color: black;
 }
 
+
 #flex{
     display: flex;
     flex-direction: column;
@@ -236,11 +237,23 @@ h3, p, h4{
     
 }
 
+h1{
+    font-size: 19px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h3, p, h4{
+    font-size: 13px;
+}
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 850px) {
     /* .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
@@ -248,15 +261,12 @@ h3, p, h4{
     margin-bottom: 15px;
 } */
 
-#flex{
-    display: flex;
-    flex-direction: row;
-}
 
-    .desc{
+
+    /* .desc{
     width: 20%;
     padding-right: 2%;
-}
+} */
 
     img, video{
     width: 100%;
@@ -269,9 +279,19 @@ h3, p, h4{
     height: 50px;
     margin-left: 0%;
     margin-top: 0px;
-    
 }
 
+h1{
+    font-size: 21px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3, p, h4{
+    font-size: 14px;
+}
 
 
 
@@ -281,6 +301,8 @@ h3, p, h4{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    
 
         .desc{
     display:block;
@@ -293,6 +315,7 @@ h3, p, h4{
 
         #flex{
         display: flex;
+        flex-direction: row;
         width: 100%;
         border-bottom: 0.75px solid black;
     }
@@ -325,6 +348,18 @@ body{
     padding-left: 2%;
     border-left: 0.75px solid black;
     
+}
+
+h1{
+    font-size: 21px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3, p, h4{
+    font-size: 14px;
 }
 }
 

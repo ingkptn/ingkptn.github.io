@@ -14,7 +14,7 @@ const projects = document.getElementsByClassName("proj");
   const filters = [
     { btnId: "filterBranding", cls: "branding" },
     { btnId: "filterPublication", cls: "publication" },
-    { btnId: "filterGraphic", cls: "graphic" },
+    { btnId: "filterAW", cls: "aw" },
     { btnId: "filterPackaging", cls: "packaging" },
     { btnId: "filterDigital", cls: "digital" },
     { btnId: "filterTypeface", cls: "typeface" },
