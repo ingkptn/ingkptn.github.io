@@ -31,135 +31,103 @@
 
 body{
     padding: 0px 20px;
-    font-size: 13px;
 }
 
 #header{
     background-color: white;
     position: sticky;
     top: 0px;
-    padding-bottom: 1px;
+    padding:3px 0px 5px 0px;
+    border-bottom: 0.75px solid black;
+    z-index: 20;
 
 }
+
 
 
 #header-flex{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
 }
 
-
-#filter{
-    border-top: 0.75px solid black;
-    display: flex;
-    flex-wrap: wrap;
-
+#name{
+    flex-basis: 95%;
+    height: fit-content;
 }
 
-#filter>h3{
-    border: 0.75px solid black;
-    margin-right: 7px;
-    padding: 8px 10px 6px;
-    border-radius: 20px;
-    transition: padding 0.5s;
-    margin-bottom: 12px;
-    margin-top: 12px;
 
-}
-
-#filter>h3:hover{
-    background-color: rgb(79, 79, 79);
-    color: white;
-    padding:8px 20px 6px;
-    font-weight: bolder;
-
-}
-
-.proj{
-    display: grid;
-    grid-template-columns: 1fr 2.5fr;
-    border-top: 0.75px solid black;
-    margin-bottom: 15px;
-}
 
 #ing-info{
     margin-top:-12px;
-    color:rgb(79, 79, 79);
+    margin-bottom: 10px;
+    color:rgb(135, 135, 135);
 }
 
+#info{
+    margin-top: 20px;
+
+}
+
+#info>div{
+    width: 100%;
+}
 
 
 
 #credits{
+    display: block;
     text-align: center;
 }
 
+.year{
+    margin-top: 25px;
+}
 
 
 
 /* text styling */
+
 h1{
     font-family: cirka;
-    font-size: 25px;
+    font-weight: 10;
 }
 
 h2{
     font-family: cirka;
-    font-size: 20px;
-    font-weight: 1000;
+    font-weight: 10;
 }
 
 h3{
     font-family: cirka;
-    font-size: 15px;
     line-height: 1.1;
     font-weight: 10;
 }
 
 h4{
     font-family: cirka;
-    font-size: 16px;
     font-style: italic;
+    font-weight: 10;
 }
 
 p{
     font-family: cirka;
-    font-size: 15px;
     line-height: 1.05;
+    font-weight: 10;
 }
 
-
-
 a{
-    text-decoration: none;
+    text-decoration:none;
     color: black;
 }
 
-
-#services{
-    position: absolute;
-    left: 75px;
-    width: 300px;
-    transform: rotate(-5deg);
-    filter: drop-shadow(2px 3px 2px #898989);
+span{
+    font-style: italic;
+    font-weight: 10;
 }
 
-#contact{
-    position: absolute;
-    right: 50px;
-    width: 350px;
-    height: 200px;
-    background-color: rgb(29, 29, 29);
-    color: white;
-    padding: 10px 0px 10px 20px;
-    filter: drop-shadow(2px 3px 2px #898989);
-}
 
-#contact>h2{
-    margin: 60px 0px 0px;
-    line-height: 1.1;
-}
 
 
 
@@ -167,39 +135,138 @@ a{
 @media only screen and (max-width: 600px) {
 
 
+
+
+
+h1{
+    font-size: 19px;
 }
+
+h2{
+    font-size: 17px;
+}
+
+h3, p, h4{
+    font-size: 13px;
+}
+
+#header-flex>img{
+    width: 35px;
+    height: 35px;
+    padding-right: 10px;
+    
+}
+
+#header-flex>a>h1{
+    margin-left: 20px;
+}
+
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
 
 
+#header-flex>img{
+    width: 45px;
+    height: 45px;
+    padding-right: 10px;
+    
+}
+
+#header-flex>a>h1{
+    margin-left: 20px;
+}
+
+h1{
+    font-size: 19px;
+}
+
+h2{
+    font-size: 17px;
+}
+
+h3, p, h4{
+    font-size: 13px;
+}
+
 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 850px) {
 
 
+#header-flex>img{
+    width: 50px;
+    height: 50px;
+    margin-left: 0%;
+    margin-top: 0px;
+    
+}
+
+h1{
+    font-size: 21px;
+}
+
+h2{
+    font-size: 18px;
+}
+
+h3, p, h4{
+    font-size: 14px;
+}
+
+#info{
+
+}
+
+#info>div{
+    width: 50%;
+}
 
 
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {...}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
 
+
+    #flex{
+        display: flex;
+        width: 100%;
+        border-bottom: 0.75px solid black;
+    }
+
+    #header{
+        position: sticky;
+        top: 0px;
+    }
+
+
+
+h3>a:hover{
+    font-style: italic;
+}
+
 body{
     padding: 10px 30px;
 }
-#filter{
-        width: 75vw;
-    float: right;
+
+
+
+
+.desc{
+    padding-left: 1.5vw;
 }
-#projects{
-    width: 75vw;
-    float: right;
+
+#credits{
+    display: none;
 }
+
+
 }
