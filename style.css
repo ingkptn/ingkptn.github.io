@@ -1,32 +1,23 @@
-@font-face {
-    font-family:"montreal" ;
-    src: url("typefaces/Neue Montreal/NeueMontreal-Regular.woff2");
-}
-
-@font-face {
-    font-family:"montreal-italic" ;
-    src: url("typefaces/Neue Montreal/NeueMontreal-Italic.woff2");
-}
-
-@font-face {
-    font-family:"montreal-light" ;
-    src: url("typefaces/Neue Montreal/NeueMontreal-Light.woff2");
-}
-
-@font-face {
-    font-family:"montreal-bold" ;
-    src: url("typefaces/Neue Montreal/NeueMontreal-Bold.woff2");
-}
-
-
-@font-face {
-    font-family:"montreal-lightItalic" ;
-    src: url("typefaces/Neue Montreal/NeueMontreal-LightItalic.woff2");
-}
 
 @font-face {
     font-family:"cirka" ;
     src: url("typefaces/PPCirka-Variable.woff");
+}
+
+@font-face {
+    font-family:"archivo" ;
+    src: url("typefaces/archivo/Archivo-Regular.woff");
+}
+
+@font-face {
+    font-family:"archivo-bold" ;
+    src: url("typefaces/archivo/Archivo-SemiBold.woff");
+}
+
+
+@font-face {
+    font-family:"arimo" ;
+    src: url("typefaces/Arimo-VariableFont.woff2");
 }
 
 body{
@@ -38,7 +29,7 @@ body{
     position: sticky;
     top: 0px;
     padding:3px 0px 5px 0px;
-    border-bottom: 0.75px solid black;
+    border-bottom: 0.85px solid black;
     z-index: 20;
 
 }
@@ -69,7 +60,7 @@ body{
 }
 
 #filter>h3{
-    border: 0.75px solid black;
+    border: 0.85px solid black;
     margin-right: 7px;
     padding: 8px 10px 6px;
     border-radius: 20px;
@@ -83,7 +74,7 @@ body{
 #filter>h3:hover{
     background-color: rgb(144, 144, 144);
     color: white;
-    padding:8px 20px 6px;
+    padding:6px 20px 4px;
     font-weight: bolder;
 
 }
@@ -100,14 +91,15 @@ body{
 .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    border-top: 0.75px solid black;
-    margin-bottom: 15px;
+    border-bottom: 0.85px solid black;
     overflow: hidden;
-    
+    color: black;
 }
 
+
+
 #ing-info{
-    margin-top:-12px;
+    margin-top:-10px;
     margin-bottom: 10px;
     color:rgb(135, 135, 135);
 }
@@ -125,7 +117,7 @@ body{
 }
 
 .fa-angles-up{
-    border: 0.75px solid black;
+    border: 0.85px solid black;
     padding: 15px;
     border-radius: 40px;
     margin-top: 40px;
@@ -144,40 +136,38 @@ background-color: rgb(79, 79, 79);
     text-align: center;
 }
 
-.year{
-    margin-top: 25px;
-}
+
 
 
 
 /* text styling */
 
 h1{
-    font-family: cirka;
-    font-weight: 10;
+    font-family: arimo;
+    font-weight: 400;
 }
 
 h2{
-    font-family: cirka;
-    font-weight: 10;
+    font-family: arimo;
+    font-weight: 400;
 }
 
 h3{
-    font-family: cirka;
-    line-height: 1.1;
-    font-weight: 10;
+    font-family: arimo;
+    line-height: 1.5;
+    font-weight: 400;
 }
 
 h4{
-    font-family: cirka;
+    font-family: arimo;
     font-style: italic;
-    font-weight: 10;
+    font-weight: 400;
 }
 
 p{
-    font-family: cirka;
-    line-height: 1.05;
-    font-weight: 10;
+    font-family: arimo;
+    line-height: 1.15;
+    font-weight: 400;
 }
 
 a{
@@ -188,7 +178,6 @@ a{
 img video{
     width: 95%;
     margin-left: 5%;
-    margin-top: 20px;
 }
 
 img:hover, video:hover{
@@ -200,7 +189,7 @@ img:hover, video:hover{
     background-color: white;
     width: fit-content;
     height: 40px;
-    border: 0.75px solid black;
+    border: 0.85px solid black;
     bottom: 40px;
     left: 98%;
     padding: 00px 20px;
@@ -221,8 +210,10 @@ img:hover, video:hover{
         .proj{
     display: grid;
     grid-template-columns: 1fr;
-    border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    margin-top: 0px;
+    border-bottom: 0.85px solid black;
+    padding-bottom: 15px;
+    color: black;}
 
     img, video{
     width: 100%;
@@ -234,7 +225,7 @@ img:hover, video:hover{
     margin-bottom: 5px;
 }
 #filter>h3{
-    border: 0.75px solid black;
+    border: 0.85px solid black;
     margin-right: 7px;
     padding: 8px 10px 6px;
     border-radius: 20px;
@@ -244,16 +235,20 @@ img:hover, video:hover{
 
 }
 
+.year{
+    margin-top: 10px;
+}
+
 h1{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 h2{
-    font-size: 17px;
+    font-size: 11px;
 }
 
 h3, p, h4{
-    font-size: 13px;
+    font-size: 11px;
 }
 
 #header-flex>img{
@@ -275,8 +270,14 @@ h3, p, h4{
     .proj{
     display: grid;
     grid-template-columns: 1fr;
-    border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    margin-top: 15px;
+    border-bottom: 0.85px solid black;
+    padding-bottom: 15px;
+    color: black;}
+
+    .proj:hover{
+    color: black;
+}
 
     img, video{
     width: 100%;
@@ -300,16 +301,20 @@ h3, p, h4{
     margin-left: 20px;
 }
 
-h1{
-    font-size: 19px;
+.year{
+    margin-top: 0px;
 }
 
-h2{
+h1{
     font-size: 17px;
 }
 
+h2{
+    font-size: 12px;
+}
+
 h3, p, h4{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -320,17 +325,22 @@ h3, p, h4{
     .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    border-top: 0.75px solid black;
-    margin-bottom: 15px;}
+    border-bottom: 0.85px solid black;
+    margin-bottom: 15px;
+    color: black;}
 
     img, video{
     width: 95%;
     margin-left: 5%;
-    margin-top: 20px;
+    margin-top: 5px;
+}
+
+.year{
+    margin-top: 10px;
 }
 
 #filter>h3{
-    border: 0.75px solid black;
+    border: 0.85px solid black;
     margin-right: 7px;
     padding: 8px 10px 6px;
     border-radius: 20px;
@@ -347,7 +357,7 @@ h3, p, h4{
     
 }
 
-h1{
+/* h1{
     font-size: 21px;
 }
 
@@ -357,7 +367,7 @@ h2{
 
 h3, p, h4{
     font-size: 14px;
-}
+} */
 
 
 
@@ -372,12 +382,16 @@ h3, p, h4{
     #flex{
         display: flex;
         width: 100%;
-        border-bottom: 0.75px solid black;
+        /* border-bottom: 0.85px solid black; */
     }
 
     #header{
         position: sticky;
         top: 0px;
+    }
+
+    .proj{
+        color: grey;
     }
 
 #wide-screen{
@@ -409,7 +423,7 @@ body{
 #main{
     width: 95%;
     padding-left: 0%;
-    border-left: 0.75px solid black;
+    border-left: 0.85px solid black;
 }
 
 #filter{
