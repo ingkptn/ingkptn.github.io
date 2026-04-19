@@ -111,35 +111,31 @@ background-color: rgb(79, 79, 79);
 
 /* text styling */
 h1{
-    font-family: cirka;
-    font-size: 22px;
+    font-family: arimo;
+    font-weight: 400;
 }
 
 h2{
-    font-family: cirka;
-    font-size: 20px;
-    font-weight: 10;
+    font-family: arimo;
+    font-weight: 600;
 }
 
 h3{
-    font-family: cirka;
-    font-size: 15px;
-    line-height: 1.1;
-    font-weight: 10;
+    font-family: arimo;
+    line-height: 1.15;
+    font-weight: 400;
 }
 
 h4{
-    font-family: cirka;
-    font-size: 14px;
+    font-family: arimo;
     font-style: italic;
-    font-weight: 10;
+    font-weight: 400;
 }
 
 p{
-    font-family: cirka;
-    font-size: 15px;
-    line-height: 1.05;
-    font-weight: 10;
+    font-family: arimo;
+    line-height: 1.15;
+    font-weight: 400;
 }
 
 a{
@@ -197,15 +193,15 @@ img video{
 }
 
 h1{
-    font-size: 19px;
+    font-size: 16px;
 }
 
 h2{
-    font-size: 17px;
+    font-size: 11.5px;
 }
 
 h3, p, h4{
-    font-size: 13px;
+    font-size: 11px;
 }
 
 #header-flex>img{
@@ -241,15 +237,15 @@ h3, p, h4{
 }
 
 h1{
-    font-size: 19px;
-}
-
-h2{
     font-size: 17px;
 }
 
+h2{
+    font-size: 12.5px;
+}
+
 h3, p, h4{
-    font-size: 13px;
+    font-size: 12px;
 }
 
 
@@ -284,17 +280,7 @@ h3, p, h4{
     margin-top: 0px;
 }
 
-h1{
-    font-size: 21px;
-}
 
-h2{
-    font-size: 18px;
-}
-
-h3, p, h4{
-    font-size: 14px;
-}
 
 
 
@@ -353,17 +339,7 @@ body{
     
 }
 
-h1{
-    font-size: 21px;
-}
 
-h2{
-    font-size: 18px;
-}
-
-h3, p, h4{
-    font-size: 14px;
-}
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
