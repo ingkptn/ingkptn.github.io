@@ -1,32 +1,22 @@
 @font-face {
-    font-family:"montreal" ;
-    src: url("/typefaces/Neue Montreal/NeueMontreal-Regular.woff2");
-}
-
-@font-face {
-    font-family:"montreal-italic" ;
-    src: url("/typefaces/Neue Montreal/NeueMontreal-Italic.woff2");
-}
-
-@font-face {
-    font-family:"montreal-light" ;
-    src: url("/typefaces/Neue Montreal/NeueMontreal-Light.woff2");
-}
-
-@font-face {
-    font-family:"montreal-bold" ;
-    src: url("/typefaces/Neue Montreal/NeueMontreal-Bold.woff2");
-}
-
-
-@font-face {
-    font-family:"montreal-lightItalic" ;
-    src: url("/typefaces/Neue Montreal/NeueMontreal-LightItalic.woff2");
-}
-
-@font-face {
     font-family:"cirka" ;
-    src: url("/typefaces/PPCirka-Variable.woff");
+    src: url("typefaces/PPCirka-Variable.woff");
+}
+
+@font-face {
+    font-family:"archivo" ;
+    src: url("typefaces/archivo/Archivo-Regular.woff");
+}
+
+@font-face {
+    font-family:"archivo-bold" ;
+    src: url("typefaces/archivo/Archivo-SemiBold.woff");
+}
+
+
+@font-face {
+    font-family:"arimo" ;
+    src: url("typefaces/Arimo-VariableFont.woff2");
 }
 
 body{
