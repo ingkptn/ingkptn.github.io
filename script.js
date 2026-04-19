@@ -1,16 +1,13 @@
-//  scroll to top
- document.addEventListener("DOMContentLoaded", () => {
-    const scrollToTop = document.getElementById("jump-up");
+document.addEventListener("DOMContentLoaded", () => {
+  const scrollToTop = document.getElementById("jump-up");
+  if (scrollToTop) {
     scrollToTop.addEventListener("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });
+  }
 
+  const projects = document.getElementsByClassName("proj");
 
-// filter system
-
-const projects = document.getElementsByClassName("proj");
-
- 
   const filters = [
     { btnId: "filterBranding", cls: "branding" },
     { btnId: "filterPublication", cls: "publication" },
@@ -20,7 +17,7 @@ const projects = document.getElementsByClassName("proj");
     { btnId: "filterTypeface", cls: "typeface" },
   ];
 
-  let activeFilter = null; // currently active class filter
+  let activeFilter = null;
 
   function showAllProjects() {
     for (let i = 0; i < projects.length; i++) {
@@ -42,14 +39,12 @@ const projects = document.getElementsByClassName("proj");
     }
   }
 
-  // attach click listeners
   for (let i = 0; i < filters.length; i++) {
     const { btnId, cls } = filters[i];
     const btn = document.getElementById(btnId);
     if (!btn) continue;
 
     btn.addEventListener("click", () => {
-      // clicking the same filter again = reset to ALL
       if (activeFilter === cls) {
         activeFilter = null;
         clearActiveButtons();
@@ -57,7 +52,6 @@ const projects = document.getElementsByClassName("proj");
         return;
       }
 
-      // set new filter
       activeFilter = cls;
       clearActiveButtons();
       btn.classList.add("active");
@@ -65,6 +59,18 @@ const projects = document.getElementsByClassName("proj");
     });
   }
 
-  // default: show all
   showAllProjects();
-});
+
+  });
+
+  // const info = document.getElementById("info");
+  // const wideScreen = document.getElementById("wide-screen");
+  // const ingDesc = document.getElementById("ing-desc");
+  // const filterSytem = document.getElementById("ing-desc");
+
+  // if (info && wideScreen) {
+  //   info.addEventListener("click", () => {
+  //     wideScreen.style.display =
+  //       wideScreen.style.display === "block" ? "none" : "block";
+  //   });
+  // }
