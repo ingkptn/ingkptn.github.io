@@ -22,13 +22,14 @@
 
 body{
     padding: 0px 20px;
+    overflow: hidden;
 }
 
 #header{
     background-color: white;
     position: sticky;
     top: 0px;
-    padding:3px 0px 5px 0px;
+    padding:3px 0px 3px 0px;
     border-bottom: 0.85px solid black;
     z-index: 20;
 
@@ -44,12 +45,22 @@ body{
 }
 
 #name{
-    flex-basis: 95%;
+    flex-basis: 60%;
     height: fit-content;
 }
 
 
 
+#projects{
+    overflow-y: scroll;
+height: calc(100vh - 100px);
+}
+
+
+#title{
+    padding-left: 0px;
+    border-bottom: 0.85px solid black;
+}
 
 .proj{
     display: grid;
@@ -191,7 +202,7 @@ img:hover, video:hover{
 }
 
 h1{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 h2{
@@ -248,8 +259,13 @@ h3, p, h4{
     
 }
 
+
 #header-flex>a>h1{
     margin-left: 20px;
+}
+
+#name{
+    flex-basis: 70%;
 }
 
 .year{
@@ -257,7 +273,7 @@ h3, p, h4{
 }
 
 h1{
-    font-size: 17px;
+    font-size: 16px;
 }
 
 h2{
@@ -267,6 +283,7 @@ h2{
 h3, p, h4{
     font-size: 12px;
 }
+
 
 
 }
@@ -290,22 +307,11 @@ h3, p, h4{
     margin-top: 10px;
 }
 
-#filter>h3{
-    border: 0.85px solid black;
-    margin-right: 7px;
-    padding: 8px 10px 6px;
-    border-radius: 20px;
-    transition: padding 0.5s;
-    margin-bottom: 0x;
-    margin-top: 0px;
-}
 
-#header-flex>img{
-    width: 50px;
-    height: 50px;
-    margin-left: 0%;
-    margin-top: 0px;
-    
+
+#name{
+    flex-basis: 85%;
+    height: fit-content;
 }
 
 /* h1{
@@ -352,7 +358,7 @@ h3, p, h4{
     width: 20%;
     padding-right: 1.5vw;
     height: calc(100vh - 120px);
-    margin-top: 10px;
+    margin-top: 0px;
     position: sticky;
     top: 100px;
 }
@@ -362,12 +368,20 @@ h3, p, h4{
     font-size: 16px;
 }
 
+#title{
+    padding-left: 24px;
+    border-bottom: 0.85px solid black;
+}
+
 #info{
     display: none;
 }
 
 
-
+#name{
+    flex-basis: 90%;
+    height: fit-content;
+}
 
 
 body{
