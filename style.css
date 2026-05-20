@@ -23,6 +23,7 @@
 body{
     padding: 0px 20px;
     overflow: hidden;
+    -webkit-font-smoothing: antialiased;
 }
 
 #header{
