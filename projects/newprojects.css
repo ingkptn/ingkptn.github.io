@@ -23,6 +23,9 @@
 body{
     padding: 0px 20px;
     overflow: hidden;
+      font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+
 }
 
 #header{
@@ -356,7 +359,7 @@ h3, p, h4{
 
     .proj{
     display: grid;
-    grid-template-columns: 1fr 4.5fr;
+    grid-template-columns: 1fr 4.5fr;}
 
 /* #wide-screen{
     display:flex;
@@ -383,7 +386,7 @@ h3, p, h4{
 }
 
 .desc{
-        width:
+        width:fit-content;
         position: sticky;
         top: 0px;
 }
@@ -405,10 +408,10 @@ body{
 }
 
 
-/* #main{
+#main{
     width: 95%;
     padding-left: 0%;
-} */
+}
 
 
 /* .desc{
@@ -421,4 +424,4 @@ body{
 
 
 
-}
+}}
