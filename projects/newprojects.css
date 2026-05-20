@@ -395,10 +395,10 @@ h3, p, h4{
     padding: 10px 1.5vw 10px 0px;
 } */
 
-#wide-screen>h3{
+/* #wide-screen>h3{
     margin-top: -5px;
     font-size: 16px;
-}
+} */
 
 #title{
     /* padding-left: 24px; */
@@ -430,10 +430,10 @@ body{
 }
 
 
-#main{
+/* #main{
     width: 95%;
     padding-left: 0%;
-}
+} */
 
 
 /* .desc{
@@ -446,4 +446,4 @@ body{
 
 
 
-}}
+}
