@@ -110,7 +110,7 @@ background-color: rgb(79, 79, 79);
 
 /* text styling */
 
-h1{
+/* h1{
     font-family: arimo;
     font-weight: 400;
 }
@@ -135,6 +135,28 @@ p{
     font-family: arimo;
     line-height: 1.15;
     font-weight: 400;
+} */
+
+h1{
+    font-family: arimo;
+}
+
+h2{
+    font-family: archivo-bold;
+}
+
+h3{
+    font-family: archivo;
+    line-height: 1.5;
+}
+
+h4{
+    font-family: archivo;
+}
+
+p{
+    font-family: archivo;
+    line-height: 1.15;
 }
 
 a{
