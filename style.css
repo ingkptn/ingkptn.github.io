@@ -32,7 +32,7 @@ body{
     background-color: white;
     position: sticky;
     top: 0px;
-    padding:3px 0px 3px 0px;
+    padding:3px 0px 5px 0px;
     border-bottom: 0.85px solid black;
     z-index: 20;
 
@@ -51,6 +51,11 @@ body{
     flex-basis: 70%;
     height: fit-content;
 }
+
+
+
+
+
 
 
 

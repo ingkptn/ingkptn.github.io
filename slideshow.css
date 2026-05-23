@@ -45,7 +45,7 @@ body{
     object-fit: cover;
     opacity: 0;
     transition: opacity 2.5s ease-in-out;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
 }
 
 .imgSlides.active {
@@ -53,11 +53,21 @@ body{
     z-index: 1;
 }
 
+#contact{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    position: absolute;
+    top: 30px;
+    width: calc(100% - 60px);
+    z-index: 2;
+}
+
 #text{
     margin-left: 30px;
     position: absolute;
     bottom: 30px;
-    width: 100vw;
+    width: calc(100% - 60px);
     z-index: 2;
 }
 
@@ -71,15 +81,29 @@ a:hover{
 }
 
 h1{
-    font-size: 30px;
-    font-family: archivo;
+    font-size: 25px;
+    font-family: archivo-bold;
     margin: 0px;
     color: white;
 }
 
 h2{
-    font-size: 30px;
+    font-size: 25px;
     font-family: archivo;
     margin: 0px;
-    color: rgb(178, 178, 178);
+    color: rgb(217, 217, 217);
+}
+
+h3{
+    font-size: 18px;
+    font-family: archivo;
+    margin: 0px;
+    color: white;
+}
+
+h4{
+    font-size: 14px;
+    font-family: archivo;
+    margin: 0px;
+    color: white;
 }
