@@ -273,6 +273,20 @@ h3, p, h4{
     margin-left: 20px;
 }
 
+button{
+    font-size: 11px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 5px 8px;
+    
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+}
+
 }
 
 

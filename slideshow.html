@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="slideshow.css" />
+        <link rel="icon" href="photos/favicon.png" type="image/png">
+        <script src="https://kit.fontawesome.com/f14ed7f8bf.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+       <style> @import url('https://fonts.googleapis.com/css2?family=Trirong:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');</style>
+        <title>ing klewpatinond</title>
+    </head>
+
+    <body>
+
+    <div id="img-slideshow">
+        <img src="website-photos/thesis/thesis1.jpg" class="imgSlides active">
+        <img src="website-photos/kkpcny/kkpcny1.jpg" class="imgSlides">
+        <img src="website-photos/kkpny/kkpny5.jpg" class="imgSlides">
+        <img src="website-photos/kyoto/kyoto3.jpg" class="imgSlides">
+        <img src="website-photos/block/block5.jpg" class="imgSlides">
+        <img src="website-photos/littlecanal/littlecanal1.jpg" class="imgSlides">
+        <img src="website-photos/dime/dime0.jpg" class="imgSlides">
+    </div>
+    <div id="text">
+        <div>
+        <h1>Ing Klewpatinond</h1>
+        <h2>designer, currently based in bangkok</h2><br>
+        </div>
+        <div>
+            <a href="index.html"><h1>View Portfolio &nbsp &#8594</h1></a>
+        </div>
+    </div>
+
+<script>
+let slideIndex = 0;
+
+function carousel() {
+  const slides = document.getElementsByClassName("imgSlides");
+
+  // Remove active class from current slide
+  slides[slideIndex].classList.remove("active");
+
+  // Move to next slide
+  slideIndex = (slideIndex + 1) % slides.length;
+
+  // Add active class to next slide
+  slides[slideIndex].classList.add("active");
+
+  setTimeout(carousel, 4500);
+}
+
+setTimeout(carousel, 4500);
+</script>
+
+    </body>
