@@ -103,7 +103,62 @@ h3{
 
 h4{
     font-size: 14px;
-    font-family: archivo;
+    font-family: archivo-bold;
     margin: 0px;
     color: white;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+#contact{
+    flex-direction: column;
+}
+
+#contact>h4{
+    margin-bottom: 10px;
+}
+
+h1, h2{
+    font-size: 19px;
+}
+
+
+h3{
+    font-size: 15px;
+}
+
+h4{
+    font-size: 12px;
+}
+
+
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 850px) {
+
+
+
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1500px) {
+
+
+ 
+
+
 }
