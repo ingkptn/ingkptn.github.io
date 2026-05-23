@@ -188,6 +188,7 @@ img:hover, video:hover{
 
 button{
     background-color: white;
+    color: black;
     font-family: archivo;
     font-size: 12px;
     border-radius: 20px;
@@ -196,12 +197,14 @@ button{
     width: fit-content;
     margin-top: auto;
     margin: 10px 0px;
+    transition: padding 0.2s ease-in-out;
     
 }
 
 button:hover{
     background-color: black;
     color: white;
+    padding: 7px 20px;
 }
 
 /* #archive{
