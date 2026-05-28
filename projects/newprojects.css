@@ -149,26 +149,15 @@ p{
     line-height: 1.15;
     font-weight: 400;
 } */
-
-h1{
-    font-family: arimo;
-}
-
-h2{
-    font-family: archivo-bold;
+h1, h2, h3, h4, p {
+    font-family: archivo;
 }
 
 h3{
-    font-family: archivo;
     line-height: 1.5;
 }
 
-h4{
-    font-family: archivo;
-}
-
 p{
-    font-family: archivo;
     line-height: 1.15;
 }
 
@@ -176,6 +165,7 @@ a{
     text-decoration:none;
     color: black;
 }
+
 
 img video{
     width: 95%;
@@ -236,6 +226,7 @@ h2{
 h3, p, h4{
     font-size: 11px;
 }
+
 
 #header-flex>img{
     width: 35px;
@@ -352,6 +343,17 @@ h3, p, h4{
     grid-gap: 10px 0px;
 }
 
+h1{
+    font-size: 16px;
+}
+
+h2{
+    font-size: 12.5px;
+}
+
+h3, p, h4{
+    font-size: 12px;
+}
 
 
   
