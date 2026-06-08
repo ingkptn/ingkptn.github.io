@@ -39,7 +39,6 @@ body{
 }
 
 
-
 #header-flex{
     display: flex;
     justify-content: space-between;
@@ -48,7 +47,7 @@ body{
 }
 
 #name{
-    flex-basis: 70%;
+    
     height: fit-content;
 }
 
@@ -61,7 +60,7 @@ body{
 
 #projects{
     overflow-y: scroll;
-height: calc(100vh - 100px);
+height: calc(100vh - 90px);
 }
 
 
@@ -97,14 +96,6 @@ height: calc(100vh - 100px);
     margin-bottom: 10px;
     color:rgb(135, 135, 135);
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -190,7 +181,7 @@ button{
     font-family: archivo;
     font-size: 12px;
     border-radius: 20px;
-    border: 1px solid black;
+    border: 0.85px solid black;
     padding: 7px 10px;
     width: fit-content;
     margin-top: auto;
@@ -260,12 +251,6 @@ h3, p, h4{
     font-size: 11px;
 }
 
-#header-flex>img{
-    width: 35px;
-    height: 35px;
-    padding-right: 10px;
-    
-}
 
 #header-flex>a>h1{
     margin-left: 20px;
@@ -313,21 +298,16 @@ button:hover{
 }
 
 
-#header-flex>img{
-    width: 45px;
-    height: 45px;
-    padding-right: 10px;
-    
-}
+
 
 
 #header-flex>a>h1{
     margin-left: 20px;
 }
 
-#name{
+/* #name{
     flex-basis: 80%;
-}
+} */
 
 .year{
     margin-top: 10px;
@@ -371,7 +351,7 @@ h3, p, h4{
 
 
 #name{
-    flex-basis: 87%;
+    /* flex-basis: 87%; */
     height: fit-content;
 }
 
@@ -398,11 +378,28 @@ h3, p, h4{
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1500px) {
 
+    .category{
+        padding-bottom: 10px;
+        border-bottom: 0.85px solid black;
+        transition: padding 0.2s ease-in-out;
+    }
+
+    .category>i{
+        display:none;
+    }
+
+        .category:hover{
+        padding-left: 20px;
+    }
+
+        .category:hover i{
+        display: inline;
+    }
 
     #flex{
         display: flex;
         width: 100%;
-        border-bottom: 0.85px solid black;
+
     }
 
     #header{
@@ -411,8 +408,22 @@ h3, p, h4{
     }
 
     .proj{
-        color: grey;
+        color: lightgray;
+        filter: brightness(0.4);
+        transition: filter 0.2s ease-in-out;
     }
+
+    /* img{
+    filter: brightness(0.4);
+} */
+
+.proj:hover{
+    filter: brightness(1.0);
+}
+
+img:hover, video:hover{
+    filter: brightness(1);
+}
 
 #wide-screen{
     display:flex;
@@ -447,11 +458,6 @@ h3, p, h4{
 }
 
 
-body{
-    padding: 10px 30px;
-}
-
-
 #main{
     width: 95%;
     padding-left: 0%;
@@ -467,9 +473,13 @@ body{
     display: none;
 }
 
+
+
 #project10{
     border-bottom: 0px;
 }
+
+
 
 
 }
