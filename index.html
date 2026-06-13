@@ -25,8 +25,9 @@
             
         </div>
 
+            <div id="menu-bg"></div>
             <div id="menu">
-            <h2>Ing Klewpatinond<br><br><br></h2>
+            <h1>Explore<br><br><br></h1>
             
             <a href="info.html"><h2 class="category">Info</h1></a>
             <a href="index.html"><h2 class="category">Work</h1></a>
@@ -234,25 +235,6 @@
 
 
 
-<script>
-const menuButton = document.getElementById('menuButton');
-const dropdownMenu = document.getElementById('menu');
-const entirePage = document.getElementById('flex');
 
-// Toggle menu on button click
-menuButton.addEventListener('click', () => {
-  dropdownMenu.style.display = 'block';
-  
-});
-
-window.addEventListener('click', (event) => {
-  if (
-    event.target !== menuButton &&
-    !dropdownMenu.contains(event.target)
-  ) {
-    dropdownMenu.style.display = 'none';
-  }
-});
-</script>
     </body>
 
