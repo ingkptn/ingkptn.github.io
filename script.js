@@ -15,8 +15,19 @@ document.addEventListener('DOMContentLoaded', () => {
       event.target !== menuButton &&
       !dropdownMenu.contains(event.target)
     ) {
-      dropdownMenu.style.display = 'none';
-      menuBg.style.display = 'none';
+      hideMenu();
     }
   });
+
+  // Hide menu when window becomes wider than 1500px
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1500) {
+      hideMenu();
+    }
+  });
+
+  function hideMenu() {
+    dropdownMenu.style.display = 'none';
+    menuBg.style.display = 'none';
+  }
 });

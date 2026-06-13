@@ -124,7 +124,7 @@ height: calc(100vh - 90px);
 .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    border-bottom: 0.85px solid black;
+    /* border-bottom: 0.85px solid black; */
     overflow: hidden;
     color: black;
 }
