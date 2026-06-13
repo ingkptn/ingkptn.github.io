@@ -13,17 +13,29 @@
     </head>
 
     <body>
-       <!-- <h1>under renovation! check back again soon :)</h1> -->
         <div id="header">
             <div id="header-flex">
-            <div id="name"><a href="slideshow.html"><h2>Ing Klewpatinond</h2>
-                <h4 id="ing-info">designer, currently based in bangkok.</h4></a>
+            <div id="name"><h2>Ing Klewpatinond</h2>
+                <h4 id="ing-info">designer, currently based in bangkok.</h4>
             </div>
             <!-- <h4>ingklptn@gmail.com<br>
             LinkedIn: Wanwanat (Ing) Klewpatinond</h4> -->
+            <h1 id="menuButton">≡</h1>
             </div>
             
         </div>
+
+            <div id="menu">
+            <h2>Ing Klewpatinond<br><br><br></h2>
+            
+            <a href="info.html"><h2 class="category">Info</h1></a>
+            <a href="index.html"><h2 class="category">Work</h1></a>
+            <a href="playground.html"><h2 class="category">Playground!</h1></a>
+            <a href="archive.html"><h2 class="category">Archive</h1></a>
+            </div>
+
+
+
 
         
         <div id="flex">
@@ -38,9 +50,7 @@
         <p>(PDF Portfolio and Resume Available upon request)</p></div> -->
 
         <div>
-        <!-- <p>ingklptn@gmail.com<br>
-        LinkedIn: Wanwanat (Ing) Klewpatinond</p> -->
-            <!-- <h2>Thailand-based multidisciplinary designer with a BFA in Communication Design from the Parsons School of Design, NYC. Creating cohesive visual languages that translate concepts into compelling, meaningful design across print and digital formats.<br><br><br></h2> -->
+            <a href="info.html"><h2 class="category">Info</h2></a>
             <a href="index.html"><h2 class="category">&#8594 &nbsp &nbsp Work<br><br><span class="category-desc">Selected university coursework, freelance projects, and internship work.</span></h2></a>
             <a href="playground.html"><h2 class="category">Playground!</h2></a>
             <a href="archive.html"><h2 class="category">Archive</h2></a>
@@ -222,5 +232,27 @@
         </div>
 
 
+
+
+<script>
+const menuButton = document.getElementById('menuButton');
+const dropdownMenu = document.getElementById('menu');
+const entirePage = document.getElementById('flex');
+
+// Toggle menu on button click
+menuButton.addEventListener('click', () => {
+  dropdownMenu.style.display = 'block';
+  
+});
+
+window.addEventListener('click', (event) => {
+  if (
+    event.target !== menuButton &&
+    !dropdownMenu.contains(event.target)
+  ) {
+    dropdownMenu.style.display = 'none';
+  }
+});
+</script>
     </body>
 
