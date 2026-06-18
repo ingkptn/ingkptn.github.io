@@ -27,6 +27,7 @@ body{
     overflow: hidden;
     font-synthesis: none;
   -webkit-font-smoothing: antialiased;
+  color: rgb(51, 51, 51);
 
 }
 
@@ -63,15 +64,15 @@ height: calc(100vh - 70px);
 
 #title{
     padding-left: 0px;
-    border-bottom: 0.85px solid black;
+    border-bottom: 0.85px solid rgb(51, 51, 51);
 }
 
 .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    /* border-bottom: 0.85px solid black; */
+    /* border-bottom: 0.85px solid rgb(51, 51, 51); */
     overflow: hidden;
-    color: black;
+    color: rgb(51, 51, 51);
 
 }
 
@@ -112,11 +113,11 @@ height: calc(100vh - 70px);
 }
 
 .fa-spiral{
-    color: black;
+    color: rgb(51, 51, 51);
 }
 
 .fa-angles-up{
-    border: 0.85px solid black;
+    border: 0.85px solid rgb(51, 51, 51);
     padding: 15px;
     border-radius: 40px;
     margin-top: 40px;
@@ -176,7 +177,7 @@ p{
 
 a{
     text-decoration:none;
-    color: black;
+    color: rgb(51, 51, 51);
 }
 
 img video{
@@ -190,7 +191,7 @@ img video{
     background-color: white;
     width: fit-content;
     height: 40px;
-    border: 0.85px solid black;
+    border: 0.85px solid rgb(51, 51, 51);
     bottom: 40px;
     left: 98%;
     padding: 00px 20px;
@@ -211,9 +212,9 @@ img video{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 0px;
-    /* border-bottom: 0.85px solid black; */
+    /* border-bottom: 0.85px solid rgb(51, 51, 51); */
     padding-bottom: 15px;
-    color: black;
+    color: rgb(51, 51, 51);
     height: calc(100vh - 100px);
     overflow-y: scroll;}
     
@@ -274,9 +275,9 @@ img video{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 15px;
-    /* border-bottom: 0.85px solid black; */
+    /* border-bottom: 0.85px solid rgb(51, 51, 51); */
     padding-bottom: 0px;
-    color: black;
+    color: rgb(51, 51, 51);
     height: calc(100vh - 100px);
     overflow-y: scroll;
    }
@@ -288,7 +289,7 @@ img video{
 }
 
     .proj:hover{
-    color: black;
+    color: rgb(51, 51, 51);
 }
 
     img, video{
@@ -350,9 +351,9 @@ img video{
     .proj{
     display: grid;
     grid-template-columns: 1fr 2.5fr;
-    /* border-bottom: 0.85px solid black; */
+    /* border-bottom: 0.85px solid rgb(51, 51, 51); */
     margin-bottom: 15px;
-    color: black;
+    color: rgb(51, 51, 51);
     height: calc(100vh - 90px);}
 
     img, video{
@@ -422,7 +423,7 @@ h3, p, h4{
     #flex{
         display: flex;
         width: 100%;
-        /* border-bottom: 0.85px solid black; */
+        /* border-bottom: 0.85px solid rgb(51, 51, 51); */
     }
 
     #header{
@@ -455,7 +456,7 @@ h3, p, h4{
     /* padding-left: 24px; */
     /* position: sticky;
     top: 10px; */
-    border-bottom: 0.85px solid black;
+    border-bottom: 0.85px solid rgb(51, 51, 51);
 }
 
 .desc{

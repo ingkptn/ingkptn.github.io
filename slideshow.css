@@ -33,7 +33,7 @@ body{
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background: black;
+    background: rgb(51, 51, 51);
 }
 
 .imgSlides{
