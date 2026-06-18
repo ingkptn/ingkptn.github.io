@@ -202,12 +202,26 @@ video:hover {
     text-align: center;
 }
 
+
+/* INFO PAGE */
+h1{
+    line-height: 1.2;
+}
+
+#main-info{
+    width: 50%;
+}
+
 /* Extra small devices */
 
 @media only screen and (max-width: 600px) {
     #wide-screen {
         display: none;
     }
+
+    #main-info{
+    width: 100%;
+}
 
     .proj {
         display: grid;
@@ -260,6 +274,15 @@ video:hover {
 /* Small devices */
 
 @media only screen and (min-width: 600px) {
+
+    #main-info{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+
     #wide-screen {
         display: none;
     }
