@@ -4,13 +4,16 @@ document.addEventListener('DOMContentLoaded', () => {
   const menuBg = document.getElementById('menu-bg');
 
   function showMenu() {
-    dropdownMenu.style.display = 'block';
+    // dropdownMenu.style.display = 'block';
     menuBg.style.display = 'block';
+    dropdownMenu.classList.add('open');
   }
 
   function hideMenu() {
-    dropdownMenu.style.display = 'none';
+    // dropdownMenu.style.display = 'none';
+    dropdownMenu.classList.remove('open');
     menuBg.style.display = 'none';
+    
   }
 
   menuButton.addEventListener('click', (event) => {
