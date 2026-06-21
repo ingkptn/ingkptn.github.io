@@ -218,6 +218,8 @@ h1{
     padding-top: 50px;
 }
 
+
+
 /* Extra small devices */
 
 @media only screen and (max-width: 600px) {
@@ -351,10 +353,20 @@ h1{
         /* border-bottom: 0.85px solid rgb(51, 51, 51) ; */
     }
 
+        .proj {
+        overflow: visible;
+    }
+
+    .photos {
+        width: 100%;
+    }
+
     img,
     video {
+        display: block;
         width: 100%;
-        margin: 0px;
+        height: auto;
+        margin: 0;
     }
 
     .year {
@@ -365,8 +377,6 @@ h1{
     #name {
         height: fit-content;
     }
-
-    
 
     #projects {
         margin-top: 10px;
@@ -426,7 +436,7 @@ h1{
     }
 
     img {
-        filter: brightness(0.4);
+        filter: brightness(1);
         transition: filter 0.2s ease-in-out;
     }
 
@@ -435,7 +445,7 @@ h1{
     }
 
     .proj:hover img {
-        filter: brightness(1);
+        filter: brightness(0.4);
     }
 
     .proj {
@@ -482,4 +492,8 @@ h1{
     button {
         border: 1.25px solid rgb(51, 51, 51);
     }
+
+    #main-info img{
+    filter: brightness(1);
+}
 }
