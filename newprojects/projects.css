@@ -1,0 +1,464 @@
+/* Fonts */
+@font-face {
+    font-family: "mori";
+    src: url("/typefaces/PPMori-Regular.woff2");
+}
+
+@font-face {
+    font-family: "mori-bold";
+    src: url("/typefaces/PPMori-Semibold.woff2");
+}
+
+
+/* Base */
+html {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-synthesis: none;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+img,
+video {
+    width: 100%;
+}
+
+h1 {
+    font-family: mori-bold;
+    font-size: 12px;
+}
+
+h2,
+h3,
+h4,
+p {
+    font-family: mori;
+    margin: 0;
+}
+
+h3 {
+    font-size: 12px;
+}
+
+h4,
+p {
+    color: rgb(150, 150, 150);
+}
+
+h4 {
+    font-size: 10px;
+}
+
+p {
+    font-size: 12px;
+}
+
+span {
+    display: none;
+    font-family: mori-bold;
+}
+
+
+
+
+
+
+/* PORTFOLIO */
+
+
+#portfolio {
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    padding: 10px 30px;
+    min-height: 100vh;
+}
+
+
+
+
+
+/* MENU */
+#header {
+    z-index: 100;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    color: black;
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.75) 0%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+#desktop-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+
+
+
+#menu-bg {
+    background-color: black;
+    position: fixed;
+    inset: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 50;
+    display: none;
+    opacity: 0.3;
+}
+
+#menu {
+    box-sizing: border-box;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 40px;
+    height: 100vh;
+    width: 80vw;
+    max-width: 330px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#menu>.credits {
+    margin-top: auto;
+}
+
+#menu.open {
+    transform: translateX(0);
+}
+
+#menu>img {
+    filter: invert(100);
+    width: 40px;
+    margin-bottom: 30px;
+}
+
+#menu>h2 {
+    margin-top: 10px;
+}
+
+#menu>h4 {
+    margin-top: 5px;
+}
+
+.category {
+    cursor: pointer;
+}
+
+.category-desc {
+    display: none;
+}
+
+.category span {
+    display: none;
+}
+
+.category.active {
+    font-family: mori-bold;
+}
+
+.category.active span {
+    display: inline;
+}
+
+.category.active+.category-desc {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+
+.intro-flex {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin-top:10px;
+}
+
+#intro-desc {
+    flex: 2;
+}
+
+.intro-flex > h4:not(#intro-desc) {
+    flex: 1;
+}
+
+.project{
+    position:relative;
+}
+
+#project-container p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Small Screens */
+@media only screen and (max-width: 600px) {
+    #landing-header>img {
+        width: 30px;
+    }
+
+    #landing-header>h1 {
+        font-size: 14px;
+    }
+
+    #intro>h2 {
+        font-size: 22px;
+    }
+
+    #header {
+        height: 40px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+
+
+.intro-flex {
+    flex-direction: column;
+    gap: 10px;
+}
+
+    .image-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        padding-bottom: 30px;
+        margin-top: 10px;
+    }
+
+
+
+    h1 {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 13px;
+    }
+
+    h3,
+    p {
+        font-size: 11px;
+    }
+
+    h4 {
+        font-size: 10px;
+    }
+}
+
+/* Tablet Screens */
+@media only screen and (min-width: 600px) {
+    #landing-header>h1 {
+        font-size: 16px;
+    }
+
+    #intro>h2 {
+        font-size: 28px;
+    }
+
+    #header {
+        height: 40px;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+        .category-intro{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+
+
+    h1 {
+        font-size: 13px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3,
+    p {
+        font-size: 12px;
+    }
+
+    h4 {
+        font-size: 10.5px;
+    }
+}
+
+
+/* Medium Screens */
+@media only screen and (min-width: 850px) {
+    #portfolio {
+        padding: 10px 40px;
+    }
+
+
+    #small-menu {
+        display: none;
+    }
+
+    #desktop-menu {
+        display: flex;
+    }
+
+    #intro>h2 {
+        font-size: 32px;
+    }
+
+
+
+   .category-intro{
+    flex-direction: row;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 15px;
+    }
+
+
+    h1 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3,
+    p {
+        font-size: 13px;
+    }
+
+    h4 {
+        font-size: 11.5px;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    #portfolio {
+        padding: 10px 150px;
+    }
+
+
+    #small-menu {
+        display: none;
+    }
+
+    #desktop-menu {
+        display: flex;
+    }
+
+    #landing-header>h1 {
+        font-size: 18px;
+    }
+
+    #intro>h2 {
+        font-size: 38px;
+    }
+
+    .image-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+    }
+
+    #project-intro1,
+    #playground-intro1,
+    #archive-intro1 {
+        width: 80%;
+
+    }
+
+
+    #header {
+        height: 55px;
+    }
+
+    h1 {
+        font-size: 15px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3,
+    p {
+        font-size: 14px;
+    }
+
+    h4 {
+        font-size: 12.5px;
+    }
+
+
+
+
+
+}

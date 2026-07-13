@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 1500) {
+    if (window.innerWidth > 850) {
       hideMenu();
     }
   });

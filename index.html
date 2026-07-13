@@ -6,6 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="website-photos/favicon.png" type="image/png">
     <script src="https://kit.fontawesome.com/f14ed7f8bf.js" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -16,294 +20,609 @@
 </head>
 
 <body>
-    <div id="header">
-        <div id="header-flex">
-            <div id="name">
-                <h2>Ing Klewpatinond</h2>
-                <h4 id="ing-info">designer, currently based in bangkok.</h4>
-            </div>
-            <!-- <h4>ingklptn@gmail.com<br>
-            LinkedIn: Wanwanat (Ing) Klewpatinond</h4> -->
-            <h1 id="menuButton">≡</h1>
+
+    <div id="landing-page">
+
+        <div id="landing-images">
+            <img src="website-photos/kkpcny/kkpcny6.png" class="imgSlides active">
+            <img src="website-photos/svnb/svnb4.jpg" class="imgSlides">
+            <img src="website-photos/block/block5.jpg" class="imgSlides">
+            <img src="website-photos/kyoto/kyoto3.jpg" class="imgSlides">
+            <img src="website-photos/archive/claycorner.png" class="imgSlides">
+            <img src="website-photos/kkpny/kkpny7.jpg" class="imgSlides">
+            <img src="website-photos/littlecanal/littlecanal3.jpg" class="imgSlides">
+            <img src="website-photos/svnb/svnb7.jpg" class="imgSlides">
+            <img src="website-photos/archive/256.png" class="imgSlides">
+            <img src="website-photos/archive/manifesto.jpg" class="imgSlides">
+        </div>
+
+        <div id="landing-header">
+            <!-- <img src="website-photos/ing.png"> -->
+            <h1>Ing Klewpatinond<br>อิง เกลียวปฏินนท์</h1>
+
+
+        </div>
+
+        <div id="intro">
+
+            <h2>
+                Bangkok-based multidisciplinary designer working across Graphic Design, Branding and Identity,
+                Publication Design and beyond. Creating cohesive visual languages that translate concepts into
+                compelling, meaningful design across print and digital formats.
+            </h2>
         </div>
 
     </div>
 
-    <div id="menu-bg"></div>
-    <div id="menu">
-        <h1>Explore<br><br><br></h1>
+    <div id="portfolio">
 
-        <a href="info.html">
-            <h2 class="category">About</h2>
-        </a>
-        <a href="index.html">
-            <h2 class="category">&#8594 &nbsp &nbsp Work</h2>
-        </a>
-        <a href="playground.html">
-            <h2 class="category">Playground!</h2>
-        </a>
-        <a href="archive.html">
-            <h2 class="category">Archive</h2>
-        </a>
-    </div>
+        <div id="header">
+            <h1>Ing Klewpatinond</h1>
+            <div id="desktop-menu">
+                <h3 class="category about"><span>&#8594 &nbsp &nbsp </span> About</h3>
+                <h3 class="category work"><span>&#8594 &nbsp &nbsp </span> Work</h3>
+                <h3 class="category playground"><span>&#8594 &nbsp &nbsp </span> Playground!</h3>
+                <h3 class="category archive"><span>&#8594 &nbsp &nbsp </span> Archive</h3>
+            </div>
+            <div id="small-menu">
+                <button class="hamburger" id="menuButton" aria-label="Open menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+
+        <div id="menu-bg"></div>
+        <div id="menu">
+            <!-- <h3>Explore<br><br><br></h3> -->
+
+
+
+
+            <h2 class="category about"><span>&#8594 &nbsp &nbsp </span> About</h2>
+
+
+            <h2 class="category work"><span>&#8594 &nbsp &nbsp </span> Work</h2>
+            <h4 class="category-desc">A selection of projects completed through university coursework, freelancing, and
+                internship experience.</h4>
+
+
+            <h2 class="category playground"><span>&#8594 &nbsp &nbsp </span> Playground!</h2>
+            <h4 class="category-desc">A collection of creative explorations, self-initiated experiments, and other fun
+                things</h4>
+
+
+            <h2 class="category archive"><span>&#8594 &nbsp &nbsp </span> Archive</h2>
+            <h4 class="category-desc">A collection of earlier coursework, studies and miscelleous projects.</h4>
+
+            <div class="credits">
+                <h4>Note: Projects labeled University Coursework were completed for academic purposes. Any brands or
+                    organizations featured are used as project subjects only and are not affiliated with the
+                    work.<br><br></h4>
+                <h4>Website Designed and Coded by Ing<br>© 2026 Wanwanat Klewpatinond<br><br>
+                    Last Updated: 30/03/2026</h4>
+
+            </div>
+        </div>
+
+
+
+
+        <div id="project-container">
+            <div class="category-intro">
+                <div>
+                    <p>Work</p>
+                    <h2>A selection of design projects completed through university coursework, freelancing, and
+                        internship
+                        experience.</h2>
+                </div>
+                <div class="intro-flex">
+                    <div>
+                        <h4>Note: Projects labeled University Coursework were completed for academic purposes. Any
+                            brands or organizations featured are used as project subjects only.
+                    </div>
+                    <div>
+                        <h4>PDF Version Available Upon Request<br>
+                            © 2026 Wanwanat Klewpatinond <br>
+                            Last Updated: 30/03/2026</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid-container">
+
+                
+                <div class="project open-overlay" data-page="newprojects/project1.html">
+                    <div class="photos">
+                        <img src="website-photos/kkpcny/kkpcny1.jpg">
+                    </div>
+                    <div class="project-desc">
+                        <div>
+                            <h3>KKP Chinese New Year 2026</h3>
+                            <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance</p>
+                        </div>
+                        <h3>2025</h3>
+                    </div>
+                </div>
+
+                <div class="project open-overlay" data-page="newprojects/project2.html">
+                    <div class="photos">
+                        <img src="website-photos/kyoto/kyoto3.jpg">
+                    </div>
+
+                    <div class="project-desc">
+                        <div>
+                            <h3>Historic Monuments of Ancient Kyoto: Uji, Kyoto & Otsu Cities</h3>
+                            <p>Branding & Identity | Project Type: University Coursework</p>
+                        </div>
+                        <h3>2024</h3>
+                    </div>
+                </div></a>
+
+                <div class="project open-overlay" data-page="newprojects/project3.html">
+                    <div class="photos">
+                        <img src="website-photos/kkpny/kkpny8.jpg">
+                    </div>
+                    <div class="project-desc">
+                        <div>
+                            <h3>KKP New Year 2026</h3>
+                            <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance </p>
+                        </div>
+                        <h3>2025</h3>
+                    </div>
+                </div>
+
+                <div class="project open-overlay" data-page="newprojects/project4.html">
+                    <div class="photos">
+                        <img src="website-photos/svnb/svnb0.jpg">
+                    </div>
+                    <div class="project-desc">
+                        <div>
+                            <h3>Dynamic Identities: Suvarnabhumi Airport Rebrand</h3>
+                            <p>Branding & Identity | Project Type: University Coursework</p>
+                        </div>
+                        <h3>2024</h3>
+                    </div>
+                </div>
+
+
+                <div class="project open-overlay" data-page="newprojects/project5.html">
+                    <div class="photos">
+                        <img src="website-photos/littlecanal/littlecanal3.jpg">
+                    </div>
+                    <div class="project-desc">
+                        <div>
+                            <h3>Little Canal: Cafe Rebrand</h3>
+                            <p>Branding & Identity | Project Type: University Coursework</p>
+                        </div>
+                        <h3>2024</h3>
+                    </div>
+                </div>
+
+                <div class="project open-overlay" data-page="newprojects/project6.html">
+                    <div class="photos">
+                        <img src="website-photos/shi/chula-logo.gif">
+                    </div>
+                    <div class="project-desc">
+                        <div>
+                            <h3>SHI47 Reunion Logo</h3>
+                            <p>Graphic Design | Project Type: Freelance</p>
+                        </div>
+                        <h3>2026</h3>
+                    </div>
+                </div>
+
+                <div class="project open-overlay" data-page="newprojects/project7.html">
+                    <div class="photos">
+                        <img src="website-photos/block/block1.jpg">
+                    </div>
+
+                    <div class="project-desc">
+                        <div>
+                            <h3>Block Mono: Typeface & Specimen</h3>
+                            <p>Typeface Design / Graphic Design | Project Type: University Coursework</p>
+                        </div>
+                        <h3>2025</h3>
+                    </div>
+                </div>
+
+
+                <div class="project open-overlay" data-page="newprojects/project8.html">
+                    <div class="photos">
+                        <img src="website-photos/thesis/thesis1.jpg">
+                    </div>
+
+                    <div class="project-desc">
+                        <div>
+                            <h3>Luck for Sale: The Economy of Belief</h3>
+                            <p>Graphic Design / Campaign | Project Type: University Coursework</p>
+                        </div>
+                        <h3>2025</h3>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
 
 
 
 
 
-    <div id="flex">
-        <div id="wide-screen">
+        <div id="about-container" class="hidden">
+
+            <div class="category-intro">
+                <div>
+                    <p>About</p>
+                    <h2>Thailand-based multidisciplinary designer working across Graphic Design, Branding and Identity,
+                    Publication Design and beyond. Creating cohesive visual languages that translate concepts into
+                    compelling, meaningful design across print and digital formats.
+                    <br><br>Open to freelance and full-time opportunities</h2>
+                </div>
+                <div class="intro-flex">
+                    <div>
+                        <h4>Note: Projects labeled University Coursework were completed for academic purposes. Any
+                            brands or organizations featured are used as project subjects only.</h4>
+                    </div>
+                    <div>
+                        <h4>PDF Version Available Upon Request<br>
+                            © 2026 Wanwanat Klewpatinond <br>
+                            Last Updated: 30/03/2026</h4>
+                    </div>
+                </div>
+            </div>
+
             <!-- <div>
-        <p>Thailand-based multidisciplinary designer with a BFA in Communication Design from the <a href="https://www.newschool.edu/parsons/bfa-communication-design/">Parsons School of Design, NYC,</a> working across Branding and Identity, Publication Design, Key Visuals, and beyond. Creating cohesive visual languages that translate concepts into compelling, meaningful design across print and digital formats.</p>
-        <p>Open to freelance and full-time opportunities!</p>
-
-        <p>Reach out at:</p>
-        <p>ingklptn@gmail.com<br>
-        LinkedIn: Wanwanat (Ing) Klewpatinond</p>
-        <p>(PDF Portfolio and Resume Available upon request)</p></div> -->
-
-            <div>
-                <a href="info.html">
-                    <h2 class="category">About</h2>
-                </a>
-                <a href="index.html">
-                    <h2 class="category">&#8594 &nbsp &nbsp Work<br><br><span class="category-desc">Selected university
-                            coursework, freelance projects, and internship work.</span></h2>
-                </a>
-                <a href="playground.html">
-                    <h2 class="category">Playground!</h2>
-                </a>
-                <a href="archive.html">
-                    <h2 class="category">Archive</h2>
-                </a>
+                <div>
+                <p>About</p>
+                <h2>Thailand-based multidisciplinary designer working across Graphic Design, Branding and Identity,
+                    Publication Design and beyond. Creating cohesive visual languages that translate concepts into
+                    compelling, meaningful design across print and digital formats.
+                    Open to freelance and full-time opportunities</h2>
+            </div>
+            <img src="website-photos/archive/work.gif">
             </div>
 
             <div>
-                <p>Note: Projects labeled University Coursework were completed for academic purposes. Any brands or organizations featured are used as project subjects only and are not affiliated with the work.<br><br></p>
-                <p>Website Designed and Coded by Ing!<br>© 2026 Wanwanat Klewpatinond<br><br>
-                    Last Updated: 30/03/2026</p>
+                <div>
+                <p>Qualifications</p>
+                <h2>2021–2025<br>
+                    BFA Communication Design, Parsons School of Design, New York City (with Honours)
+                </h2>
+            </div>
+
+            <div>
+                <p>Contact</p>
+                <h2>ingklptn@gmail.com<br>
+                    LinkedIn: Wanwanat (Ing) Klewpatinond<br>
+                    (PDF Portfolio and Resume Available upon request)
+                </h2>
+            </div>
+
+            <div>
+                <p>Design Menu</p>
+                <h2>Branding & Visual Identity<br>
+                    Editorial / Publication Design<br>
+                     Prints and Packaging<br>
+                    & more!
+                </h2>
+            </div>
+            </div> -->
+            
+
+ 
+
+
+
+        </div>
+
+
+        <div id="playground-container" class="hidden">
+            <div class="category-intro">
+                <div>
+                    <p>Playground</p>
+                    <h2>A collection of creative explorations, self-initiated experiments, and other fun things</h2>
+                </div>
+                <div class="intro-flex">
+                    <div>
+                        <h4>Note: Projects featured in this section are all self-initiated, fictional projects created
+                            for fun. They are not affiliated with any brands, organizations, or clients.
+                    </div>
+                    <div>
+                        <h4>
+                            © 2026 Wanwanat Klewpatinond <br>
+                            Last Updated: 30/03/2026</h4>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="grid-container">
+                <div class="project">
+                    <video preload="auto" autoplay loop controls webkit-playsinline playsinline>
+                        <source src="/website-photos/archive/Comp 1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-desc">
+                        <div>
+                            <h3>KKP Chinese New Year 2026</h3>
+                            <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance</p>
+                        </div>
+                        <div>
+                            <h3>2026</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project">
+                    <video preload="auto" autoplay loop controls webkit-playsinline playsinline>
+                        <source src="/website-photos/archive/market.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="project-desc">
+                        <div>
+                            <h3>KKP Chinese New Year 2026</h3>
+                            <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance</p>
+                        </div>
+                        <div>
+                            <h3>2026</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="archive-container">
+
+
+
+        </div>
+
+
+
+        <!-- <div id="archive-container" class="hidden">
+            <div id="archive-intro1">
+                <p>Archive</p>
+                <h2>A collection of earlier coursework, studies and miscelleous projects.</h2>
+            </div>
+            <div id="archive-intro2">
+                <div>
+                    <h4>Note: Projects labeled University Coursework were completed for academic purposes. Any brands or
+                        organizations featured are used as project subjects only.</h4>
+                </div>
+                <div>
+                    <h4>PDF Version Available Upon Request<br>
+                        © 2026 Wanwanat Klewpatinond <br>
+                        Last Updated: 30/03/2026</h4>
+                </div>
+            </div>
+            <div class="archive-project">
+                <img src="website-photos/archive/256.png">
+                <div class="project-desc">
+                    <div>
+                        <h3>256</h3>
+                        <p>Editorial Design | Project Type: University Coursework</p>
+                    </div>
+                    <div>
+                        <h3>2026</h3>
+                    </div>
+                </div>
             </div>
 
         </div>
 
-        <div id="main">
-            <!-- <div id="filter">
-            <h3 id="filterBranding">BRANDING & IDENTITY</h3>
-            <h3 id="filterPublication">PUBLICATION</h3>
-            <h3 id="filterAW">KEY ARTWORK</h3>
-            <h3 id="filterPackaging">PACKAGING / PRINT</h3>
-            <h3 id="filterDigital">DIGITAL</h3>
-            <h3 id="filterTypeface">TYPEFACE DESIGN</h3>
-        </div> -->
+    </div> -->
 
-            <div id="projects">
-                <a href="projects/kkpcny.html">
-                    <div class="proj aw packaging" id="project4">
-                        <div class="desc">
+        <!-- <div id="archive-container" class="hidden">
 
-                            <h2 class="year">(2026)</h2>
-                            <h2 class="proj-name">KKP Chinese New Year 2026</h2>
-                            <div><p>Key Artwork / Graphic Design / Packaging Design<br>
-                                Project Type: Freelance<br>
-                                <!-- Software(s): Adobe Illustrator, AfterEffects -->
-                            </p>
-                            <p class="project-desc">A contemporary interpretation of traditional Chinese New Year red
-                                packets, designed for Kiatnakin Phatra Bank.</p>
-                            <!-- <p>A contemporary interpretation of traditional Chinese New Year red packets, designed for Kiatnakin Phatra Bank.
-                The collection explores themes of prosperity, continuity, and good fortune through abstracted auspicious forms, expressed as bold silhouettes and layered details.
-                Created as a seasonal gesture for clients, the packets are intended to convey well wishes, appreciation, and a sense of lasting success.
-                </p> -->
-                            <!-- <button>See More &nbsp &#8594</button> -->
-                        </div>
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/kkpcny/kkpcny1.jpg">
-                        </div>
+            <div class="category-intro">
+                <div>
+                    <p>Archive</p>
+                    <h2>A collection of earlier coursework, studies and miscelleous projects.</h2>
+                </div>
+                <div class="intro-flex">
+                    <div>
+                        <h4>Note: Projects labeled University Coursework were completed for academic purposes. Any
+                            brands or organizations featured are used as project subjects only.
                     </div>
-                </a>
-
-
-                <a href="projects/kyoto.html">
-                    <div class="proj branding publication" id="project5">
-                        <div class="desc">
-                            <h2 class="year">(2024)</h2>
-                            <h2 class="proj-name">Historic Monuments of Ancient Kyoto: Kyoto, Uji, and Otsu Cities</h2>
-                            <div><p>Branding & Identity / Publication Design<br>
-                                Project Type: University Coursework<br>
-                                <!-- Software(s): Adobe Illustrator, InDesign, After Effects -->
-                            </p></div>
-                            <p class="project-desc">Hypothetical Identity and Editorial Design for the UNESCO World
-                                Heritage Site: "Historic Monuments of Ancient Kyoto: Kyoto, Uji, and Otsu Cities”.</p>
-                            <!-- <p>Hypothetical Identity and Editorial Design for the UNESCO World Heritage Site: "Historic Monuments of Ancient Kyoto: Kyoto, Uji, and Otsu Cities”. This project explores the creation of a comprehensive visual identity and editorial system for one of Japan’s most culturally significant UNESCO World Heritage sites. The design initiative seeks to balance historical reverence with contemporary design sensibilities, creating a bridge between centuries-old heritage and modern forms of communication.
-                </p> -->
-        
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/kyoto/kyoto3.jpg">
-                        </div>
+                    <div>
+                        <h4>
+                            © 2026 Wanwanat Klewpatinond <br>
+                            Last Updated: 30/03/2026</h4>
                     </div>
-                </a>
-
-
-                <a href="projects/svnb.html">
-                    <div class="proj branding" id="project2">
-                        <div class="desc">
-                            <h2 class="year">(2025)</h2>
-                            <h2 class="proj-name">Dynamic Identities: Suvarnabhumi Airport Rebrand</h2>
-                            <div><p>Branding & Identity / Graphic Design / Motion<br>
-                                Project Type: University Coursework<br>
-                                <!-- Software(s): Adobe Illustrator, After Effects -->
-                            </p></div>
-                            <p class="project-desc">Hypothetical rebranding project of Bangkok Suvarnabhumi Airport
-                                (BKK), drawing inspiration from the airport's architectural structure.</p>
-
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/svnb/svnb0.jpg">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projects/kkpny.html">
-                    <div class="proj aw" id="project3">
-                        <div class="desc">
-                            <h2 class="year">(2025)</h2>
-                            <h2 class="proj-name">Yantra Reverie (KKP New Year 2026)</h2>
-                             <div><p>Key Artwork / Illustration / Graphic Design <br>
-                                Project Type: Freelance<br>
-                                <!-- Software(s): Adobe Illustrator, AfterEffects -->
-                            </p></div>
-                            <p class="project-desc">Design for Kiatnakin Phatra's 2026 New Years' Gift Collection, as
-                                well as application across various products.</p>
-                            <!-- <p>For Kiatnakin Phatra Financial Group’s New Year’s gift collection, I designed the key artwork and applied the visual concept across a range of gift items.
-                The design draws inspiration from Yantra, a traditional Thai art form rooted in faith, symbolism, and Buddhist philosophy. Composed of flowing lines and geometric structures, the artwork reinterprets the spiritual language of Yantra into a contemporary visual expression.
-                What may appear as abstract lines at first gradually reveals a sense of rhythm and intention, reflecting themes of guidance, protection, and prosperity.
-                </p> -->
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/kkpny/kkpny5.jpg">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projects/chula.html">
-                    <div class="proj aw" id="project3">
-                        <div class="desc">
-                            <h2 class="year">(2025)</h2>
-                            <h2 class="proj-name">SHI47 Reunion Party</h2>
-                            <div><p>Graphic Design<br>
-                                Project Type: Freelance<br>
-                                <!-- Software(s): Adobe Illustrator -->
-                            </p></div>
-                            <p class="project-desc">
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/shi/chula-logo.gif">
-                        </div>
-                    </div>
-                </a>
-
-
-
-                <a href="projects/dime.html">
-                    <div class="proj typeface" id="project6">
-                        <div class="desc">
-                            <h2 class="year">(2024)</h2>
-                            <h2 class="proj-name">Dime! Internship</h2>
-                            <div><p>Graphic Design <br>
-                                Project Type: Internship<br>
-                                <!-- Software(s): Adobe Illustrator -->
-                            </p></div>
-                            <p class="project-desc">
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/dime/dime0.jpg">
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="projects/block.html">
-                    <div class="proj typeface" id="project6">
-                        <div class="desc">
-                            <h2 class="year">(2024)</h2>
-                            <h2 class="proj-name">Block Mono</h2>
-                            <div><p>Typeface Design / Graphic Design <br>
-                                Project Type: University Coursework<br>
-                                <!-- Software(s): Adobe Illustrator, AfterEffects -->
-                            </p></div>
-                            <p class="project-desc">A contemporary monospaced sans-serif typeface that draws inspiration
-                                from industrial design, architecture, and construction, subtly infused with a touch of
-                                calligraphic flair.</p>
-                            <!-- <p>Block Mono is a contemporary monospaced sans-serif typeface that draws inspiration from industrial design, architecture, and construction, subtly infused with a touch of calligraphic flair. Designed for versatility, each character is crafted with attention to proportion and form, balancing sharp, geometric precision with softened, rounded corners. This interplay creates a rhythm that feels both structured and approachable.
-                </p> -->
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/block/block1.jpg">
-                        </div>
-                    </div>
-                </a>
-
-
-                <a href="projects/littlecanal.html">
-                    <div class="proj" id="project7">
-                        <div class="desc">
-                            <h2 class="year">(2024)</h2>
-                            <h2 class="proj-name">Little Canal Rebrand</h2>
-                            <div><p>Branding & Identity / Graphic Design<br>
-                                Project Type: University Coursework<br>
-                                <!-- Software(s): Adobe Illustrator, InDesign -->
-                            </p></div>
-                            <p class="project-desc">Hypothetical rebrand of Little Canal, a neighborhood coffee shop and
-                                bar in New York City’s Chinatown.</p>
-                            <!-- <p>Hypothetical rebrand of Little Canal, a neighborhood coffee shop and bar in New York City’s Chinatown. The new identity centers on community, celebrating the spirit of the neighborhood and the connections formed within it. Bold visual language and tactile design elements channel the raw, street-level energy of the area, creating a brand presence that feels authentic, welcoming, and distinctly tied to its surroundings.
-                </p> -->
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/littlecanal/littlecanal0.jpg">
-                        </div>
-                    </div>
-                </a>
-
-                <a href="projects/thesis.html">
-                    <div class="proj branding publication" id="project1">
-                        <div class="desc">
-                            <h2 class="year">(2025)</h2>
-                            <h2 class="proj-name">Luck for Sale: The Economy of Belief (Parsons CD Senior Thesis)</h2>
-                            <div><p>Publication Design / Branding & Identity / Graphic Design<br>
-                                Project Type: University Coursework<br>
-                                <!-- Software(s): Adobe Illustrator, InDesign -->
-                            </p></div>
-                            <p class="project-desc"> Parsons Communication Design Thesis, exploring and providing a
-                                critical commentary on the intersection of belief systems, material culture, and
-                                capitalism in contemporary Thailand through a design-driven lens.</p>
-                            <!-- <p>As convenience and efficiency have become the main factors driving modern lifestyles, even deeply personal and spiritual practices have adapted to fit the fast-paced rhythm of urbanized societies. This project explores and provides a critical commentary on the intersection of belief systems, material culture, and capitalism in contemporary Thailand through a design-driven lens.
-                </p> -->
-                        </div>
-
-                        <div class="photos">
-                            <img src="website-photos/thesis/thesis1.jpg">
-                        </div>
-
-                    </div>
-                </a>
-
-
-
+                </div>
             </div>
-        </div>
+
+            <div id="list-container">
+                <div class="archive-item">
+                    <div class="item-text">
+                        <h3>2025<br><br>256: Unpacking the Human Experience</h3>
+                        <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance<br>&nbsp</p>
+                    
+                        <h4>A series of 4 short booklets, in total containing 256 images, exploring the dimensions of
+                            the human experience that constitutes one's
+                            "reality" and their sense of self. Each booklet loosely investigates a different dimension—
+                            the physical, the relational, the temporal, and the mental-through the examination and
+                            organization of both representational and metaphorical imagery. Within each dimension,
+                            images are sorted into smaller, specific sub-categories. Images range from photographs to
+                            graphic design, paintings and installations.
+                        </h4>
+                    </div>
+                    <div class="item-photos">
+                        <img src="website-photos/archive/256.png">
+                        <img src="photos-1/2.png">
+                         <img src="photos-1/3.png">
+                        <img src="photos-1/4.png">
+                        <img src="photos-1/5.png">
+                    </div>
+
+                </div>
+
+
+                <div class="archive-item">
+                    <div class="item-text">
+                        <h3>2025<br><br>256: Unpacking the Human Experience</h3>
+                        <p>Key AW / Graphic Design / Print & Packaging | Project Type: Freelance<br>&nbsp</p>
+                    
+                        <h4>A series of 4 short booklets, in total containing 256 images, exploring the dimensions of
+                            the human experience that constitutes one's
+                            "reality" and their sense of self. Each booklet loosely investigates a different dimension—
+                            the physical, the relational, the temporal, and the mental-through the examination and
+                            organization of both representational and metaphorical imagery. Within each dimension,
+                            images are sorted into smaller, specific sub-categories. Images range from photographs to
+                            graphic design, paintings and installations.
+                        </h4>
+                    </div>
+                    <div class="item-photos">
+                        <img src="website-photos/archive/256.png">
+                        <img src="photos-1/2.png">
+                         <img src="photos-1/3.png">
+                        <img src="photos-1/4.png">
+                        <img src="photos-1/5.png">
+                    </div>
+
+                </div> -->
+
+
+<div id="page-overlay">
+    <button class="close-button" id="closeOverlay" aria-label="Close overlay">
+    <span></span>
+    <span></span>
+</button>
+
+    <iframe id="overlayFrame" src=""></iframe>
+</div>
+
+
+
+
+    </div>
     </div>
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            
+            const projects = document.getElementById("project-container");
+            const playground = document.getElementById("playground-container");
+            const archive = document.getElementById("archive-container");
+            const about = document.getElementById("about-container");
+
+            const categoryNames = ["about", "work", "playground", "archive"];
+
+            function setActiveCategory(categoryName) {
+                // Remove active state from every category
+                document.querySelectorAll(".category").forEach(category => {
+                    category.classList.remove("active");
+                });
+
+                // Add active state to matching category in both desktop and mobile menus
+                document.querySelectorAll("." + categoryName).forEach(category => {
+                    category.classList.add("active");
+                });
+            }
+
+            function showAbout() {
+                about.classList.remove("hidden");
+                projects.classList.add("hidden");
+                playground.classList.add("hidden");
+                archive.classList.add("hidden");
+                setActiveCategory("about");
+            }
+
+            function showWork() {
+                about.classList.add("hidden");
+                projects.classList.remove("hidden");
+                playground.classList.add("hidden");
+                archive.classList.add("hidden");
+                setActiveCategory("work");
+            }
+
+            function showPlayground() {
+                about.classList.add("hidden");
+                projects.classList.add("hidden");
+                playground.classList.remove("hidden");
+                archive.classList.add("hidden");
+                setActiveCategory("playground");
+            }
+
+
+            function showArchive() {
+                about.classList.add("hidden");
+                projects.classList.add("hidden");
+                playground.classList.add("hidden");
+                archive.classList.remove("hidden");
+                setActiveCategory("archive");
+            }
+
+            categoryNames.forEach(categoryName => {
+                document.querySelectorAll("." + categoryName).forEach(button => {
+                    button.addEventListener("click", () => {
+                        if (categoryName === "work") {
+                            showWork();
+                        } else if (categoryName === "playground") {
+                            showPlayground();
+                        } else if (categoryName === "about") {
+                            showAbout();
+                        } else if (categoryName === "archive") {
+                            showArchive();
+                        }
+                    });
+                });
+            });
+
+            // Default selected state when page loads
+            showWork();
+        });
+
+            const overlay = document.getElementById("page-overlay");
+    const overlayFrame = document.getElementById("overlayFrame");
+    const closeOverlay = document.getElementById("closeOverlay");
+
+    document.querySelectorAll(".open-overlay").forEach(item => {
+        item.addEventListener("click", () => {
+            const page = item.getAttribute("data-page");
+            overlayFrame.src = page;
+            overlay.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+    });
+
+    closeOverlay.addEventListener("click", () => {
+        overlay.classList.remove("active");
+        overlayFrame.src = "";
+        document.body.style.overflow = "";
+    });
+
+        let slideIndex = 0;
+
+        function carousel() {
+            const slides = document.getElementsByClassName("imgSlides");
+
+            slides[slideIndex].classList.remove("active");
+
+            slideIndex = (slideIndex + 1) % slides.length;
+
+            slides[slideIndex].classList.add("active");
+
+            setTimeout(carousel, 5000);
+        }
+
+        setTimeout(carousel, 5000);
+    </script>
 </body>
