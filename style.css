@@ -190,11 +190,9 @@ span {
     position: sticky;
     top: 0;
     color: black;
-    background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, 0.75) 0%,
-        rgba(255, 255, 255, 0) 100%
-    );
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.75) 0%,
+            rgba(255, 255, 255, 0) 100%);
 }
 
 #desktop-menu {
@@ -304,7 +302,7 @@ span {
     display: none !important;
 }
 
-.category-intro{
+.category-intro {
     margin-top: 20px;
     display: flex;
     flex-direction: row;
@@ -312,15 +310,15 @@ span {
     justify-content: space-between;
 }
 
-.category-intro>div{
+.category-intro>div {
     flex: 1 1 0;
 }
 
-.category-intro p{
+.category-intro p {
     margin-bottom: 10px;
 }
 
-.intro-flex{
+.intro-flex {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -328,12 +326,12 @@ span {
 }
 
 
-.intro-flex>div{
+.intro-flex>div {
     flex: 1 1 0;
 }
 
-.project{
-    position:relative;
+.project {
+    position: relative;
 }
 
 .grid-container {
@@ -346,7 +344,9 @@ span {
 }
 
 
-
+#about-container h2{
+    margin-bottom: 25px;
+}
 
 
 .project-desc {
@@ -408,7 +408,7 @@ span {
     cursor: pointer;
     position: relative;
     display: inline;
-    
+
 }
 
 .close-button span {
@@ -457,12 +457,12 @@ span {
         display: none;
     }
 
-    .category-intro{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    .category-intro {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
     .grid-container {
         display: grid;
@@ -509,11 +509,11 @@ span {
         display: none;
     }
 
-        .category-intro{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
+    .category-intro {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 25px;
     }
 
     .grid-container {
@@ -545,7 +545,7 @@ span {
 
 /* Medium Screens */
 @media only screen and (min-width: 850px) {
-    
+
     #portfolio {
         padding: 10px 40px;
     }
@@ -565,8 +565,8 @@ span {
 
 
 
-   .category-intro{
-    flex-direction: row;
+    .category-intro {
+        flex-direction: row;
     }
 
     .grid-container {
@@ -594,9 +594,9 @@ span {
     }
 
     #closeOverlay {
-    top: 20px;
-    right: 40px;
-}
+        top: 20px;
+        right: 40px;
+    }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -656,10 +656,10 @@ span {
         font-size: 12.5px;
     }
 
-        #closeOverlay {
-    top: 25px;
-    right: 150px;
-}
+    #closeOverlay {
+        top: 25px;
+        right: 150px;
+    }
 
 
 
